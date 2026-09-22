@@ -25,8 +25,10 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
 
-      - name: Install dependencies
-        run: flutter pub get
+      - name: Recreate Android Project Scaffolding
+        run: |
+          flutter create . --org com.mihrab.app --platforms android
+          flutter pub get
 
       - name: Build APK
         run: flutter build apk --release

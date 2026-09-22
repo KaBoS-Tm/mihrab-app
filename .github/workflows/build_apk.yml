@@ -25,9 +25,15 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
 
-      - name: Recreate Android Project Scaffolding
+      - name: Rebuild Clean Android Project
         run: |
+          # حذف أي ملفات أندرويد قديمة أو ناقصة
+          rm -rf android
+          
+          # إعادة توليد مجلد أندرويد بهيكل حديث متوافق تماماً
           flutter create . --org com.mihrab.app --platforms android
+          
+          # تثبيت الحزم
           flutter pub get
 
       - name: Build APK

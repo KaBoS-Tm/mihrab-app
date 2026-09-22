@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Java
+      - name: Setup Java JDK
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
@@ -25,21 +25,26 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
 
-      - name: Rebuild Clean Android Project
+      - name: Generate Official Android Platform
         run: |
-          # حذف أي ملفات أندرويد قديمة أو ناقصة
+          # مسح أي مجلد أندرويد قديم
           rm -rf android
           
-          # إعادة توليد مجلد أندرويد بهيكل حديث متوافق تماماً
-          flutter create . --org com.mihrab.app --platforms android
+          # إنشاء مشروع فلاتر مؤقت نظيف في الخلفية للحصول على ملفات الأندرويد الرسمية
+          cd ..
+          flutter create temp_project --org com.mihrab.app --platforms android
           
-          # تثبيت الحزم
-          flutter pub get
+          # نقل مجلد الأندرويد الرسمي والكامل لمشروعنا
+          cp -r temp_project/android mihrab-app/
+          cd mihrab-app
 
-      - name: Build APK
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Android Release APK
         run: flutter build apk --release
 
-      - name: Upload APK
+      - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: mihrab-release-apk

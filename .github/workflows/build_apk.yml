@@ -25,27 +25,34 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
 
-      - name: Generate Official Android Platform
+      - name: Build Project in Clean Scaffold
         run: |
-          # مسح أي مجلد أندرويد قديم
-          rm -rf android
-          
-          # إنشاء مشروع فلاتر مؤقت نظيف في الخلفية للحصول على ملفات الأندرويد الرسمية
+          # 1. حفظ ملفاتنا البرمجية والأصول في مجلد مؤقت
+          mkdir /tmp/user_code
+          cp -r lib assets pubspec.yaml /tmp/user_code/
+
+          # 2. إنشاء مشروع فلاتر كامل وجديد متوافق تماماً
           cd ..
-          flutter create temp_project --org com.mihrab.app --platforms android
-          
-          # نقل مجلد الأندرويد الرسمي والكامل لمشروعنا
-          cp -r temp_project/android mihrab-app/
-          cd mihrab-app
+          rm -rf workspace
+          flutter create workspace --org com.mihrab.app --platforms android
+          cd workspace
 
-      - name: Install dependencies
-        run: flutter pub get
+          # 3. إعادة ملفاتنا (الكود والأصول والـ pubspec) إلى المشروع الجديد
+          cp /tmp/user_code/pubspec.yaml .
+          rm -rf lib assets
+          cp -r /tmp/user_code/lib .
+          cp -r /tmp/user_code/assets .
 
-      - name: Build Android Release APK
-        run: flutter build apk --release
+          # 4. جلب الحزم وبناء الـ APK
+          flutter pub get
+          flutter build apk --release
+
+          # 5. تجهيز مكان الملف النهائي لرفعه
+          mkdir -p $GITHUB_WORKSPACE/build_output
+          cp build/app/outputs/flutter-apk/app-release.apk $GITHUB_WORKSPACE/build_output/
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: mihrab-release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build_output/app-release.apk

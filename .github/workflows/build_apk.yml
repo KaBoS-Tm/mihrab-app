@@ -25,37 +25,42 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
 
-      - name: Prepare Clean Flutter Android Workspace
+      - name: Setup Project and Configure Kotlin
         run: |
-          # حفظ ملفات التطبيق
+          # 1. حفظ ملفات المشروع الأساسية
           mkdir -p /tmp/app_src
           cp -r lib assets pubspec.yaml /tmp/app_src/
 
-          # إنشاء هيكل أندرويد رسمي متكامل
+          # 2. إنشاء بيئة عمل أندرويد رسمية
           cd $RUNNER_TEMP
           rm -rf mihrab_workspace
           flutter create mihrab_workspace --org com.mihrab.app --platforms android
           cd mihrab_workspace
 
-          # استبدال الملفات بملفاتنا
+          # 3. دمج ملفات التطبيق الخاصة بنا
           rm -rf lib assets pubspec.yaml
           cp -r /tmp/app_src/* .
 
-          # تحديث الـ minSdkVersion إلى 21 لضمان توافق الحزم
-          sed -i 's/minSdkVersion = flutter.minSdkVersion/minSdkVersion = 21/g' android/app/build.gradle || true
-          sed -i 's/minSdkVersion [0-9]*/minSdkVersion 21/g' android/app/build.gradle || true
+          # 4. ترقية إصدار Kotlin إلى الإصدار المتوافق مع حزمة shared_preferences
+          # تعديل settings.gradle إذا كان المشروع يستخدم الصيغة الجديدة
+          if [ -f android/settings.gradle ]; then
+            sed -i 's/id "org.jetbrains.kotlin.android" version "[^"]*"/id "org.jetbrains.kotlin.android" version "1.9.24"/g' android/settings.gradle
+          fi
 
-          # تنزيل الحزم
+          # تعديل build.gradle إذا كان المشروع يستخدم الصيغة السابقة
+          if [ -f android/build.gradle ]; then
+            sed -i 's/ext.kotlin_version = .*/ext.kotlin_version = "1.9.24"/g' android/build.gradle
+          fi
+
+          # 5. جلب الحزم وبناء تطبيق أندرويد النهائي
           flutter pub get
-
-          # البناء بصيغة release بدون توقيع معقد
           flutter build apk --release --no-tree-shake-icons
 
-          # تجهيز الملف للتحميل
+          # 6. نقل الـ APK المكتمل لمسار الرفع
           mkdir -p $GITHUB_WORKSPACE/output
           cp build/app/outputs/flutter-apk/app-release.apk $GITHUB_WORKSPACE/output/
 
-      - name: Upload APK
+      - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: mihrab-release-apk

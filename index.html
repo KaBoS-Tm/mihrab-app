@@ -2,356 +2,489 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مِحْرَاب | دليل تلاوة الإمام</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>مِحْرَابُ الإِمَام | تنويع التلاوة وضبط الوقف</title>
+  
   <!-- خطوط عربية فاخرة ومصحفية من Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Plus+Jakarta+Sans:wght@500;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --primary: #144D37;       /* أخضر محراب ملكي */
-      --primary-dark: #0d3525;
-      --secondary: #B38E46;     /* ذهبي إسلامي معتق */
-      --secondary-light: #F4EEDF;
-      --bg: #F7F5EE;            /* بيج دافئ ومريح للعين */
-      --card-bg: #FFFFFF;
-      --text-main: #232724;
-      --text-muted: #5A625B;
-      --border: #E5DEC9;
-      --shadow: 0 4px 18px rgba(20, 77, 55, 0.08);
-      --radius: 14px;
+      --primary: #12372A;          /* أخضر محراب عميق */
+      --primary-soft: #1B4D3E;
+      --secondary: #C5A059;        /* ذهبي معتق فاخر */
+      --secondary-glow: rgba(197, 160, 89, 0.18);
+      --bg: #F9F8F3;               /* خلفية ورق مصحفي كريمي مريح */
+      --surface: #FFFFFF;
+      --surface-subtle: #F4F1EA;
+      --text: #1C2421;
+      --text-muted: #5E6963;
+      --border: #E8E3D5;
+      --border-accent: #D4AF37;
+      --shadow-sm: 0 2px 8px rgba(18, 55, 42, 0.04);
+      --shadow-md: 0 8px 24px rgba(18, 55, 42, 0.08);
+      --radius: 16px;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Tajawal', sans-serif;
+      font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
       background-color: var(--bg);
-      color: var(--text-main);
+      color: var(--text);
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
 
-    /* رأس الصفحة (Header) */
+    /* رأس الصفحة الإسلامي الأنيق */
     header {
       width: 100%;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      background: linear-gradient(145deg, var(--primary), var(--primary-soft));
       color: #fff;
-      padding: 24px 20px;
+      padding: 26px 20px 22px;
       text-align: center;
-      border-bottom: 3px solid var(--secondary);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       position: sticky;
       top: 0;
       z-index: 100;
+      border-bottom: 2px solid var(--secondary);
+      box-shadow: var(--shadow-md);
     }
 
-    header h1 {
-      font-size: 1.8rem;
-      letter-spacing: 1px;
-      margin-bottom: 4px;
-      font-weight: 700;
+    .brand-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
 
-    header p {
-      color: var(--secondary-light);
-      font-size: 0.95rem;
-      opacity: 0.9;
+    .brand-subtitle {
+      font-size: 0.9rem;
+      color: #E2D9C8;
+      margin-top: 4px;
+      font-weight: 500;
     }
 
-    /* الحاوية الرئيسية المتناسقة */
+    /* الحاوية الرئيسية */
     .container {
       width: 100%;
-      max-width: 800px;
-      padding: 20px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    /* لوحة التحكم والخيارات */
-    .control-panel {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      padding: 20px;
-      box-shadow: var(--shadow);
+      max-width: 760px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
       gap: 18px;
     }
 
-    /* أزرار الصلوات الخمس */
-    .prayers-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-    }
-
-    .prayer-btn {
-      background: var(--bg);
-      border: 1.5px solid var(--border);
-      color: var(--text-main);
-      padding: 10px 4px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-align: center;
-    }
-
-    .prayer-btn:hover {
-      border-color: var(--secondary);
-    }
-
-    .prayer-btn.active {
-      background: var(--primary);
-      color: #fff;
-      border-color: var(--secondary);
-      box-shadow: 0 2px 8px rgba(20, 77, 55, 0.3);
-    }
-
-    /* القوائم المنسدلة وأشرطة التحكم */
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    label {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--primary);
-      display: flex;
-      justify-content: space-between;
-    }
-
-    select {
-      width: 100%;
-      padding: 12px 14px;
-      background: #FAF8F2;
-      border: 1.5px solid var(--border);
-      border-radius: 10px;
-      font-size: 0.95rem;
-      font-weight: 500;
-      outline: none;
-      cursor: pointer;
-      color: var(--text-main);
-    }
-
-    select:focus {
-      border-color: var(--secondary);
-    }
-
-    .range-box {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 4px;
-    }
-
-    input[type="range"] {
-      flex: 1;
-      accent-color: var(--primary);
-      cursor: pointer;
-    }
-
-    /* بطاقات الآيات القرآنية */
-    .cards-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .quran-card {
-      background: var(--card-bg);
+    /* بطاقة التحكم والتصفية */
+    .controls-card {
+      background: var(--surface);
       border-radius: var(--radius);
-      border: 1.5px solid var(--border);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: transform 0.2s ease;
-    }
-
-    .card-header {
-      background: #FAF8F2;
-      border-bottom: 1.5px solid var(--border);
-      padding: 14px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .surah-tag {
-      background: var(--primary);
-      color: #fff;
-      padding: 5px 12px;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-
-    .meta-tag {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    .card-body {
-      padding: 20px;
+      border: 1px solid var(--border);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
 
-    .theme-text {
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* الصلوات الخمس بنمط أزرار تفاعلية ناعمة */
+    .prayers-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .prayer-chip {
+      background: var(--surface-subtle);
+      border: 1.5px solid var(--border);
       color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.5;
-      font-style: italic;
-      border-right: 3px solid var(--secondary);
-      padding-right: 10px;
-    }
-
-    /* نص الآيات بخط مصحفي صافٍ */
-    .verses-box {
-      background: #FDFAF2;
-      border: 1px solid var(--border);
+      padding: 10px 4px;
       border-radius: 12px;
-      padding: 22px 18px;
-      font-family: 'Amiri Quran', serif;
-      font-size: 1.45rem;
-      line-height: 2.3;
-      text-align: center;
-      color: #1a221e;
-    }
-
-    .verse-end {
-      color: var(--secondary);
-      margin: 0 4px;
-      font-size: 1.3rem;
-    }
-
-    /* دليل الركعتين */
-    .rakah-guide {
-      background: #EAF4EE;
-      border: 1px solid #B0D7BE;
-      border-radius: 8px;
-      padding: 10px 14px;
       font-size: 0.9rem;
       font-weight: 700;
-      color: #144D37;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      text-align: center;
+    }
+
+    .prayer-chip:hover {
+      border-color: var(--secondary);
+      color: var(--primary);
+    }
+
+    .prayer-chip.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--secondary);
+      box-shadow: 0 4px 12px rgba(18, 55, 42, 0.25);
+    }
+
+    /* شبكة خيارات التصفية */
+    .filter-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 580px) {
+      .filter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .custom-select {
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: var(--surface-subtle);
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 600;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .custom-select:focus {
+      border-color: var(--secondary);
+      background: #FFFFFF;
+    }
+
+    /* شريط الأجزاء */
+    .range-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .range-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--primary);
+      height: 6px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* بطاقات الآيات */
+    .quran-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 6px;
+    }
+
+    .quran-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: #D6CEBC;
+    }
+
+    /* رأس البطاقة */
+    .card-top {
+      background: #F6F4ED;
+      border-bottom: 1.5px solid var(--border);
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .surah-badge {
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    /* زر التسجيل وحظر 48 ساعة */
-    .read-btn {
+    .surah-name {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--primary);
+    }
+
+    .surah-ayat-count {
+      background: #EAE5D8;
+      color: #4A544F;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .juz-badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #8C6D2B;
+      background: #FFF8E7;
+      border: 1px solid #EEDBB2;
+      padding: 3px 10px;
+      border-radius: 8px;
+    }
+
+    .card-body {
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* الدلالة الموضوعية */
+    .theme-banner {
+      background: #FAF8F2;
+      border-right: 4px solid var(--secondary);
+      padding: 8px 12px;
+      border-radius: 4px 8px 8px 4px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    /* نص المصحف الفاخر والمشكول */
+    .quran-verses-container {
+      background: #FFFEFA;
+      border: 1.5px solid #EDE8DB;
+      border-radius: 14px;
+      padding: 22px 16px;
+      text-align: justify;
+      text-align-last: center;
+      line-height: 2.6;
+      font-family: 'Amiri Quran', serif;
+      font-size: 1.45rem;
+      color: #17201C;
+    }
+
+    /* علامات نهاية الآيات برقم الآية */
+    .ayah-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary);
+      font-family: 'Amiri Quran', serif;
+      font-size: 1.25rem;
+      margin: 0 6px;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    /* دليل الركعتين */
+    .rakah-indicator {
+      background: #EEF6F2;
+      border: 1px solid #C4E2D2;
+      color: var(--primary);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* زر الاعتماد وحظر الـ 48 ساعة */
+    .action-btn {
       width: 100%;
       background: var(--secondary);
-      color: #fff;
+      color: #FFFFFF;
       border: none;
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 700;
+      padding: 13px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 800;
       cursor: pointer;
+      transition: all 0.2s ease;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 8px;
-      transition: background 0.2s ease;
+      box-shadow: 0 3px 10px rgba(197, 160, 89, 0.3);
     }
 
-    .read-btn:hover {
-      background: #9d7b37;
+    .action-btn:hover {
+      background: #B38E46;
+      transform: translateY(-1px);
     }
 
-    /* حالة القائمة الفارغة */
-    .empty-state {
-      text-align: center;
-      padding: 40px 20px;
+    /* شريط إدارة المحظورات واستعادة البطاقات */
+    .bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 6px;
+      font-size: 0.85rem;
       color: var(--text-muted);
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      border: 1px dashed var(--border);
     }
 
-    /* التجاوب مع شاشات الجوال */
-    @media (max-width: 600px) {
-      .prayers-grid {
-        gap: 4px;
-      }
-      .prayer-btn {
-        font-size: 0.8rem;
-        padding: 8px 2px;
-      }
-      .verses-box {
-        font-size: 1.3rem;
-        line-height: 2.1;
-      }
+    .reset-link {
+      color: #C0392B;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .reset-link:hover {
+      text-decoration: underline;
+    }
+
+    /* حالة القائمة الفارغة الأنيقة */
+    .empty-state {
+      background: var(--surface);
+      border: 1.5px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .empty-state h3 {
+      color: var(--primary);
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+
+    .empty-state p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .restore-btn {
+      margin-top: 8px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>مِحْرَابُ الإِمَام</h1>
-    <p>معين الإمام لتنويع التلاوة وضبط الوقف والابتداء في الصلوات الجهرية</p>
+    <div class="brand-title">
+      <span>مِحْرَابُ الإِمَام</span>
+    </div>
+    <div class="brand-subtitle">معين الإمام لتنويع التلاوة وضبط مقاطع الصلاة الجهرية</div>
   </header>
 
   <main class="container">
-    <!-- لوحة التصفية والاختيارات -->
-    <section class="control-panel">
-      <!-- اختيار الصلاة -->
-      <div class="prayers-grid">
-        <button class="prayer-btn" onclick="selectPrayer('fajr', this)">الفجر</button>
-        <button class="prayer-btn" onclick="selectPrayer('dhuhr', this)">الظهر</button>
-        <button class="prayer-btn" onclick="selectPrayer('asr', this)">العصر</button>
-        <button class="prayer-btn active" onclick="selectPrayer('maghrib', this)">المغرب</button>
-        <button class="prayer-btn" onclick="selectPrayer('isha', this)">العشاء</button>
+    <!-- لوحة التصفية واختيار الصلاة -->
+    <section class="controls-card">
+      <div>
+        <div class="section-title">الصلاة المفروضة</div>
+        <div class="prayers-row">
+          <button class="prayer-chip" onclick="selectPrayer('fajr', this)">الفجر</button>
+          <button class="prayer-chip" onclick="selectPrayer('dhuhr', this)">الظهر</button>
+          <button class="prayer-chip" onclick="selectPrayer('asr', this)">العصر</button>
+          <button class="prayer-chip active" onclick="selectPrayer('maghrib', this)">المغرب</button>
+          <button class="prayer-chip" onclick="selectPrayer('isha', this)">العشاء</button>
+        </div>
       </div>
 
-      <!-- التصنيف -->
-      <div class="form-group">
-        <label for="categorySelect">نوع المقطع القرآني:</label>
-        <select id="categorySelect" onchange="renderCards()">
-          <option value="shortEasy">آيات قصيرة وسهلة جداً (كتاب 1)</option>
-          <option value="mediumSelected">مقاطع متوسطة ومكتملة المعنى (الشيخ المطري)</option>
-          <option value="all">كل المقاطع المختارة</option>
-        </select>
-      </div>
+      <div class="filter-grid">
+        <div class="range-wrap">
+          <label class="section-title">
+            <span>نطاق الحفظ</span>
+            <span id="juzDisplay" style="color:var(--secondary); font-size: 0.9rem;">إلى جزء 30</span>
+          </label>
+          <input type="range" id="juzSlider" min="1" max="30" value="30" oninput="changeJuz(this.value)">
+          <div class="range-labels">
+            <span>جزء 1</span>
+            <span>جزء 30</span>
+          </div>
+        </div>
 
-      <!-- شريط تحديد الأجزاء المحفوظة -->
-      <div class="form-group">
-        <label>
-          <span>نطاق الحفظ: حتى الجزء <span id="juzValue">30</span></span>
-        </label>
-        <div class="range-box">
-          <span>1</span>
-          <input type="range" id="juzRange" min="1" max="30" value="30" oninput="updateJuz(this.value)">
-          <span>30</span>
+        <div>
+          <label class="section-title" for="categorySelect">مصدر المقطع</label>
+          <select id="categorySelect" class="custom-select" onchange="renderCards()">
+            <option value="all">كافة المقاطع المقترحة (الكل)</option>
+            <option value="shortEasy">كتاب 1: آيات وسور قصيرة سهلة</option>
+            <option value="mediumSelected">كتاب الشيخ المطري: مقاطع متوسطة متكاملة</option>
+          </select>
         </div>
       </div>
     </section>
 
-    <!-- قائمة عرض البطاقات -->
-    <section id="cardsList" class="cards-list"></section>
+    <!-- قائمة عرض البطاقات المقترحة -->
+    <section id="cardsArea"></section>
+
+    <!-- شريط الإدارة السفلي -->
+    <div class="bottom-bar">
+      <span id="activeCountText">المقاطع المعروضة: جاري التحميل...</span>
+      <span class="reset-link" onclick="resetAllCooldowns()">↺ إعادة تنشيط كافة المقاطع المحظورة مؤقتاً</span>
+    </div>
   </main>
 
   <script>
-    // قاعدة بيانات المقاطع المدققة
-    const quranData = [
+    // قاعدة بيانات المقاطع القرآنية المدققة مع ترقيم الآيات
+    const quranSections = [
+      // --- كتاب 1: قصار السور والآيات السهلة ---
+      {
+        id: "short_fatiha",
+        surahName: "الفاتحة",
+        surahNo: 1,
+        startAyah: 1,
+        endAyah: 7,
+        juz: 1,
+        category: "shortEasy",
+        theme: "أم الكتاب: الحمد والثناء على الله، وطلب الهداية إلى الصراط المستقيم",
+        rakah1End: 4,
+        rakah2Start: 5,
+        verses: [
+          { num: 1, text: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" },
+          { num: 2, text: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ" },
+          { num: 3, text: "الرَّحْمَٰنِ الرَّحِيمِ" },
+          { num: 4, text: "مَالِكِ يَوْمِ الدِّينِ" },
+          { num: 5, text: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ" },
+          { num: 6, text: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ" },
+          { num: 7, text: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ" }
+        ]
+      },
       {
         id: "short_ikhlas",
         surahName: "الإخلاص",
@@ -360,14 +493,53 @@
         endAyah: 4,
         juz: 30,
         category: "shortEasy",
-        theme: "صفة الرحمن وتوحيد الألوهية والربوبية الخالص",
+        theme: "صفة الرحمن وتجريد التوحيد الخالص لله وتنزيهه عن الشبيه والولد",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
-          "قُلْ هُوَ اللَّهُ أَحَدٌ",
-          "اللَّهُ الصَّمَدُ",
-          "لَمْ يَلِدْ وَلَمْ يُولَدْ",
-          "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ"
+          { num: 1, text: "قُلْ هُوَ اللَّهُ أَحَدٌ" },
+          { num: 2, text: "اللَّهُ الصَّمَدُ" },
+          { num: 3, text: "لَمْ يَلِدْ وَلَمْ يُولَدْ" },
+          { num: 4, text: "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ" }
+        ]
+      },
+      {
+        id: "short_falaq",
+        surahName: "الفلق",
+        surahNo: 113,
+        startAyah: 1,
+        endAyah: 5,
+        juz: 30,
+        category: "shortEasy",
+        theme: "الاعتصام برب الفلق والتحصن من شرور المخلوقات والحسد والسحر",
+        rakah1End: 3,
+        rakah2Start: 4,
+        verses: [
+          { num: 1, text: "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ" },
+          { num: 2, text: "مِن شَرِّ مَا خَلَقَ" },
+          { num: 3, text: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ" },
+          { num: 4, text: "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ" },
+          { num: 5, text: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ" }
+        ]
+      },
+      {
+        id: "short_nas",
+        surahName: "الناس",
+        surahNo: 114,
+        startAyah: 1,
+        endAyah: 6,
+        juz: 30,
+        category: "shortEasy",
+        theme: "الاستعاذة برب الناس وملكهم من وسواس الشيطان الخناس",
+        rakah1End: 3,
+        rakah2Start: 4,
+        verses: [
+          { num: 1, text: "قُلْ أَعُوذُ بِرَبِّ النَّاسِ" },
+          { num: 2, text: "مَلِكِ النَّاسِ" },
+          { num: 3, text: "إِلَٰهِ النَّاسِ" },
+          { num: 4, text: "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ" },
+          { num: 5, text: "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ" },
+          { num: 6, text: "مِنَ الْجِنَّةِ وَالنَّاسِ" }
         ]
       },
       {
@@ -378,13 +550,13 @@
         endAyah: 3,
         juz: 30,
         category: "shortEasy",
-        theme: "البشارة بالفتح ودخول الناس في دين الله والتوجيه للتسبيح والاستغفار",
+        theme: "بشارة الفتح الأكبر والحث على ملازمة التسبيح والحمد والاستغفار",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
-          "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
-          "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
-          "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا"
+          { num: 1, text: "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ" },
+          { num: 2, text: "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا" },
+          { num: 3, text: "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا" }
         ]
       },
       {
@@ -395,15 +567,56 @@
         endAyah: 3,
         juz: 30,
         category: "shortEasy",
-        theme: "عطاء الله العظيم لنبيه ﷺ وإخلاص الصلاة والنسك له سبحانه",
+        theme: "فضل الله العظيم على النبي ﷺ وإخلاص العبادة والنحر له وحده",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
-          "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
-          "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
-          "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ"
+          { num: 1, text: "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ" },
+          { num: 2, text: "فَصَلِّ لِرَبِّكَ وَانْحَرْ" },
+          { num: 3, text: "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ" }
         ]
       },
+      {
+        id: "short_tin",
+        surahName: "التين",
+        surahNo: 95,
+        startAyah: 1,
+        endAyah: 8,
+        juz: 30,
+        category: "shortEasy",
+        theme: "خلق الإنسان في أحسن تقويم وجزاء أهل الإيمان والعمل الصالح",
+        rakah1End: 4,
+        rakah2Start: 5,
+        verses: [
+          { num: 1, text: "وَالتِّينِ وَالزَّيْتُونِ" },
+          { num: 2, text: "وَطُورِ سِينِينَ" },
+          { num: 3, text: "وَهَٰذَا الْبَلَدِ الْأَمِينِ" },
+          { num: 4, text: "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ" },
+          { num: 5, text: "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ" },
+          { num: 6, text: "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ" },
+          { num: 7, text: "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ" },
+          { num: 8, text: "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ" }
+        ]
+      },
+      {
+        id: "short_asr",
+        surahName: "العصر",
+        surahNo: 103,
+        startAyah: 1,
+        endAyah: 3,
+        juz: 30,
+        category: "shortEasy",
+        theme: "قيمة الزمن والنجاة بالإيمان والعمل الصالح والتواصي بالحق والصبر",
+        rakah1End: 2,
+        rakah2Start: 3,
+        verses: [
+          { num: 1, text: "وَالْعَصْرِ" },
+          { num: 2, text: "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ" },
+          { num: 3, text: "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ" }
+        ]
+      },
+
+      // --- كتاب الشيخ محمد المطري: مقاطع متوسطة متكاملة المعنى ---
       {
         id: "matari_kursi",
         surahName: "البقرة",
@@ -412,13 +625,30 @@
         endAyah: 257,
         juz: 3,
         category: "mediumSelected",
-        theme: "آية الكرسي العظيمة وبيان ولاية الله للمؤمنين وإخراجهم من الظلمات إلى النور",
+        theme: "آية الكرسي العظمى، ونفي الإكراه في الدين، وولاية الله للمؤمنين",
         rakah1End: 255,
         rakah2Start: 256,
         verses: [
-          "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
-          "لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ",
-          "اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُم مِّنَ النُّورِ إِلَى الظُّلُمَاتِ ۗ أُولَٰئِكَ أَصْحَابُ النَّارِ ۖ هُمْ فِيهَا خَالِدُونَ"
+          { num: 255, text: "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ" },
+          { num: 256, text: "لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ" },
+          { num: 257, text: "اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُم مِّنَ النُّورِ إِلَى الظُّلُمَاتِ ۗ أُولَٰئِكَ أَصْحَابُ النَّارِ ۖ هُمْ فِيهَا خَالِدُونَ" }
+        ]
+      },
+      {
+        id: "matari_baqarah_end",
+        surahName: "البقرة",
+        surahNo: 2,
+        startAyah: 284,
+        endAyah: 286,
+        juz: 3,
+        category: "mediumSelected",
+        theme: "خواتيم سورة البقرة: سعة ملك الله، إيمان الرسل والمؤمنين، والدعاء بالرحمة والمغفرة",
+        rakah1End: 285,
+        rakah2Start: 286,
+        verses: [
+          { num: 284, text: "لِّلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ وَإِن تُبْدُوا مَا فِي أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ اللَّهُ ۖ فَيَغْفِرُ لِمَن يَشَاءُ وَيُعَذِّبُ مَن يَشَاءُ ۗ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ" },
+          { num: 285, text: "آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ" },
+          { num: 286, text: "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ" }
         ]
       },
       {
@@ -429,15 +659,34 @@
         endAyah: 5,
         juz: 29,
         category: "mediumSelected",
-        theme: "عظمة الملك والقدرة الإلهية وخلق الموت والحياة لابتلاء الإحسان في العمل",
+        theme: "عظمة الملك والقدرة الإلهية، وخلق الموت والحياة لابتلاء الإحسان في العمل",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
-          "تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
-          "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ",
-          "الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَّا تَرَىٰ فِي خَلْقِ الرَّحْمَٰنِ مِن تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ",
-          "ثُمَّ ارْجِعِ الْبَصَرَ كَرَّتَيْنِ يَنقَلِبْ إِلَيْكَ الْبَصَرُ خَاسِئًا وَهُوَ حَسِيرٌ",
-          "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِّلشَّيَاطِينِ ۖ وَأَعْتَدْنَا لَهُمْ عَذَابَ السَّعِيرِ"
+          { num: 1, text: "تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ" },
+          { num: 2, text: "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ" },
+          { num: 3, text: "الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَّا تَرَىٰ فِي خَلْقِ الرَّحْمَٰنِ مِن تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ" },
+          { num: 4, text: "ثُمَّ ارْجِعِ الْبَصَرَ كَرَّتَيْنِ يَنقَلِبْ إِلَيْكَ الْبَصَرُ خَاسِئًا وَهُوَ حَسِيرٌ" },
+          { num: 5, text: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِّلشَّيَاطِينِ ۖ وَأَعْتَدْنَا لَهُمْ عَذَابَ السَّعِيرِ" }
+        ]
+      },
+      {
+        id: "matari_furqan",
+        surahName: "الفرقان",
+        surahNo: 25,
+        startAyah: 63,
+        endAyah: 67,
+        juz: 19,
+        category: "mediumSelected",
+        theme: "صفات عباد الرحمن الأبرار: التواضع، السجود والقيام، والاعتدال والإنفاق",
+        rakah1End: 64,
+        rakah2Start: 65,
+        verses: [
+          { num: 63, text: "وَعِبَادُ الرَّحْمَٰنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا" },
+          { num: 64, text: "وَالَّذِينَ يَبِيتُونَ لِرَبِّهِمْ سُجَّدًا وَقِيَامًا" },
+          { num: 65, text: "وَالَّذِينَ يَقُولُونَ رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ ۖ إِنَّ عَذَابَهَا كَانَ غَرَامًا" },
+          { num: 66, text: "إِنَّهَا سَاءَتْ مُسْتَقَرًّا وَمُقَامًا" },
+          { num: 67, text: "وَالَّذِينَ إِذَا أَنفَقُوا لَمْ يُسْرِفُوا وَلَمْ يَقْتُرُوا وَكَانَ بَيْنَ ذَٰلِكَ قَوَامًا" }
         ]
       }
     ];
@@ -447,84 +696,113 @@
 
     function selectPrayer(prayer, btn) {
       currentPrayer = prayer;
-      document.querySelectorAll('.prayer-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.prayer-chip').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       renderCards();
     }
 
-    function updateJuz(val) {
+    function changeJuz(val) {
       maxJuz = parseInt(val);
-      document.getElementById('juzValue').innerText = val;
+      document.getElementById('juzDisplay').innerText = `إلى جزء ${val}`;
       renderCards();
     }
 
-    function isLocked(id) {
-      const lockUntil = localStorage.getItem('cooldown_' + id);
-      if (!lockUntil) return false;
-      if (Date.now() > parseInt(lockUntil)) {
-        localStorage.removeItem('cooldown_' + id);
+    function isUnderCooldown(id) {
+      const expiry = localStorage.getItem('mihrab_cd_' + id);
+      if (!expiry) return false;
+      if (Date.now() > parseInt(expiry)) {
+        localStorage.removeItem('mihrab_cd_' + id);
         return false;
       }
       return true;
     }
 
-    function lockSection(id) {
-      const twoDays = 48 * 60 * 60 * 1000;
-      localStorage.setItem('cooldown_' + id, Date.now() + twoDays);
-      alert('تقبل الله صلاتكم! تم استبعاد هذا المقطع لمدة 48 ساعة لمنع التكرار.');
+    function lockCard(id) {
+      const cooldownHours = 48;
+      const expireTime = Date.now() + (cooldownHours * 60 * 60 * 1000);
+      localStorage.setItem('mihrab_cd_' + id, expireTime);
       renderCards();
     }
 
-    function renderCards() {
-      const container = document.getElementById('cardsList');
-      const cat = document.getElementById('categorySelect').value;
-      container.innerHTML = '';
+    function resetAllCooldowns() {
+      if (confirm('هل ترغب بإلغاء حظر الـ 48 ساعة وإعادة إتاحة جميع المقاطع الآن؟')) {
+        Object.keys(localStorage).forEach(key => {
+          if (key.startsWith('mihrab_cd_')) {
+            localStorage.removeItem(key);
+          }
+        });
+        renderCards();
+      }
+    }
 
-      const filtered = quranData.filter(item => {
-        if (item.juz > maxJuz) return false;
-        if (cat !== 'all' && item.category !== cat) return false;
-        if (currentPrayer === 'maghrib' && item.verses.length > 6) return false;
-        if (isLocked(item.id)) return false;
+    // دالة تحويل الأرقام إلى أرقام مشرقية عربية
+    function toArabicDigits(num) {
+      return String(num).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+    }
+
+    function renderCards() {
+      const area = document.getElementById('cardsArea');
+      const category = document.getElementById('categorySelect').value;
+      area.innerHTML = '';
+
+      // تصفية المقاطع بناءً على الضوابط
+      const list = quranSections.filter(sec => {
+        if (sec.juz > maxJuz) return false;
+        if (category !== 'all' && sec.category !== category) return false;
+        // في صلاة المغرب: نستبعد المقاطع الطويلة التي تزيد آياتها عن 8 آيات تيسيراً على المصلين
+        if (currentPrayer === 'maghrib' && sec.verses.length > 8) return false;
+        if (isUnderCooldown(sec.id)) return false;
         return true;
       });
 
-      if (filtered.length === 0) {
-        container.innerHTML = `
+      document.getElementById('activeCountText').innerText = `المقاطع المتوفرة حالياً: ${list.length} مقطع`;
+
+      if (list.length === 0) {
+        area.innerHTML = `
           <div class="empty-state">
-            <h3>لا توجد مقاطع متوفرة حالياً</h3>
-            <p>قد تكون المقاطع خارج نطاق الأجزاء المحدد، أو أنها تحت حظر الـ 48 ساعة لضمان تنويع القراءة.</p>
+            <span style="font-size: 2.5rem;">⏳</span>
+            <h3>جميع المقاطع في هذا النطاق تحت حظر الـ 48 ساعة</h3>
+            <p>تم استبعاد المقاطع المقروءة حديثاً لضمان التنويع ومنع التكرار في الصلوات. يمكنك توسيع نطاق الأجزاء، أو إعادة تنشيط المقاطع فوراً.</p>
+            <button class="restore-btn" onclick="resetAllCooldowns()">إلغاء الحظر وتنشيط المقاطع الآن</button>
           </div>
         `;
         return;
       }
 
-      filtered.forEach(item => {
-        const versesText = item.verses.map((v, i) => `${v} <span class="verse-end">۝</span>`).join(' ');
+      list.forEach(sec => {
+        // تشكيل نصوص الآيات مع أرقامها داخل رمز القوس القرآني الفاخر
+        const versesHtml = sec.verses.map(v => 
+          `${v.text} <span class="ayah-num">﴿${toArabicDigits(v.num)}﴾</span>`
+        ).join(' ');
+
         const card = document.createElement('article');
         card.className = 'quran-card';
         card.innerHTML = `
-          <div class="card-header">
-            <span class="surah-tag">سورة ${item.surahName}</span>
-            <span class="meta-tag">الآيات (${item.startAyah} - ${item.endAyah}) | الجزء ${item.juz}</span>
+          <div class="card-top">
+            <div class="surah-badge">
+              <span class="surah-name">سورة ${sec.surahName}</span>
+              <span class="surah-ayat-count">الآيات (${sec.startAyah} - ${sec.endAyah})</span>
+            </div>
+            <div class="juz-badge">الجزء ${sec.juz}</div>
           </div>
           <div class="card-body">
-            <div class="theme-text">${item.theme}</div>
-            <div class="verses-box">${versesText}</div>
-            <div class="rakah-guide">
+            <div class="theme-banner">${sec.theme}</div>
+            <div class="quran-verses-container">${versesHtml}</div>
+            <div class="rakah-indicator">
               <span>📖</span>
-              <span>دليل الركعتين: الأولى تقف عند آية (${item.rakah1End})، والثانية تبدأ من آية (${item.rakah2Start}).</span>
+              <span>دليل الركعتين: الأولى تقف عند آية (${sec.rakah1End})، والثانية تبدأ من آية (${sec.rakah2Start}).</span>
             </div>
-            <button class="read-btn" onclick="lockSection('${item.id}')">
+            <button class="action-btn" onclick="lockCard('${sec.id}')">
               <span>✓</span>
               <span>تمت القراءة في الصلاة (حظر 48 ساعة)</span>
             </button>
           </div>
         `;
-        container.appendChild(card);
+        area.appendChild(card);
       });
     }
 
-    // التشغيل المبدئي
+    // التشغيل الفوري عند تحميل الصفحة
     renderCards();
   </script>
 </body>

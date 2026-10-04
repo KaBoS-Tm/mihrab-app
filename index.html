@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>مِحْرَابُ الإِمَام | تنويع التلاوة وضبط الوقف</title>
+  <title>مِحْرَابُ الإِمَام | رفيق التلاوة والوقف</title>
   
-  <!-- خطوط عربية فاخرة ومصحفية من Google Fonts -->
+  <!-- خطوط عربية فاخرة ومصحفية -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Plus+Jakarta+Sans:wght@500;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --primary: #12372A;          /* أخضر محراب عميق */
-      --primary-soft: #1B4D3E;
-      --secondary: #C5A059;        /* ذهبي معتق فاخر */
-      --secondary-glow: rgba(197, 160, 89, 0.18);
-      --bg: #F9F8F3;               /* خلفية ورق مصحفي كريمي مريح */
-      --surface: #FFFFFF;
-      --surface-subtle: #F4F1EA;
-      --text: #1C2421;
-      --text-muted: #5E6963;
-      --border: #E8E3D5;
-      --border-accent: #D4AF37;
-      --shadow-sm: 0 2px 8px rgba(18, 55, 42, 0.04);
-      --shadow-md: 0 8px 24px rgba(18, 55, 42, 0.08);
-      --radius: 16px;
+      --primary: #0F382A;           /* أخضر ملكي عميق */
+      --primary-light: #18533E;
+      --gold: #C5A059;              /* ذهبي مصحفي معتق */
+      --gold-light: #DFCA95;
+      --gold-glow: rgba(197, 160, 89, 0.25);
+      --bg: #F7F5EE;                /* ورق مصحفي عاجي مريح */
+      --card-bg: #FFFFFF;
+      --text-main: #19221E;
+      --text-muted: #5D6B64;
+      --border-subtle: #E8E2D2;
+      --border-gold: rgba(197, 160, 89, 0.45);
+      --shadow-sm: 0 4px 12px rgba(15, 56, 42, 0.04);
+      --shadow-lg: 0 12px 32px rgba(15, 56, 42, 0.1);
+      --radius: 18px;
+      --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     * {
@@ -38,61 +39,98 @@
 
     body {
       background-color: var(--bg);
-      color: var(--text);
+      color: var(--text-main);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 50px;
+      padding-bottom: 60px;
+      overflow-x: hidden;
     }
 
-    /* رأس الصفحة الإسلامي الأنيق */
+    /* رأس الصفحة الإسلامي الفاخر */
     header {
       width: 100%;
-      background: linear-gradient(145deg, var(--primary), var(--primary-soft));
+      background: linear-gradient(135deg, #0B2B20 0%, var(--primary) 100%);
       color: #fff;
-      padding: 26px 20px 22px;
+      padding: 24px 20px 20px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 100;
-      border-bottom: 2px solid var(--secondary);
-      box-shadow: var(--shadow-md);
+      border-bottom: 2px solid var(--gold);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .header-content {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-box {
+      text-align: right;
     }
 
     .brand-title {
-      font-size: 1.75rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
+      font-size: 1.6rem;
+      font-weight: 900;
       color: #FFFFFF;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
+      gap: 8px;
+      letter-spacing: 0.5px;
     }
 
-    .brand-subtitle {
-      font-size: 0.9rem;
-      color: #E2D9C8;
-      margin-top: 4px;
+    .brand-title span.accent {
+      color: var(--gold-light);
+    }
+
+    .brand-desc {
+      font-size: 0.82rem;
+      color: #D6CFBE;
+      margin-top: 2px;
       font-weight: 500;
     }
 
-    /* الحاوية الرئيسية */
+    .cooldown-pill-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--gold);
+      color: #FFFFFF;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+      backdrop-filter: blur(4px);
+    }
+
+    .cooldown-pill-btn:hover {
+      background: var(--gold);
+      color: var(--primary);
+    }
+
+    /* الحاوية المركزية */
     .container {
       width: 100%;
       max-width: 760px;
       padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
 
-    /* بطاقة التحكم والتصفية */
-    .controls-card {
-      background: var(--surface);
+    /* لوحة التحكم الرئيسية */
+    .control-card {
+      background: var(--card-bg);
       border-radius: var(--radius);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-subtle);
       padding: 18px;
       box-shadow: var(--shadow-sm);
       display: flex;
@@ -100,164 +138,165 @@
       gap: 16px;
     }
 
-    .section-title {
-      font-size: 0.85rem;
-      font-weight: 800;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 6px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* الصلوات الخمس بنمط أزرار تفاعلية ناعمة */
-    .prayers-row {
+    /* أزرار الصلوات بمؤثر ضغط حركي */
+    .prayers-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 8px;
     }
 
-    .prayer-chip {
-      background: var(--surface-subtle);
-      border: 1.5px solid var(--border);
+    .prayer-btn {
+      background: var(--bg);
+      border: 1.5px solid var(--border-subtle);
       color: var(--text-muted);
       padding: 10px 4px;
       border-radius: 12px;
       font-size: 0.9rem;
-      font-weight: 700;
+      font-weight: 800;
       cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: var(--transition);
       text-align: center;
+      box-shadow: inset 0 -2px 0 rgba(0,0,0,0.03);
     }
 
-    .prayer-chip:hover {
-      border-color: var(--secondary);
-      color: var(--primary);
+    .prayer-btn:active {
+      transform: scale(0.96);
     }
 
-    .prayer-chip.active {
+    .prayer-btn.active {
       background: var(--primary);
       color: #FFFFFF;
-      border-color: var(--secondary);
-      box-shadow: 0 4px 12px rgba(18, 55, 42, 0.25);
+      border-color: var(--gold);
+      box-shadow: 0 4px 14px rgba(15, 56, 42, 0.3);
     }
 
-    /* شبكة خيارات التصفية */
-    .filter-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    @media (max-width: 580px) {
-      .filter-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .custom-select {
-      width: 100%;
-      padding: 11px 14px;
-      border-radius: 12px;
-      border: 1.5px solid var(--border);
-      background: var(--surface-subtle);
-      color: var(--text);
-      font-size: 0.9rem;
-      font-weight: 600;
-      outline: none;
-      transition: border 0.2s;
-    }
-
-    .custom-select:focus {
-      border-color: var(--secondary);
-      background: #FFFFFF;
-    }
-
-    /* شريط الأجزاء */
-    .range-wrap {
+    /* محدد الكتاب (سويتش التبديل الأنيق) */
+    .books-selector-wrap {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
     }
 
-    .range-labels {
-      display: flex;
-      justify-content: space-between;
+    .book-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 4px;
+      border: 1px solid var(--border-subtle);
+      gap: 4px;
+    }
+
+    .book-tab-btn {
+      background: transparent;
+      border: none;
+      padding: 10px 8px;
+      border-radius: 9px;
       font-size: 0.85rem;
       font-weight: 700;
       color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .book-tab-btn.active {
+      background: #FFFFFF;
+      color: var(--primary);
+      font-weight: 800;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border-gold);
+    }
+
+    /* نطاق الحفظ مع زر اقتراح عشوائي */
+    .slider-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
     input[type=range] {
-      width: 100%;
-      accent-color: var(--primary);
+      flex: 1;
       height: 6px;
-      border-radius: 4px;
+      accent-color: var(--primary);
       cursor: pointer;
     }
 
-    /* بطاقات الآيات */
-    .quran-card {
-      background: var(--surface);
+    /* بطاقة الآيات القرآنية الفخمة */
+    .card-item {
+      background: var(--card-bg);
       border-radius: var(--radius);
-      border: 1.5px solid var(--border);
+      border: 1.5px solid var(--border-gold);
       box-shadow: var(--shadow-sm);
       overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.3s ease;
+      position: relative;
     }
 
-    .quran-card:hover {
-      box-shadow: var(--shadow-md);
-      border-color: #D6CEBC;
+    .card-item:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
     }
 
-    /* رأس البطاقة */
-    .card-top {
-      background: #F6F4ED;
-      border-bottom: 1.5px solid var(--border);
+    /* شريط عنوان البطاقة */
+    .card-header-bar {
+      background: linear-gradient(90deg, #F9F7F1 0%, #F3EFE4 100%);
+      border-bottom: 1px solid var(--border-subtle);
       padding: 12px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .surah-badge {
+    .surah-info {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
-    .surah-name {
-      font-weight: 800;
-      font-size: 1.05rem;
+    .surah-title {
+      font-size: 1.15rem;
+      font-weight: 900;
       color: var(--primary);
     }
 
-    .surah-ayat-count {
-      background: #EAE5D8;
-      color: #4A544F;
-      padding: 3px 8px;
+    .ayat-tag {
+      background: #EAE4D5;
+      color: #4C5952;
+      padding: 3px 9px;
       border-radius: 6px;
       font-size: 0.78rem;
       font-weight: 700;
     }
 
-    .juz-badge {
-      font-size: 0.82rem;
+    .source-badge {
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #8C6D2B;
-      background: #FFF8E7;
-      border: 1px solid #EEDBB2;
-      padding: 3px 10px;
+      padding: 4px 10px;
       border-radius: 8px;
+      border: 1px solid var(--border-gold);
+      background: #FFFAF0;
+      color: #8C6627;
     }
 
-    .card-body {
+    /* محتوى البطاقة */
+    .card-content {
       padding: 20px 18px;
       display: flex;
       flex-direction: column;
@@ -265,214 +304,295 @@
     }
 
     /* الدلالة الموضوعية */
-    .theme-banner {
+    .theme-statement {
       background: #FAF8F2;
-      border-right: 4px solid var(--secondary);
-      padding: 8px 12px;
-      border-radius: 4px 8px 8px 4px;
-      font-size: 0.92rem;
+      border-right: 4px solid var(--gold);
+      padding: 10px 14px;
+      border-radius: 4px 10px 10px 4px;
+      font-size: 0.94rem;
       color: var(--text-muted);
       line-height: 1.5;
-      font-weight: 500;
+      font-weight: 600;
     }
 
-    /* نص المصحف الفاخر والمشكول */
-    .quran-verses-container {
+    /* صندوق نص الآيات العثماني */
+    .quran-text-wrapper {
       background: #FFFEFA;
-      border: 1.5px solid #EDE8DB;
+      border: 1.5px solid #EBE5D8;
       border-radius: 14px;
-      padding: 22px 16px;
+      padding: 24px 18px;
       text-align: justify;
       text-align-last: center;
-      line-height: 2.6;
+      line-height: 2.7;
       font-family: 'Amiri Quran', serif;
-      font-size: 1.45rem;
-      color: #17201C;
+      font-size: 1.5rem;
+      color: #16201B;
+      position: relative;
     }
 
-    /* علامات نهاية الآيات برقم الآية */
-    .ayah-num {
+    /* رقم الآية القرآني المزخرف */
+    .verse-badge {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: var(--secondary);
+      color: var(--gold);
       font-family: 'Amiri Quran', serif;
-      font-size: 1.25rem;
-      margin: 0 6px;
+      font-size: 1.35rem;
+      margin: 0 5px;
       font-weight: bold;
       user-select: none;
     }
 
-    /* دليل الركعتين */
-    .rakah-indicator {
-      background: #EEF6F2;
-      border: 1px solid #C4E2D2;
-      color: var(--primary);
-      padding: 10px 14px;
+    /* دليل الركعتين الإرشادي */
+    .rakah-box {
+      background: #EFF7F2;
+      border: 1.2px solid #BFDFCD;
       border-radius: 10px;
+      padding: 11px 14px;
       font-size: 0.88rem;
       font-weight: 700;
+      color: var(--primary);
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
     /* زر الاعتماد وحظر الـ 48 ساعة */
-    .action-btn {
+    .confirm-btn {
       width: 100%;
-      background: var(--secondary);
+      background: linear-gradient(135deg, var(--gold) 0%, #A8833A 100%);
       color: #FFFFFF;
       border: none;
-      padding: 13px;
+      padding: 14px;
       border-radius: 12px;
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       font-weight: 800;
       cursor: pointer;
-      transition: all 0.2s ease;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 8px;
-      box-shadow: 0 3px 10px rgba(197, 160, 89, 0.3);
+      box-shadow: 0 4px 14px var(--gold-glow);
+      transition: var(--transition);
     }
 
-    .action-btn:hover {
-      background: #B38E46;
-      transform: translateY(-1px);
+    .confirm-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(197, 160, 89, 0.45);
     }
 
-    /* شريط إدارة المحظورات واستعادة البطاقات */
-    .bottom-bar {
+    .confirm-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* نافذة منبثقة للمقاطع المحظورة (Modal) */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 16px;
+    }
+
+    .modal-card {
+      background: #FFFFFF;
+      width: 100%;
+      max-width: 500px;
+      max-height: 80vh;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-gold);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: modalPop 0.25s ease-out;
+    }
+
+    @keyframes modalPop {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-header {
+      padding: 16px 20px;
+      background: var(--primary);
+      color: #fff;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 6px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
     }
 
-    .reset-link {
-      color: #C0392B;
-      text-decoration: none;
+    .modal-body {
+      padding: 16px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .locked-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: var(--bg);
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .unlock-single-btn {
+      background: transparent;
+      border: 1px solid #D9534F;
+      color: #D9534F;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
       font-weight: 700;
       cursor: pointer;
-      display: inline-flex;
+    }
+
+    /* إشعار Toast علوي فاخر */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      background: var(--primary);
+      color: #FFFFFF;
+      border: 1px solid var(--gold);
+      padding: 14px 22px;
+      border-radius: 30px;
+      box-shadow: var(--shadow-lg);
+      font-size: 0.92rem;
+      font-weight: 700;
+      display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 10px;
+      z-index: 2000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    .reset-link:hover {
-      text-decoration: underline;
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
     }
 
-    /* حالة القائمة الفارغة الأنيقة */
+    /* حالة الفراغ الأنيقة */
     .empty-state {
-      background: var(--surface);
-      border: 1.5px dashed var(--border);
+      background: var(--card-bg);
+      border: 1.5px dashed var(--border-subtle);
       border-radius: var(--radius);
-      padding: 40px 20px;
+      padding: 45px 20px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 12px;
     }
-
-    .empty-state h3 {
-      color: var(--primary);
-      font-size: 1.15rem;
-      font-weight: 800;
-    }
-
-    .empty-state p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      max-width: 480px;
-      line-height: 1.6;
-    }
-
-    .restore-btn {
-      margin-top: 8px;
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 10px;
-      font-weight: 700;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
 
+  <!-- رأس التطبيق -->
   <header>
-    <div class="brand-title">
-      <span>مِحْرَابُ الإِمَام</span>
+    <div class="header-content">
+      <div class="brand-box">
+        <div class="brand-title">مِحْرَابُ <span class="accent">الإِمَام</span></div>
+        <div class="brand-desc">معين الإمام لتنويع التلاوة وضبط مقاطع الصلوات الجهرية</div>
+      </div>
+      <button class="cooldown-pill-btn" onclick="openLockedModal()">
+        <span>⏳</span>
+        <span id="cooldownCounter">المحظورة (0)</span>
+      </button>
     </div>
-    <div class="brand-subtitle">معين الإمام لتنويع التلاوة وضبط مقاطع الصلاة الجهرية</div>
   </header>
 
   <main class="container">
-    <!-- لوحة التصفية واختيار الصلاة -->
-    <section class="controls-card">
-      <div>
-        <div class="section-title">الصلاة المفروضة</div>
-        <div class="prayers-row">
-          <button class="prayer-chip" onclick="selectPrayer('fajr', this)">الفجر</button>
-          <button class="prayer-chip" onclick="selectPrayer('dhuhr', this)">الظهر</button>
-          <button class="prayer-chip" onclick="selectPrayer('asr', this)">العصر</button>
-          <button class="prayer-chip active" onclick="selectPrayer('maghrib', this)">المغرب</button>
-          <button class="prayer-chip" onclick="selectPrayer('isha', this)">العشاء</button>
+    <!-- لوحة التصفية واختيار الكتاب والصلاة -->
+    <section class="control-card">
+      <!-- أزرار اختيار الصلاة -->
+      <div class="prayers-grid">
+        <button class="prayer-btn" onclick="setPrayer('fajr', this)">الفجر</button>
+        <button class="prayer-btn" onclick="setPrayer('dhuhr', this)">الظهر</button>
+        <button class="prayer-btn" onclick="setPrayer('asr', this)">العصر</button>
+        <button class="prayer-btn active" onclick="setPrayer('maghrib', this)">المغرب</button>
+        <button class="prayer-btn" onclick="setPrayer('isha', this)">العشاء</button>
+      </div>
+
+      <!-- محدد مصدر الكتاب -->
+      <div class="books-selector-wrap">
+        <div class="book-tabs">
+          <button class="book-tab-btn" onclick="setBookFilter('shortEasy', this)">📖 كتاب قصار السور</button>
+          <button class="book-tab-btn" onclick="setBookFilter('mediumSelected', this)">📚 كتاب الشيخ المطري</button>
+          <button class="book-tab-btn active" onclick="setBookFilter('all', this)">✨ كلاهما معاً (اقتراح ذكي)</button>
         </div>
       </div>
 
-      <div class="filter-grid">
-        <div class="range-wrap">
-          <label class="section-title">
-            <span>نطاق الحفظ</span>
-            <span id="juzDisplay" style="color:var(--secondary); font-size: 0.9rem;">إلى جزء 30</span>
-          </label>
-          <input type="range" id="juzSlider" min="1" max="30" value="30" oninput="changeJuz(this.value)">
-          <div class="range-labels">
-            <span>جزء 1</span>
-            <span>جزء 30</span>
-          </div>
+      <!-- نطاق الحفظ التفاعلي -->
+      <div class="slider-row">
+        <div class="slider-header">
+          <span>أقصى جزء محفوظ:</span>
+          <span id="juzDisplay" style="color:var(--gold); font-size: 0.95rem;">الجزء 30</span>
         </div>
-
-        <div>
-          <label class="section-title" for="categorySelect">مصدر المقطع</label>
-          <select id="categorySelect" class="custom-select" onchange="renderCards()">
-            <option value="all">كافة المقاطع المقترحة (الكل)</option>
-            <option value="shortEasy">كتاب 1: آيات وسور قصيرة سهلة</option>
-            <option value="mediumSelected">كتاب الشيخ المطري: مقاطع متوسطة متكاملة</option>
-          </select>
+        <div class="slider-container">
+          <span style="font-size:0.8rem; font-weight:700; color:var(--text-muted);">1</span>
+          <input type="range" id="juzSlider" min="1" max="30" value="30" oninput="setJuz(this.value)">
+          <span style="font-size:0.8rem; font-weight:700; color:var(--text-muted);">30</span>
         </div>
       </div>
     </section>
 
-    <!-- قائمة عرض البطاقات المقترحة -->
-    <section id="cardsArea"></section>
-
-    <!-- شريط الإدارة السفلي -->
-    <div class="bottom-bar">
-      <span id="activeCountText">المقاطع المعروضة: جاري التحميل...</span>
-      <span class="reset-link" onclick="resetAllCooldowns()">↺ إعادة تنشيط كافة المقاطع المحظورة مؤقتاً</span>
-    </div>
+    <!-- منطقة عرض البطاقات -->
+    <section id="cardsFeed"></section>
   </main>
 
+  <!-- نافذة المقاطع المحظورة (Modal) -->
+  <div id="lockedModal" class="modal-overlay" onclick="closeLockedModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div style="font-weight: 800; font-size: 1rem;">المقاطع المحظورة مؤقتاً (48 ساعة)</div>
+        <button onclick="closeLockedModal(null)" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
+      </div>
+      <div id="lockedModalBody" class="modal-body"></div>
+      <div style="padding: 12px; background:#FAF8F2; border-top:1px solid #EBE5D8; text-align:center;">
+        <button onclick="resetAllCooldowns()" style="background:#D9534F; color:#fff; border:none; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:0.85rem;">
+          إلغاء حظر كافة المقاطع فوراً
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- إشعار Toast -->
+  <div id="toastMessage" class="toast">
+    <span>✓</span>
+    <span id="toastText">تقبل الله صلاتكم! تم استبعاد المقطع لمدة 48 ساعة.</span>
+  </div>
+
   <script>
-    // قاعدة بيانات المقاطع القرآنية المدققة مع ترقيم الآيات
-    const quranSections = [
-      // --- كتاب 1: قصار السور والآيات السهلة ---
+    // ========================================================
+    // قاعدة بيانات الكتابين المعتمدة (Book 1 & Book 2)
+    // ========================================================
+    const database = [
+      // ------------------------------------------------------
+      // كتاب 1: السور والآيات القصيرة السهلة جداً
+      // ------------------------------------------------------
       {
-        id: "short_fatiha",
+        id: "b1_fatiha",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "الفاتحة",
         surahNo: 1,
         startAyah: 1,
         endAyah: 7,
         juz: 1,
-        category: "shortEasy",
-        theme: "أم الكتاب: الحمد والثناء على الله، وطلب الهداية إلى الصراط المستقيم",
+        theme: "أم القرآن: الثناء التام وطلب الاستقامة على الصراط",
         rakah1End: 4,
         rakah2Start: 5,
         verses: [
@@ -486,14 +606,15 @@
         ]
       },
       {
-        id: "short_ikhlas",
+        id: "b1_ikhlas",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "الإخلاص",
         surahNo: 112,
         startAyah: 1,
         endAyah: 4,
         juz: 30,
-        category: "shortEasy",
-        theme: "صفة الرحمن وتجريد التوحيد الخالص لله وتنزيهه عن الشبيه والولد",
+        theme: "تجريد التوحيد الصافي ونفي الشريك والولد والمثيل",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
@@ -504,14 +625,15 @@
         ]
       },
       {
-        id: "short_falaq",
+        id: "b1_falaq",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "الفلق",
         surahNo: 113,
         startAyah: 1,
         endAyah: 5,
         juz: 30,
-        category: "shortEasy",
-        theme: "الاعتصام برب الفلق والتحصن من شرور المخلوقات والحسد والسحر",
+        theme: "الاعتصام بنور الصباح والتحصن من شرور الخلائق والحاسدين",
         rakah1End: 3,
         rakah2Start: 4,
         verses: [
@@ -523,14 +645,15 @@
         ]
       },
       {
-        id: "short_nas",
+        id: "b1_nas",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "الناس",
         surahNo: 114,
         startAyah: 1,
         endAyah: 6,
         juz: 30,
-        category: "shortEasy",
-        theme: "الاستعاذة برب الناس وملكهم من وسواس الشيطان الخناس",
+        theme: "الاستعاذة برب البشرية ومليكهم من وسوسة الشيطان الخناس",
         rakah1End: 3,
         rakah2Start: 4,
         verses: [
@@ -543,14 +666,15 @@
         ]
       },
       {
-        id: "short_nasr",
+        id: "b1_nasr",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "النصر",
         surahNo: 110,
         startAyah: 1,
         endAyah: 3,
         juz: 30,
-        category: "shortEasy",
-        theme: "بشارة الفتح الأكبر والحث على ملازمة التسبيح والحمد والاستغفار",
+        theme: "بشارة الفتح المبين والأمر بالاستغفار والتسبيح عند التمام",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
@@ -560,14 +684,15 @@
         ]
       },
       {
-        id: "short_kawthar",
+        id: "b1_kawthar",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "الكوثر",
         surahNo: 108,
         startAyah: 1,
         endAyah: 3,
         juz: 30,
-        category: "shortEasy",
-        theme: "فضل الله العظيم على النبي ﷺ وإخلاص العبادة والنحر له وحده",
+        theme: "الإنعام العظيم بالخير الوفير وإخلاص الصلاة والنحر لله",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
@@ -577,14 +702,15 @@
         ]
       },
       {
-        id: "short_tin",
+        id: "b1_tin",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "التين",
         surahNo: 95,
         startAyah: 1,
         endAyah: 8,
         juz: 30,
-        category: "shortEasy",
-        theme: "خلق الإنسان في أحسن تقويم وجزاء أهل الإيمان والعمل الصالح",
+        theme: "خلق الإنسان في أبهى تقويم وعظمة الجزاء الأخروي",
         rakah1End: 4,
         rakah2Start: 5,
         verses: [
@@ -599,14 +725,15 @@
         ]
       },
       {
-        id: "short_asr",
+        id: "b1_asr",
+        book: "shortEasy",
+        sourceName: "كتاب الآيات القصيرة",
         surahName: "العصر",
         surahNo: 103,
         startAyah: 1,
         endAyah: 3,
         juz: 30,
-        category: "shortEasy",
-        theme: "قيمة الزمن والنجاة بالإيمان والعمل الصالح والتواصي بالحق والصبر",
+        theme: "قسم بالزمان: فوز المؤمنين المتواصين بالحق والصبر",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
@@ -616,16 +743,19 @@
         ]
       },
 
-      // --- كتاب الشيخ محمد المطري: مقاطع متوسطة متكاملة المعنى ---
+      // ------------------------------------------------------
+      // كتاب 2: كتاب الشيخ محمد المطري (مقاطع متوسطة متكاملة)
+      // ------------------------------------------------------
       {
-        id: "matari_kursi",
+        id: "b2_kursi",
+        book: "mediumSelected",
+        sourceName: "الشيخ محمد المطري",
         surahName: "البقرة",
         surahNo: 2,
         startAyah: 255,
         endAyah: 257,
         juz: 3,
-        category: "mediumSelected",
-        theme: "آية الكرسي العظمى، ونفي الإكراه في الدين، وولاية الله للمؤمنين",
+        theme: "آية الكرسي العظمى وولاية الله للمؤمنين بإخراجهم إلى النور",
         rakah1End: 255,
         rakah2Start: 256,
         verses: [
@@ -635,14 +765,15 @@
         ]
       },
       {
-        id: "matari_baqarah_end",
+        id: "b2_baqarah_end",
+        book: "mediumSelected",
+        sourceName: "الشيخ محمد المطري",
         surahName: "البقرة",
         surahNo: 2,
         startAyah: 284,
         endAyah: 286,
         juz: 3,
-        category: "mediumSelected",
-        theme: "خواتيم سورة البقرة: سعة ملك الله، إيمان الرسل والمؤمنين، والدعاء بالرحمة والمغفرة",
+        theme: "خواتيم سورة البقرة: سعة ملك الله، إيمان الرسل، والدعاء الجامع",
         rakah1End: 285,
         rakah2Start: 286,
         verses: [
@@ -652,14 +783,15 @@
         ]
       },
       {
-        id: "matari_mulk",
+        id: "b2_mulk",
+        book: "mediumSelected",
+        sourceName: "الشيخ محمد المطري",
         surahName: "الملك",
         surahNo: 67,
         startAyah: 1,
         endAyah: 5,
         juz: 29,
-        category: "mediumSelected",
-        theme: "عظمة الملك والقدرة الإلهية، وخلق الموت والحياة لابتلاء الإحسان في العمل",
+        theme: "عظمة الملك والقدرة الإلهية وخلق الحياة والموت للابتلاء بالأحسن عملاً",
         rakah1End: 2,
         rakah2Start: 3,
         verses: [
@@ -671,14 +803,15 @@
         ]
       },
       {
-        id: "matari_furqan",
+        id: "b2_furqan",
+        book: "mediumSelected",
+        sourceName: "الشيخ محمد المطري",
         surahName: "الفرقان",
         surahNo: 25,
         startAyah: 63,
         endAyah: 67,
         juz: 19,
-        category: "mediumSelected",
-        theme: "صفات عباد الرحمن الأبرار: التواضع، السجود والقيام، والاعتدال والإنفاق",
+        theme: "أوصاف عباد الرحمن: السكينة، قيام الأسحار، والاعتدال في النفقة",
         rakah1End: 64,
         rakah2Start: 65,
         verses: [
@@ -691,119 +824,193 @@
       }
     ];
 
-    let currentPrayer = 'maghrib';
+    // ========================================================
+    // إدارة الحالة والمنطق الميكانيكي
+    // ========================================================
+    let selectedPrayer = 'maghrib';
+    let selectedBook = 'all';
     let maxJuz = 30;
 
-    function selectPrayer(prayer, btn) {
-      currentPrayer = prayer;
-      document.querySelectorAll('.prayer-chip').forEach(b => b.classList.remove('active'));
+    function toArabicDigits(num) {
+      return String(num).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+    }
+
+    function setPrayer(p, btn) {
+      selectedPrayer = p;
+      document.querySelectorAll('.prayer-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      renderCards();
+      render();
     }
 
-    function changeJuz(val) {
+    function setBookFilter(b, btn) {
+      selectedBook = b;
+      document.querySelectorAll('.book-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    }
+
+    function setJuz(val) {
       maxJuz = parseInt(val);
-      document.getElementById('juzDisplay').innerText = `إلى جزء ${val}`;
-      renderCards();
+      document.getElementById('juzDisplay').innerText = `الجزء ${val}`;
+      render();
     }
 
-    function isUnderCooldown(id) {
-      const expiry = localStorage.getItem('mihrab_cd_' + id);
-      if (!expiry) return false;
-      if (Date.now() > parseInt(expiry)) {
+    function isLocked(id) {
+      const exp = localStorage.getItem('mihrab_cd_' + id);
+      if (!exp) return false;
+      if (Date.now() > parseInt(exp)) {
         localStorage.removeItem('mihrab_cd_' + id);
         return false;
       }
       return true;
     }
 
-    function lockCard(id) {
-      const cooldownHours = 48;
-      const expireTime = Date.now() + (cooldownHours * 60 * 60 * 1000);
-      localStorage.setItem('mihrab_cd_' + id, expireTime);
-      renderCards();
+    function updateCooldownCounter() {
+      let count = 0;
+      database.forEach(sec => {
+        if (isLocked(sec.id)) count++;
+      });
+      document.getElementById('cooldownCounter').innerText = `المحظورة (${count})`;
+    }
+
+    // تطبيق ميكانيكية استبعاد البطاقة بتأثير حركي
+    function commitRead(id, btnElement) {
+      const card = btnElement.closest('.card-item');
+      card.style.transform = 'scale(0.95)';
+      card.style.opacity = '0';
+
+      setTimeout(() => {
+        const cooldownHours = 48;
+        const expireTime = Date.now() + (cooldownHours * 60 * 60 * 1000);
+        localStorage.setItem('mihrab_cd_' + id, expireTime);
+        showToast('تقبل الله صلاتكم! تم استبعاد المقطع لمدة 48 ساعة.');
+        render();
+      }, 300);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastMessage');
+      document.getElementById('toastText').innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+    }
+
+    // نافذة إدارة المحظورات
+    function openLockedModal() {
+      const modal = document.getElementById('lockedModal');
+      const body = document.getElementById('lockedModalBody');
+      body.innerHTML = '';
+
+      const lockedList = database.filter(s => isLocked(s.id));
+      if (lockedList.length === 0) {
+        body.innerHTML = '<div style="text-align:center; padding:20px; color:var(--text-muted);">لا توجد أي مقاطع محظورة حالياً. جميع الآيات متاحة للعرض.</div>';
+      } else {
+        lockedList.forEach(s => {
+          const exp = parseInt(localStorage.getItem('mihrab_cd_' + s.id));
+          const hoursLeft = Math.max(1, Math.round((exp - Date.now()) / (1000 * 60 * 60)));
+          const row = document.createElement('div');
+          row.className = 'locked-item-row';
+          row.innerHTML = `
+            <div>
+              <div style="font-weight:800; color:var(--primary);">سورة ${s.surahName} (${s.startAyah} - ${s.endAyah})</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">متبقي في الحظر: قرابة ${hoursLeft} ساعة</div>
+            </div>
+            <button class="unlock-single-btn" onclick="unlockSingle('${s.id}')">إتاحة الآن</button>
+          `;
+          body.appendChild(row);
+        });
+      }
+
+      modal.style.display = 'flex';
+    }
+
+    function closeLockedModal(e) {
+      document.getElementById('lockedModal').style.display = 'none';
+    }
+
+    function unlockSingle(id) {
+      localStorage.removeItem('mihrab_cd_' + id);
+      openLockedModal();
+      render();
     }
 
     function resetAllCooldowns() {
-      if (confirm('هل ترغب بإلغاء حظر الـ 48 ساعة وإعادة إتاحة جميع المقاطع الآن؟')) {
-        Object.keys(localStorage).forEach(key => {
-          if (key.startsWith('mihrab_cd_')) {
-            localStorage.removeItem(key);
-          }
-        });
-        renderCards();
-      }
+      Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('mihrab_cd_')) localStorage.removeItem(key);
+      });
+      closeLockedModal();
+      showToast('تمت إعادة إتاحة كافة المقاطع بنجاح.');
+      render();
     }
 
-    // دالة تحويل الأرقام إلى أرقام مشرقية عربية
-    function toArabicDigits(num) {
-      return String(num).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
-    }
+    // رسم واجهة البطاقات
+    function render() {
+      const feed = document.getElementById('cardsFeed');
+      feed.innerHTML = '';
+      updateCooldownCounter();
 
-    function renderCards() {
-      const area = document.getElementById('cardsArea');
-      const category = document.getElementById('categorySelect').value;
-      area.innerHTML = '';
-
-      // تصفية المقاطع بناءً على الضوابط
-      const list = quranSections.filter(sec => {
-        if (sec.juz > maxJuz) return false;
-        if (category !== 'all' && sec.category !== category) return false;
-        // في صلاة المغرب: نستبعد المقاطع الطويلة التي تزيد آياتها عن 8 آيات تيسيراً على المصلين
-        if (currentPrayer === 'maghrib' && sec.verses.length > 8) return false;
-        if (isUnderCooldown(sec.id)) return false;
+      const filtered = database.filter(item => {
+        if (item.juz > maxJuz) return false;
+        if (selectedBook !== 'all' && item.book !== selectedBook) return false;
+        // مراعاة التخفيف في صلاة المغرب تلقائياً
+        if (selectedPrayer === 'maghrib' && item.verses.length > 8) return false;
+        if (isLocked(item.id)) return false;
         return true;
       });
 
-      document.getElementById('activeCountText').innerText = `المقاطع المتوفرة حالياً: ${list.length} مقطع`;
-
-      if (list.length === 0) {
-        area.innerHTML = `
+      if (filtered.length === 0) {
+        feed.innerHTML = `
           <div class="empty-state">
-            <span style="font-size: 2.5rem;">⏳</span>
-            <h3>جميع المقاطع في هذا النطاق تحت حظر الـ 48 ساعة</h3>
-            <p>تم استبعاد المقاطع المقروءة حديثاً لضمان التنويع ومنع التكرار في الصلوات. يمكنك توسيع نطاق الأجزاء، أو إعادة تنشيط المقاطع فوراً.</p>
-            <button class="restore-btn" onclick="resetAllCooldowns()">إلغاء الحظر وتنشيط المقاطع الآن</button>
+            <span style="font-size: 2.6rem;">⏳</span>
+            <h3 style="color:var(--primary); font-weight:800;">لا توجد مقاطع متوفرة حالياً</h3>
+            <p style="color:var(--text-muted); font-size:0.9rem; max-width:420px; line-height:1.6;">
+              المقاطع في هذا النطاق تحت حظر الـ 48 ساعة أو خارج نطاق الحفظ المحدد. يمكنك مراجعة المحظورات أو إلغاء الحظر مؤقتاً.
+            </p>
+            <button class="confirm-btn" style="width:auto; padding:10px 24px;" onclick="resetAllCooldowns()">
+              إعادة إتاحة المقاطع فوراً
+            </button>
           </div>
         `;
         return;
       }
 
-      list.forEach(sec => {
-        // تشكيل نصوص الآيات مع أرقامها داخل رمز القوس القرآني الفاخر
+      filtered.forEach(sec => {
         const versesHtml = sec.verses.map(v => 
-          `${v.text} <span class="ayah-num">﴿${toArabicDigits(v.num)}﴾</span>`
+          `${v.text} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
         ).join(' ');
 
         const card = document.createElement('article');
-        card.className = 'quran-card';
+        card.className = 'card-item';
         card.innerHTML = `
-          <div class="card-top">
-            <div class="surah-badge">
-              <span class="surah-name">سورة ${sec.surahName}</span>
-              <span class="surah-ayat-count">الآيات (${sec.startAyah} - ${sec.endAyah})</span>
+          <div class="card-header-bar">
+            <div class="surah-info">
+              <span class="surah-title">سورة ${sec.surahName}</span>
+              <span class="ayat-tag">الآيات (${toArabicDigits(sec.startAyah)} - ${toArabicDigits(sec.endAyah)})</span>
             </div>
-            <div class="juz-badge">الجزء ${sec.juz}</div>
+            <span class="source-badge">${sec.sourceName}</span>
           </div>
-          <div class="card-body">
-            <div class="theme-banner">${sec.theme}</div>
-            <div class="quran-verses-container">${versesHtml}</div>
-            <div class="rakah-indicator">
+
+          <div class="card-content">
+            <div class="theme-statement">${sec.theme}</div>
+            <div class="quran-text-wrapper">${versesHtml}</div>
+            
+            <div class="rakah-box">
               <span>📖</span>
-              <span>دليل الركعتين: الأولى تقف عند آية (${sec.rakah1End})، والثانية تبدأ من آية (${sec.rakah2Start}).</span>
+              <span>دليل الركعتين: الأولى تقف عند آية (${toArabicDigits(sec.rakah1End)})، والثانية تبدأ من آية (${toArabicDigits(sec.rakah2Start)}).</span>
             </div>
-            <button class="action-btn" onclick="lockCard('${sec.id}')">
+
+            <button class="confirm-btn" onclick="commitRead('${sec.id}', this)">
               <span>✓</span>
               <span>تمت القراءة في الصلاة (حظر 48 ساعة)</span>
             </button>
           </div>
         `;
-        area.appendChild(card);
+        feed.appendChild(card);
       });
     }
 
-    // التشغيل الفوري عند تحميل الصفحة
-    renderCards();
+    // بدء التشغيل
+    render();
   </script>
 </body>
 </html>

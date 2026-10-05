@@ -48,7 +48,6 @@
       overflow-x: hidden;
     }
 
-    /* رأس الصفحة الإسلامي الفاخر */
     header {
       width: 100%;
       background: linear-gradient(135deg, #0B2B20 0%, var(--primary) 100%);
@@ -116,7 +115,6 @@
       color: var(--primary);
     }
 
-    /* الحاوية المركزية */
     .container {
       width: 100%;
       max-width: 760px;
@@ -126,7 +124,6 @@
       gap: 16px;
     }
 
-    /* لوحة التحكم الرئيسية */
     .control-card {
       background: var(--card-bg);
       border-radius: var(--radius);
@@ -138,7 +135,6 @@
       gap: 16px;
     }
 
-    /* أزرار الصلوات بمؤثر ضغط حركي */
     .prayers-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -156,7 +152,6 @@
       cursor: pointer;
       transition: var(--transition);
       text-align: center;
-      box-shadow: inset 0 -2px 0 rgba(0,0,0,0.03);
     }
 
     .prayer-btn:active {
@@ -170,7 +165,6 @@
       box-shadow: 0 4px 14px rgba(15, 56, 42, 0.3);
     }
 
-    /* محدد الكتاب (سويتش التبديل الأنيق) */
     .books-selector-wrap {
       display: flex;
       flex-direction: column;
@@ -208,7 +202,6 @@
       border: 1px solid var(--border-gold);
     }
 
-    /* نطاق الحفظ مع زر اقتراح عشوائي */
     .slider-row {
       display: flex;
       flex-direction: column;
@@ -237,7 +230,6 @@
       cursor: pointer;
     }
 
-    /* بطاقة الآيات القرآنية الفخمة */
     .card-item {
       background: var(--card-bg);
       border-radius: var(--radius);
@@ -254,7 +246,6 @@
       transform: translateY(-2px);
     }
 
-    /* شريط عنوان البطاقة */
     .card-header-bar {
       background: linear-gradient(90deg, #F9F7F1 0%, #F3EFE4 100%);
       border-bottom: 1px solid var(--border-subtle);
@@ -295,7 +286,6 @@
       color: #8C6627;
     }
 
-    /* محتوى البطاقة */
     .card-content {
       padding: 20px 18px;
       display: flex;
@@ -303,7 +293,6 @@
       gap: 16px;
     }
 
-    /* الدلالة الموضوعية */
     .theme-statement {
       background: #FAF8F2;
       border-right: 4px solid var(--gold);
@@ -315,7 +304,6 @@
       font-weight: 600;
     }
 
-    /* صندوق نص الآيات العثماني */
     .quran-text-wrapper {
       background: #FFFEFA;
       border: 1.5px solid #EBE5D8;
@@ -330,7 +318,6 @@
       position: relative;
     }
 
-    /* رقم الآية القرآني المزخرف */
     .verse-badge {
       display: inline-flex;
       align-items: center;
@@ -343,7 +330,6 @@
       user-select: none;
     }
 
-    /* دليل الركعتين الإرشادي */
     .rakah-box {
       background: #EFF7F2;
       border: 1.2px solid #BFDFCD;
@@ -357,7 +343,6 @@
       gap: 8px;
     }
 
-    /* زر الاعتماد وحظر الـ 48 ساعة */
     .confirm-btn {
       width: 100%;
       background: linear-gradient(135deg, var(--gold) 0%, #A8833A 100%);
@@ -385,7 +370,6 @@
       transform: scale(0.98);
     }
 
-    /* نافذة منبثقة للمقاطع المحظورة (Modal) */
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -458,7 +442,6 @@
       cursor: pointer;
     }
 
-    /* إشعار Toast علوي فاخر */
     .toast {
       position: fixed;
       bottom: 24px;
@@ -484,7 +467,6 @@
       opacity: 1;
     }
 
-    /* حالة الفراغ الأنيقة */
     .empty-state {
       background: var(--card-bg);
       border: 1.5px dashed var(--border-subtle);
@@ -500,7 +482,6 @@
 </head>
 <body>
 
-  <!-- رأس التطبيق -->
   <header>
     <div class="header-content">
       <div class="brand-box">
@@ -515,9 +496,7 @@
   </header>
 
   <main class="container">
-    <!-- لوحة التصفية واختيار الكتاب والصلاة -->
     <section class="control-card">
-      <!-- أزرار اختيار الصلاة -->
       <div class="prayers-grid">
         <button class="prayer-btn" onclick="setPrayer('fajr', this)">الفجر</button>
         <button class="prayer-btn" onclick="setPrayer('dhuhr', this)">الظهر</button>
@@ -526,7 +505,6 @@
         <button class="prayer-btn" onclick="setPrayer('isha', this)">العشاء</button>
       </div>
 
-      <!-- محدد مصدر الكتاب -->
       <div class="books-selector-wrap">
         <div class="book-tabs">
           <button class="book-tab-btn" onclick="setBookFilter('shortEasy', this)">📖 كتاب قصار السور</button>
@@ -535,7 +513,6 @@
         </div>
       </div>
 
-      <!-- نطاق الحفظ التفاعلي -->
       <div class="slider-row">
         <div class="slider-header">
           <span>أقصى جزء محفوظ:</span>
@@ -549,11 +526,9 @@
       </div>
     </section>
 
-    <!-- منطقة عرض البطاقات -->
     <section id="cardsFeed"></section>
   </main>
 
-  <!-- نافذة المقاطع المحظورة (Modal) -->
   <div id="lockedModal" class="modal-overlay" onclick="closeLockedModal(event)">
     <div class="modal-card" onclick="event.stopPropagation()">
       <div class="modal-header">
@@ -569,22 +544,16 @@
     </div>
   </div>
 
-  <!-- إشعار Toast -->
   <div id="toastMessage" class="toast">
     <span>✓</span>
     <span id="toastText">تقبل الله صلاتكم! تم استبعاد المقطع لمدة 48 ساعة.</span>
   </div>
 
   <script>
-    // ========================================================
-    // قاعدة بيانات الكتابين المعتمدة (Book 1 & Book 2)
-    // ========================================================
-    const database = [
-      // ------------------------------------------------------
-      // كتاب 1: السور والآيات القصيرة السهلة جداً
-      // ------------------------------------------------------
+    // قاعدة بيانات احتياطية تعمل في حال تأخر تحميل الملف
+    const fallbackData = [
       {
-        id: "b1_fatiha",
+        id: "fb_fatiha",
         book: "shortEasy",
         sourceName: "كتاب الآيات القصيرة",
         surahName: "الفاتحة",
@@ -596,158 +565,17 @@
         rakah1End: 4,
         rakah2Start: 5,
         verses: [
-          { num: 1, text: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" },
-          { num: 2, text: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ" },
-          { num: 3, text: "الرَّحْمَٰنِ الرَّحِيمِ" },
-          { num: 4, text: "مَالِكِ يَوْمِ الدِّينِ" },
-          { num: 5, text: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ" },
-          { num: 6, text: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ" },
-          { num: 7, text: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ" }
+          { num: 1, text: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" },
+          { num: 2, text: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ" },
+          { num: 3, text: "الرَّحْمَٰنِ الرَّحِيمِ" },
+          { num: 4, text: "مَالِكِ يَوْمِ الدِّينِ" },
+          { num: 5, text: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ" },
+          { num: 6, text: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ" },
+          { num: 7, text: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ" }
         ]
       },
       {
-        id: "b1_ikhlas",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "الإخلاص",
-        surahNo: 112,
-        startAyah: 1,
-        endAyah: 4,
-        juz: 30,
-        theme: "تجريد التوحيد الصافي ونفي الشريك والولد والمثيل",
-        rakah1End: 2,
-        rakah2Start: 3,
-        verses: [
-          { num: 1, text: "قُلْ هُوَ اللَّهُ أَحَدٌ" },
-          { num: 2, text: "اللَّهُ الصَّمَدُ" },
-          { num: 3, text: "لَمْ يَلِدْ وَلَمْ يُولَدْ" },
-          { num: 4, text: "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ" }
-        ]
-      },
-      {
-        id: "b1_falaq",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "الفلق",
-        surahNo: 113,
-        startAyah: 1,
-        endAyah: 5,
-        juz: 30,
-        theme: "الاعتصام بنور الصباح والتحصن من شرور الخلائق والحاسدين",
-        rakah1End: 3,
-        rakah2Start: 4,
-        verses: [
-          { num: 1, text: "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ" },
-          { num: 2, text: "مِن شَرِّ مَا خَلَقَ" },
-          { num: 3, text: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ" },
-          { num: 4, text: "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ" },
-          { num: 5, text: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ" }
-        ]
-      },
-      {
-        id: "b1_nas",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "الناس",
-        surahNo: 114,
-        startAyah: 1,
-        endAyah: 6,
-        juz: 30,
-        theme: "الاستعاذة برب البشرية ومليكهم من وسوسة الشيطان الخناس",
-        rakah1End: 3,
-        rakah2Start: 4,
-        verses: [
-          { num: 1, text: "قُلْ أَعُوذُ بِرَبِّ النَّاسِ" },
-          { num: 2, text: "مَلِكِ النَّاسِ" },
-          { num: 3, text: "إِلَٰهِ النَّاسِ" },
-          { num: 4, text: "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ" },
-          { num: 5, text: "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ" },
-          { num: 6, text: "مِنَ الْجِنَّةِ وَالنَّاسِ" }
-        ]
-      },
-      {
-        id: "b1_nasr",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "النصر",
-        surahNo: 110,
-        startAyah: 1,
-        endAyah: 3,
-        juz: 30,
-        theme: "بشارة الفتح المبين والأمر بالاستغفار والتسبيح عند التمام",
-        rakah1End: 2,
-        rakah2Start: 3,
-        verses: [
-          { num: 1, text: "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ" },
-          { num: 2, text: "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا" },
-          { num: 3, text: "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا" }
-        ]
-      },
-      {
-        id: "b1_kawthar",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "الكوثر",
-        surahNo: 108,
-        startAyah: 1,
-        endAyah: 3,
-        juz: 30,
-        theme: "الإنعام العظيم بالخير الوفير وإخلاص الصلاة والنحر لله",
-        rakah1End: 2,
-        rakah2Start: 3,
-        verses: [
-          { num: 1, text: "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ" },
-          { num: 2, text: "فَصَلِّ لِرَبِّكَ وَانْحَرْ" },
-          { num: 3, text: "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ" }
-        ]
-      },
-      {
-        id: "b1_tin",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "التين",
-        surahNo: 95,
-        startAyah: 1,
-        endAyah: 8,
-        juz: 30,
-        theme: "خلق الإنسان في أبهى تقويم وعظمة الجزاء الأخروي",
-        rakah1End: 4,
-        rakah2Start: 5,
-        verses: [
-          { num: 1, text: "وَالتِّينِ وَالزَّيْتُونِ" },
-          { num: 2, text: "وَطُورِ سِينِينَ" },
-          { num: 3, text: "وَهَٰذَا الْبَلَدِ الْأَمِينِ" },
-          { num: 4, text: "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ" },
-          { num: 5, text: "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ" },
-          { num: 6, text: "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ" },
-          { num: 7, text: "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ" },
-          { num: 8, text: "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ" }
-        ]
-      },
-      {
-        id: "b1_asr",
-        book: "shortEasy",
-        sourceName: "كتاب الآيات القصيرة",
-        surahName: "العصر",
-        surahNo: 103,
-        startAyah: 1,
-        endAyah: 3,
-        juz: 30,
-        theme: "قسم بالزمان: فوز المؤمنين المتواصين بالحق والصبر",
-        rakah1End: 2,
-        rakah2Start: 3,
-        verses: [
-          { num: 1, text: "وَالْعَصْرِ" },
-          { num: 2, text: "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ" },
-          { num: 3, text: "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ" }
-        ]
-      },
-
-      // ------------------------------------------------------
-      // كتاب 2: كتاب الشيخ محمد المطري (مقاطع متوسطة متكاملة)
-      // ------------------------------------------------------
-      {
-        id: "b2_kursi",
+        id: "fb_kursi",
         book: "mediumSelected",
         sourceName: "الشيخ محمد المطري",
         surahName: "البقرة",
@@ -755,81 +583,36 @@
         startAyah: 255,
         endAyah: 257,
         juz: 3,
-        theme: "آية الكرسي العظمى وولاية الله للمؤمنين بإخراجهم إلى النور",
+        theme: "آية الكرسي العظمى وولاية الله للمؤمنين",
         rakah1End: 255,
         rakah2Start: 256,
         verses: [
-          { num: 255, text: "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ" },
-          { num: 256, text: "لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ" },
-          { num: 257, text: "اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُم مِّنَ النُّورِ إِلَى الظُّلُمَاتِ ۗ أُولَٰئِكَ أَصْحَابُ النَّارِ ۖ هُمْ فِيهَا خَالِدُونَ" }
-        ]
-      },
-      {
-        id: "b2_baqarah_end",
-        book: "mediumSelected",
-        sourceName: "الشيخ محمد المطري",
-        surahName: "البقرة",
-        surahNo: 2,
-        startAyah: 284,
-        endAyah: 286,
-        juz: 3,
-        theme: "خواتيم سورة البقرة: سعة ملك الله، إيمان الرسل، والدعاء الجامع",
-        rakah1End: 285,
-        rakah2Start: 286,
-        verses: [
-          { num: 284, text: "لِّلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ وَإِن تُبْدُوا مَا فِي أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ اللَّهُ ۖ فَيَغْفِرُ لِمَن يَشَاءُ وَيُعَذِّبُ مَن يَشَاءُ ۗ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ" },
-          { num: 285, text: "آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ" },
-          { num: 286, text: "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ" }
-        ]
-      },
-      {
-        id: "b2_mulk",
-        book: "mediumSelected",
-        sourceName: "الشيخ محمد المطري",
-        surahName: "الملك",
-        surahNo: 67,
-        startAyah: 1,
-        endAyah: 5,
-        juz: 29,
-        theme: "عظمة الملك والقدرة الإلهية وخلق الحياة والموت للابتلاء بالأحسن عملاً",
-        rakah1End: 2,
-        rakah2Start: 3,
-        verses: [
-          { num: 1, text: "تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ" },
-          { num: 2, text: "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ" },
-          { num: 3, text: "الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَّا تَرَىٰ فِي خَلْقِ الرَّحْمَٰنِ مِن تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ" },
-          { num: 4, text: "ثُمَّ ارْجِعِ الْبَصَرَ كَرَّتَيْنِ يَنقَلِبْ إِلَيْكَ الْبَصَرُ خَاسِئًا وَهُوَ حَسِيرٌ" },
-          { num: 5, text: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِّلشَّيَاطِينِ ۖ وَأَعْتَدْنَا لَهُمْ عَذَابَ السَّعِيرِ" }
-        ]
-      },
-      {
-        id: "b2_furqan",
-        book: "mediumSelected",
-        sourceName: "الشيخ محمد المطري",
-        surahName: "الفرقان",
-        surahNo: 25,
-        startAyah: 63,
-        endAyah: 67,
-        juz: 19,
-        theme: "أوصاف عباد الرحمن: السكينة، قيام الأسحار، والاعتدال في النفقة",
-        rakah1End: 64,
-        rakah2Start: 65,
-        verses: [
-          { num: 63, text: "وَعِبَادُ الرَّحْمَٰنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا" },
-          { num: 64, text: "وَالَّذِينَ يَبِيتُونَ لِرَبِّهِمْ سُجَّدًا وَقِيَامًا" },
-          { num: 65, text: "وَالَّذِينَ يَقُولُونَ رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ ۖ إِنَّ عَذَابَهَا كَانَ غَرَامًا" },
-          { num: 66, text: "إِنَّهَا سَاءَتْ مُسْتَقَرًّا وَمُقَامًا" },
-          { num: 67, text: "وَالَّذِينَ إِذَا أَنفَقُوا لَمْ يُسْرِفُوا وَلَمْ يَقْتُرُوا وَكَانَ بَيْنَ ذَٰلِكَ قَوَامًا" }
+          { num: 255, text: "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ" },
+          { num: 256, text: "لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ" },
+          { num: 257, text: "اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُم مِّنَ النُّورِ إِلَى الظُّلُمَاتِ ۗ أُولَٰئِكَ أَصْحَابُ النَّارِ ۖ هُمْ فِيهَا خَالِدُونَ" }
         ]
       }
     ];
 
-    // ========================================================
-    // إدارة الحالة والمنطق الميكانيكي
-    // ========================================================
+    let database = [];
     let selectedPrayer = 'maghrib';
     let selectedBook = 'all';
     let maxJuz = 30;
+
+    // جلب ملف quran_books.json الذي ولّده البوت سحابياً
+    async function initDatabase() {
+      try {
+        const response = await fetch('quran_books.json?v=' + Date.now());
+        if (response.ok) {
+          database = await response.json();
+        } else {
+          database = fallbackData;
+        }
+      } catch (e) {
+        database = fallbackData;
+      }
+      render();
+    }
 
     function toArabicDigits(num) {
       return String(num).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
@@ -873,7 +656,6 @@
       document.getElementById('cooldownCounter').innerText = `المحظورة (${count})`;
     }
 
-    // تطبيق ميكانيكية استبعاد البطاقة بتأثير حركي
     function commitRead(id, btnElement) {
       const card = btnElement.closest('.card-item');
       card.style.transform = 'scale(0.95)';
@@ -895,7 +677,6 @@
       setTimeout(() => toast.classList.remove('show'), 3500);
     }
 
-    // نافذة إدارة المحظورات
     function openLockedModal() {
       const modal = document.getElementById('lockedModal');
       const body = document.getElementById('lockedModalBody');
@@ -943,7 +724,6 @@
       render();
     }
 
-    // رسم واجهة البطاقات
     function render() {
       const feed = document.getElementById('cardsFeed');
       feed.innerHTML = '';
@@ -952,8 +732,7 @@
       const filtered = database.filter(item => {
         if (item.juz > maxJuz) return false;
         if (selectedBook !== 'all' && item.book !== selectedBook) return false;
-        // مراعاة التخفيف في صلاة المغرب تلقائياً
-        if (selectedPrayer === 'maghrib' && item.verses.length > 8) return false;
+        if (selectedPrayer === 'maghrib' && item.verses && item.verses.length > 8) return false;
         if (isLocked(item.id)) return false;
         return true;
       });
@@ -975,7 +754,7 @@
       }
 
       filtered.forEach(sec => {
-        const versesHtml = sec.verses.map(v => 
+        const versesHtml = (sec.verses || []).map(v => 
           `${v.text} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
         ).join(' ');
 
@@ -1009,8 +788,8 @@
       });
     }
 
-    // بدء التشغيل
-    render();
+    // بدء تشغيل التطبيق وجلب البيانات
+    initDatabase();
   </script>
 </body>
 </html>

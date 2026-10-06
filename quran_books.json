@@ -2,13 +2,19 @@
   {
     "id": "shortEasy_2",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "البقرة",
     "surahNo": 2,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 1,
-    "theme": "مقاطع مختارة تامة المعنى من سورة البقرة",
+    "page": 2,
+    "theme": "مقاطع مختارة تامة المعنى من سورة البقرة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -41,13 +47,19 @@
   {
     "id": "shortEasy_36",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "يس",
     "surahNo": 36,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 22,
-    "theme": "مقاطع مختارة تامة المعنى من سورة يس",
+    "page": 440,
+    "theme": "مقاطع مختارة تامة المعنى من سورة يس في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -80,13 +92,19 @@
   {
     "id": "shortEasy_38",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "ص",
     "surahNo": 38,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 23,
-    "theme": "مقاطع مختارة تامة المعنى من سورة ص",
+    "page": 453,
+    "theme": "مقاطع مختارة تامة المعنى من سورة ص في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -119,13 +137,19 @@
   {
     "id": "shortEasy_50",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "ق",
     "surahNo": 50,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة ق",
+    "page": 518,
+    "theme": "مقاطع مختارة تامة المعنى من سورة ق في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -158,13 +182,19 @@
   {
     "id": "shortEasy_23",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المؤمنون",
     "surahNo": 23,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 18,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المؤمنون",
+    "page": 342,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المؤمنون في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -197,13 +227,19 @@
   {
     "id": "shortEasy_3",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "آل عمران",
     "surahNo": 3,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 3,
-    "theme": "مقاطع مختارة تامة المعنى من سورة آل عمران",
+    "page": 50,
+    "theme": "مقاطع مختارة تامة المعنى من سورة آل عمران في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -236,13 +272,19 @@
   {
     "id": "shortEasy_55",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الرحمن",
     "surahNo": 55,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الرحمن",
+    "page": 531,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الرحمن في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -275,13 +317,19 @@
   {
     "id": "shortEasy_4",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النساء",
     "surahNo": 4,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 4,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النساء",
+    "page": 77,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النساء في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -314,13 +362,19 @@
   {
     "id": "shortEasy_5",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المائدة",
     "surahNo": 5,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "morals",
+    "topicLabel": "الأخلاق والتقوى والمعاملات",
     "juz": 6,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المائدة",
+    "page": 106,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المائدة في الأخلاق والتقوى والمعاملات",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -353,13 +407,19 @@
   {
     "id": "shortEasy_6",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأنعام",
     "surahNo": 6,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 7,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأنعام",
+    "page": 128,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأنعام في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -392,13 +452,19 @@
   {
     "id": "shortEasy_7",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأعراف",
     "surahNo": 7,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 8,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأعراف",
+    "page": 151,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأعراف في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -431,13 +497,19 @@
   {
     "id": "shortEasy_8",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأنفال",
     "surahNo": 8,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 9,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأنفال",
+    "page": 177,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأنفال في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -470,13 +542,19 @@
   {
     "id": "shortEasy_9",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "التوبة",
     "surahNo": 9,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 10,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التوبة",
+    "page": 187,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التوبة في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -509,13 +587,19 @@
   {
     "id": "shortEasy_10",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "يونس",
     "surahNo": 10,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 11,
-    "theme": "مقاطع مختارة تامة المعنى من سورة يونس",
+    "page": 208,
+    "theme": "مقاطع مختارة تامة المعنى من سورة يونس في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -548,13 +632,19 @@
   {
     "id": "shortEasy_11",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "هود",
     "surahNo": 11,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 11,
-    "theme": "مقاطع مختارة تامة المعنى من سورة هود",
+    "page": 221,
+    "theme": "مقاطع مختارة تامة المعنى من سورة هود في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -587,13 +677,19 @@
   {
     "id": "shortEasy_12",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "يوسف",
     "surahNo": 12,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 12,
-    "theme": "مقاطع مختارة تامة المعنى من سورة يوسف",
+    "page": 235,
+    "theme": "مقاطع مختارة تامة المعنى من سورة يوسف في قصص الأنبياء والرسل والعِبر",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -626,13 +722,19 @@
   {
     "id": "shortEasy_13",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الرعد",
     "surahNo": 13,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 13,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الرعد",
+    "page": 249,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الرعد في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -665,13 +767,19 @@
   {
     "id": "shortEasy_14",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "إبراهيم",
     "surahNo": 14,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 13,
-    "theme": "مقاطع مختارة تامة المعنى من سورة إبراهيم",
+    "page": 255,
+    "theme": "مقاطع مختارة تامة المعنى من سورة إبراهيم في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -704,13 +812,19 @@
   {
     "id": "shortEasy_15",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الحجر",
     "surahNo": 15,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 14,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحجر",
+    "page": 262,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحجر في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -743,13 +857,19 @@
   {
     "id": "shortEasy_16",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النحل",
     "surahNo": 16,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 14,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النحل",
+    "page": 267,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النحل في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -782,13 +902,19 @@
   {
     "id": "shortEasy_17",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الإسراء",
     "surahNo": 17,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 15,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الإسراء",
+    "page": 282,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الإسراء في قصص الأنبياء والرسل والعِبر",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -821,13 +947,19 @@
   {
     "id": "shortEasy_67",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الملك",
     "surahNo": 67,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الملك",
+    "page": 562,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الملك في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -860,13 +992,19 @@
   {
     "id": "shortEasy_18",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الكهف",
     "surahNo": 18,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 15,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الكهف",
+    "page": 293,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الكهف في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -899,13 +1037,19 @@
   {
     "id": "shortEasy_19",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "مريم",
     "surahNo": 19,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 16,
-    "theme": "مقاطع مختارة تامة المعنى من سورة مريم",
+    "page": 305,
+    "theme": "مقاطع مختارة تامة المعنى من سورة مريم في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -938,13 +1082,19 @@
   {
     "id": "shortEasy_20",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "طه",
     "surahNo": 20,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 16,
-    "theme": "مقاطع مختارة تامة المعنى من سورة طه",
+    "page": 312,
+    "theme": "مقاطع مختارة تامة المعنى من سورة طه في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -977,13 +1127,19 @@
   {
     "id": "shortEasy_21",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأنبياء",
     "surahNo": 21,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 17,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأنبياء",
+    "page": 322,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأنبياء في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1016,13 +1172,19 @@
   {
     "id": "shortEasy_22",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الحج",
     "surahNo": 22,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 17,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحج",
+    "page": 332,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحج في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1055,13 +1217,19 @@
   {
     "id": "shortEasy_114",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الناس",
     "surahNo": 114,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الناس",
+    "page": 604,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الناس في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1094,13 +1262,19 @@
   {
     "id": "shortEasy_24",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النور",
     "surahNo": 24,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 18,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النور",
+    "page": 350,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النور في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1133,13 +1307,19 @@
   {
     "id": "shortEasy_25",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الفرقان",
     "surahNo": 25,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 18,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفرقان",
+    "page": 359,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفرقان في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1172,13 +1352,19 @@
   {
     "id": "shortEasy_92",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الليل",
     "surahNo": 92,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الليل",
+    "page": 595,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الليل في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1211,13 +1397,19 @@
   {
     "id": "shortEasy_26",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الشعراء",
     "surahNo": 26,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 19,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الشعراء",
+    "page": 367,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الشعراء في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1250,13 +1442,19 @@
   {
     "id": "shortEasy_27",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النمل",
     "surahNo": 27,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 19,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النمل",
+    "page": 377,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النمل في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1289,13 +1487,19 @@
   {
     "id": "shortEasy_28",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "القصص",
     "surahNo": 28,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 20,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القصص",
+    "page": 385,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القصص في قصص الأنبياء والرسل والعِبر",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1328,13 +1532,19 @@
   {
     "id": "shortEasy_29",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "العنكبوت",
     "surahNo": 29,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 20,
-    "theme": "مقاطع مختارة تامة المعنى من سورة العنكبوت",
+    "page": 396,
+    "theme": "مقاطع مختارة تامة المعنى من سورة العنكبوت في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1367,13 +1577,19 @@
   {
     "id": "shortEasy_30",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الروم",
     "surahNo": 30,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الروم",
+    "page": 404,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الروم في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1406,13 +1622,19 @@
   {
     "id": "shortEasy_31",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "لقمان",
     "surahNo": 31,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة لقمان",
+    "page": 411,
+    "theme": "مقاطع مختارة تامة المعنى من سورة لقمان في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1445,13 +1667,19 @@
   {
     "id": "shortEasy_32",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "السجدة",
     "surahNo": 32,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة السجدة",
+    "page": 415,
+    "theme": "مقاطع مختارة تامة المعنى من سورة السجدة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1484,13 +1712,19 @@
   {
     "id": "shortEasy_33",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأحزاب",
     "surahNo": 33,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأحزاب",
+    "page": 418,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأحزاب في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1523,13 +1757,19 @@
   {
     "id": "shortEasy_34",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "سبأ",
     "surahNo": 34,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 22,
-    "theme": "مقاطع مختارة تامة المعنى من سورة سبأ",
+    "page": 428,
+    "theme": "مقاطع مختارة تامة المعنى من سورة سبأ في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1562,13 +1802,19 @@
   {
     "id": "shortEasy_35",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "فاطر",
     "surahNo": 35,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 22,
-    "theme": "مقاطع مختارة تامة المعنى من سورة فاطر",
+    "page": 434,
+    "theme": "مقاطع مختارة تامة المعنى من سورة فاطر في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1601,13 +1847,19 @@
   {
     "id": "shortEasy_71",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "نوح",
     "surahNo": 71,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة نوح",
+    "page": 570,
+    "theme": "مقاطع مختارة تامة المعنى من سورة نوح في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1640,13 +1892,19 @@
   {
     "id": "shortEasy_37",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الصافات",
     "surahNo": 37,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 23,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الصافات",
+    "page": 446,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الصافات في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1679,13 +1937,19 @@
   {
     "id": "shortEasy_109",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الكافرون",
     "surahNo": 109,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الكافرون",
+    "page": 603,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الكافرون في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1718,13 +1982,19 @@
   {
     "id": "shortEasy_39",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الزمر",
     "surahNo": 39,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 23,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الزمر",
+    "page": 458,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الزمر في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1757,13 +2027,19 @@
   {
     "id": "shortEasy_40",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "غافر",
     "surahNo": 40,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 24,
-    "theme": "مقاطع مختارة تامة المعنى من سورة غافر",
+    "page": 467,
+    "theme": "مقاطع مختارة تامة المعنى من سورة غافر في قصص الأنبياء والرسل والعِبر",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1796,13 +2072,19 @@
   {
     "id": "shortEasy_41",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "فصلت",
     "surahNo": 41,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 24,
-    "theme": "مقاطع مختارة تامة المعنى من سورة فصلت",
+    "page": 477,
+    "theme": "مقاطع مختارة تامة المعنى من سورة فصلت في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1835,13 +2117,19 @@
   {
     "id": "shortEasy_42",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الشورى",
     "surahNo": 42,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الشورى",
+    "page": 483,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الشورى في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1874,13 +2162,19 @@
   {
     "id": "shortEasy_43",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الزخرف",
     "surahNo": 43,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الزخرف",
+    "page": 489,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الزخرف في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1913,13 +2207,19 @@
   {
     "id": "shortEasy_44",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الدخان",
     "surahNo": 44,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الدخان",
+    "page": 496,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الدخان في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1952,13 +2252,19 @@
   {
     "id": "shortEasy_45",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الجاثية",
     "surahNo": 45,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الجاثية",
+    "page": 499,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الجاثية في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -1991,13 +2297,19 @@
   {
     "id": "shortEasy_46",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأحقاف",
     "surahNo": 46,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأحقاف",
+    "page": 502,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأحقاف في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2030,13 +2342,19 @@
   {
     "id": "shortEasy_47",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "محمد",
     "surahNo": 47,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة محمد",
+    "page": 507,
+    "theme": "مقاطع مختارة تامة المعنى من سورة محمد في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2069,13 +2387,19 @@
   {
     "id": "shortEasy_48",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الفتح",
     "surahNo": 48,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفتح",
+    "page": 511,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفتح في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2108,13 +2432,19 @@
   {
     "id": "shortEasy_49",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الحجرات",
     "surahNo": 49,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحجرات",
+    "page": 515,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحجرات في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2147,13 +2477,19 @@
   {
     "id": "shortEasy_51",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الذاريات",
     "surahNo": 51,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الذاريات",
+    "page": 520,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الذاريات في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2186,13 +2522,19 @@
   {
     "id": "shortEasy_52",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الطور",
     "surahNo": 52,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الطور",
+    "page": 523,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الطور في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2225,13 +2567,19 @@
   {
     "id": "shortEasy_53",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النجم",
     "surahNo": 53,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النجم",
+    "page": 526,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النجم في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2264,13 +2612,19 @@
   {
     "id": "shortEasy_54",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "القمر",
     "surahNo": 54,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القمر",
+    "page": 528,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القمر في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2303,13 +2657,19 @@
   {
     "id": "shortEasy_76",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الإنسان",
     "surahNo": 76,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "paradise",
+    "topicLabel": "نعيم الجنة والرضوان",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الإنسان",
+    "page": 578,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الإنسان في نعيم الجنة والرضوان",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2342,13 +2702,19 @@
   {
     "id": "shortEasy_56",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الواقعة",
     "surahNo": 56,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الواقعة",
+    "page": 534,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الواقعة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2381,13 +2747,19 @@
   {
     "id": "shortEasy_57",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الحديد",
     "surahNo": 57,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحديد",
+    "page": 537,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحديد في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2420,13 +2792,19 @@
   {
     "id": "shortEasy_58",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المجادلة",
     "surahNo": 58,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المجادلة",
+    "page": 542,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المجادلة في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2459,13 +2837,19 @@
   {
     "id": "shortEasy_59",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الحشر",
     "surahNo": 59,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحشر",
+    "page": 545,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحشر في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2498,13 +2882,19 @@
   {
     "id": "shortEasy_72",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الجن",
     "surahNo": 72,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الجن",
+    "page": 572,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الجن في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2537,13 +2927,19 @@
   {
     "id": "shortEasy_60",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الممتحنة",
     "surahNo": 60,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الممتحنة",
+    "page": 549,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الممتحنة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2576,13 +2972,19 @@
   {
     "id": "shortEasy_61",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الصف",
     "surahNo": 61,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الصف",
+    "page": 551,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الصف في قصص الأنبياء والرسل والعِبر",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2615,13 +3017,19 @@
   {
     "id": "shortEasy_62",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الجمعة",
     "surahNo": 62,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الجمعة",
+    "page": 553,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الجمعة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2654,13 +3062,19 @@
   {
     "id": "shortEasy_63",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المنافقون",
     "surahNo": 63,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المنافقون",
+    "page": 554,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المنافقون في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2693,13 +3107,19 @@
   {
     "id": "shortEasy_64",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "التغابن",
     "surahNo": 64,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التغابن",
+    "page": 556,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التغابن في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2732,13 +3152,19 @@
   {
     "id": "shortEasy_65",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الطلاق",
     "surahNo": 65,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الطلاق",
+    "page": 558,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الطلاق في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2771,13 +3197,19 @@
   {
     "id": "shortEasy_68",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "القلم",
     "surahNo": 68,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القلم",
+    "page": 564,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القلم في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2810,13 +3242,19 @@
   {
     "id": "shortEasy_69",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الحاقة",
     "surahNo": 69,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحاقة",
+    "page": 566,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحاقة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2847,54 +3285,66 @@
     ]
   },
   {
-    "id": "shortEasy_80",
+    "id": "shortEasy_70",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
-    "surahName": "عبس",
-    "surahNo": 80,
+    "sourceName": "قـصـار السور للصلاة",
+    "surahName": "المعارج",
+    "surahNo": 70,
     "startAyah": 1,
     "endAyah": 6,
-    "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة عبس",
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
+    "juz": 29,
+    "page": 568,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المعارج في أهوال القيامة والمواعظ",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
       {
         "num": 1,
-        "text": "عَبَسَ وَتَوَلَّىٰٓ"
+        "text": "سَأَلَ سَآئِلٌۢ بِعَذَابٍۢ وَاقِعٍۢ"
       },
       {
         "num": 2,
-        "text": "أَن جَآءَهُ ٱلْأَعْمَىٰ"
+        "text": "لِّلْكَٰفِرِينَ لَيْسَ لَهُۥ دَافِعٌۭ"
       },
       {
         "num": 3,
-        "text": "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ"
+        "text": "مِّنَ ٱللَّهِ ذِى ٱلْمَعَارِجِ"
       },
       {
         "num": 4,
-        "text": "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ"
+        "text": "تَعْرُجُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ إِلَيْهِ فِى يَوْمٍۢ كَانَ مِقْدَارُهُۥ خَمْسِينَ أَلْفَ سَنَةٍۢ"
       },
       {
         "num": 5,
-        "text": "أَمَّا مَنِ ٱسْتَغْنَىٰ"
+        "text": "فَٱصْبِرْ صَبْرًۭا جَمِيلًا"
       },
       {
         "num": 6,
-        "text": "فَأَنتَ لَهُۥ تَصَدَّىٰ"
+        "text": "إِنَّهُمْ يَرَوْنَهُۥ بَعِيدًۭا"
       }
     ]
   },
   {
     "id": "shortEasy_73",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المزمل",
     "surahNo": 73,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المزمل",
+    "page": 574,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المزمل في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2927,13 +3377,19 @@
   {
     "id": "shortEasy_74",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المدثر",
     "surahNo": 74,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المدثر",
+    "page": 575,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المدثر في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -2966,13 +3422,19 @@
   {
     "id": "shortEasy_75",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "القيامة",
     "surahNo": 75,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القيامة",
+    "page": 577,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القيامة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3005,13 +3467,19 @@
   {
     "id": "shortEasy_91",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الشمس",
     "surahNo": 91,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الشمس",
+    "page": 595,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الشمس في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3044,13 +3512,19 @@
   {
     "id": "shortEasy_77",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المرسلات",
     "surahNo": 77,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المرسلات",
+    "page": 580,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المرسلات في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3083,13 +3557,19 @@
   {
     "id": "shortEasy_78",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النبأ",
     "surahNo": 78,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النبأ",
+    "page": 582,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النبأ في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3122,13 +3602,19 @@
   {
     "id": "shortEasy_79",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النازعات",
     "surahNo": 79,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النازعات",
+    "page": 583,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النازعات في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3159,15 +3645,66 @@
     ]
   },
   {
+    "id": "shortEasy_80",
+    "book": "shortEasy",
+    "sourceName": "قـصـار السور للصلاة",
+    "surahName": "عبس",
+    "surahNo": 80,
+    "startAyah": 1,
+    "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
+    "juz": 30,
+    "page": 585,
+    "theme": "مقاطع مختارة تامة المعنى من سورة عبس في التوحيد وعظمة الخالق",
+    "rakah1End": 3,
+    "rakah2Start": 4,
+    "verses": [
+      {
+        "num": 1,
+        "text": "عَبَسَ وَتَوَلَّىٰٓ"
+      },
+      {
+        "num": 2,
+        "text": "أَن جَآءَهُ ٱلْأَعْمَىٰ"
+      },
+      {
+        "num": 3,
+        "text": "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ"
+      },
+      {
+        "num": 4,
+        "text": "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ"
+      },
+      {
+        "num": 5,
+        "text": "أَمَّا مَنِ ٱسْتَغْنَىٰ"
+      },
+      {
+        "num": 6,
+        "text": "فَأَنتَ لَهُۥ تَصَدَّىٰ"
+      }
+    ]
+  },
+  {
     "id": "shortEasy_81",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "التكوير",
     "surahNo": 81,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التكوير",
+    "page": 586,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التكوير في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3200,13 +3737,19 @@
   {
     "id": "shortEasy_82",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الانفطار",
     "surahNo": 82,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الانفطار",
+    "page": 587,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الانفطار في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3239,13 +3782,19 @@
   {
     "id": "shortEasy_83",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المطففين",
     "surahNo": 83,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المطففين",
+    "page": 587,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المطففين في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3278,13 +3827,19 @@
   {
     "id": "shortEasy_84",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الانشقاق",
     "surahNo": 84,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الانشقاق",
+    "page": 589,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الانشقاق في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3317,13 +3872,19 @@
   {
     "id": "shortEasy_85",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "البروج",
     "surahNo": 85,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة البروج",
+    "page": 590,
+    "theme": "مقاطع مختارة تامة المعنى من سورة البروج في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3356,13 +3917,19 @@
   {
     "id": "shortEasy_86",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الطارق",
     "surahNo": 86,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الطارق",
+    "page": 591,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الطارق في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3395,13 +3962,19 @@
   {
     "id": "shortEasy_87",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الأعلى",
     "surahNo": 87,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأعلى",
+    "page": 591,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأعلى في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3434,13 +4007,19 @@
   {
     "id": "shortEasy_88",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الغاشية",
     "surahNo": 88,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الغاشية",
+    "page": 592,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الغاشية في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3473,13 +4052,19 @@
   {
     "id": "shortEasy_89",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الفجر",
     "surahNo": 89,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفجر",
+    "page": 593,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفجر في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3512,13 +4097,19 @@
   {
     "id": "shortEasy_90",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "البلد",
     "surahNo": 90,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة البلد",
+    "page": 594,
+    "theme": "مقاطع مختارة تامة المعنى من سورة البلد في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3551,13 +4142,19 @@
   {
     "id": "shortEasy_93",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الضحى",
     "surahNo": 93,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الضحى",
+    "page": 596,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الضحى في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3590,13 +4187,19 @@
   {
     "id": "shortEasy_94",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الشرح",
     "surahNo": 94,
     "startAyah": 1,
     "endAyah": 8,
+    "ayahCount": 8,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الشرح",
+    "page": 596,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الشرح في التوحيد وعظمة الخالق",
     "rakah1End": 4,
     "rakah2Start": 5,
     "verses": [
@@ -3637,13 +4240,19 @@
   {
     "id": "shortEasy_95",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "التين",
     "surahNo": 95,
     "startAyah": 1,
     "endAyah": 8,
+    "ayahCount": 8,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التين",
+    "page": 597,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التين في التوحيد وعظمة الخالق",
     "rakah1End": 4,
     "rakah2Start": 5,
     "verses": [
@@ -3684,13 +4293,19 @@
   {
     "id": "shortEasy_96",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "العلق",
     "surahNo": 96,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة العلق",
+    "page": 597,
+    "theme": "مقاطع مختارة تامة المعنى من سورة العلق في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3723,13 +4338,19 @@
   {
     "id": "shortEasy_97",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "القدر",
     "surahNo": 97,
     "startAyah": 1,
     "endAyah": 5,
+    "ayahCount": 5,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القدر",
+    "page": 598,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القدر في التوحيد وعظمة الخالق",
     "rakah1End": 2,
     "rakah2Start": 3,
     "verses": [
@@ -3758,13 +4379,19 @@
   {
     "id": "shortEasy_98",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "البينة",
     "surahNo": 98,
     "startAyah": 1,
     "endAyah": 8,
+    "ayahCount": 8,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة البينة",
+    "page": 598,
+    "theme": "مقاطع مختارة تامة المعنى من سورة البينة في التوحيد وعظمة الخالق",
     "rakah1End": 4,
     "rakah2Start": 5,
     "verses": [
@@ -3805,13 +4432,19 @@
   {
     "id": "shortEasy_99",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الزلزلة",
     "surahNo": 99,
     "startAyah": 1,
     "endAyah": 8,
+    "ayahCount": 8,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الزلزلة",
+    "page": 599,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الزلزلة في التوحيد وعظمة الخالق",
     "rakah1End": 4,
     "rakah2Start": 5,
     "verses": [
@@ -3852,13 +4485,19 @@
   {
     "id": "shortEasy_100",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "العاديات",
     "surahNo": 100,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة العاديات",
+    "page": 599,
+    "theme": "مقاطع مختارة تامة المعنى من سورة العاديات في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3891,13 +4530,19 @@
   {
     "id": "shortEasy_101",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "القارعة",
     "surahNo": 101,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القارعة",
+    "page": 600,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القارعة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -3930,13 +4575,19 @@
   {
     "id": "shortEasy_102",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "التكاثر",
     "surahNo": 102,
     "startAyah": 1,
     "endAyah": 8,
+    "ayahCount": 8,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التكاثر",
+    "page": 600,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التكاثر في التوحيد وعظمة الخالق",
     "rakah1End": 4,
     "rakah2Start": 5,
     "verses": [
@@ -3977,13 +4628,19 @@
   {
     "id": "shortEasy_103",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "العصر",
     "surahNo": 103,
     "startAyah": 1,
     "endAyah": 3,
+    "ayahCount": 3,
+    "lengthTier": "very_short",
+    "lengthLabel": "قصير جداً",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة العصر",
+    "page": 601,
+    "theme": "مقاطع مختارة تامة المعنى من سورة العصر في التوحيد وعظمة الخالق",
     "rakah1End": 1,
     "rakah2Start": 2,
     "verses": [
@@ -4004,15 +4661,21 @@
   {
     "id": "shortEasy_104",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الهمزة",
     "surahNo": 104,
     "startAyah": 1,
-    "endAyah": 6,
+    "endAyah": 9,
+    "ayahCount": 9,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الهمزة",
-    "rakah1End": 3,
-    "rakah2Start": 4,
+    "page": 601,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الهمزة في التوحيد وعظمة الخالق",
+    "rakah1End": 4,
+    "rakah2Start": 5,
     "verses": [
       {
         "num": 1,
@@ -4037,19 +4700,37 @@
       {
         "num": 6,
         "text": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ"
+      },
+      {
+        "num": 7,
+        "text": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ"
+      },
+      {
+        "num": 8,
+        "text": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌۭ"
+      },
+      {
+        "num": 9,
+        "text": "فِى عَمَدٍۢ مُّمَدَّدَةٍۭ"
       }
     ]
   },
   {
     "id": "shortEasy_105",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الفيل",
     "surahNo": 105,
     "startAyah": 1,
     "endAyah": 5,
+    "ayahCount": 5,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفيل",
+    "page": 601,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفيل في التوحيد وعظمة الخالق",
     "rakah1End": 2,
     "rakah2Start": 3,
     "verses": [
@@ -4078,13 +4759,19 @@
   {
     "id": "shortEasy_106",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "قريش",
     "surahNo": 106,
     "startAyah": 1,
     "endAyah": 4,
+    "ayahCount": 4,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة قريش",
+    "page": 602,
+    "theme": "مقاطع مختارة تامة المعنى من سورة قريش في التوحيد وعظمة الخالق",
     "rakah1End": 2,
     "rakah2Start": 3,
     "verses": [
@@ -4109,13 +4796,19 @@
   {
     "id": "shortEasy_107",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الماعون",
     "surahNo": 107,
     "startAyah": 1,
     "endAyah": 7,
+    "ayahCount": 7,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الماعون",
+    "page": 602,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الماعون في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -4152,13 +4845,19 @@
   {
     "id": "shortEasy_108",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الكوثر",
     "surahNo": 108,
     "startAyah": 1,
     "endAyah": 3,
+    "ayahCount": 3,
+    "lengthTier": "very_short",
+    "lengthLabel": "قصير جداً",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الكوثر",
+    "page": 602,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الكوثر في التوحيد وعظمة الخالق",
     "rakah1End": 1,
     "rakah2Start": 2,
     "verses": [
@@ -4179,13 +4878,19 @@
   {
     "id": "shortEasy_110",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "النصر",
     "surahNo": 110,
     "startAyah": 1,
     "endAyah": 3,
+    "ayahCount": 3,
+    "lengthTier": "very_short",
+    "lengthLabel": "قصير جداً",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النصر",
+    "page": 603,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النصر في التوحيد وعظمة الخالق",
     "rakah1End": 1,
     "rakah2Start": 2,
     "verses": [
@@ -4206,13 +4911,19 @@
   {
     "id": "shortEasy_111",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "المسد",
     "surahNo": 111,
     "startAyah": 1,
     "endAyah": 5,
+    "ayahCount": 5,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المسد",
+    "page": 603,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المسد في التوحيد وعظمة الخالق",
     "rakah1End": 2,
     "rakah2Start": 3,
     "verses": [
@@ -4241,13 +4952,19 @@
   {
     "id": "shortEasy_112",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الإخلاص",
     "surahNo": 112,
     "startAyah": 1,
     "endAyah": 4,
+    "ayahCount": 4,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الإخلاص",
+    "page": 604,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الإخلاص في التوحيد وعظمة الخالق",
     "rakah1End": 2,
     "rakah2Start": 3,
     "verses": [
@@ -4272,13 +4989,19 @@
   {
     "id": "shortEasy_113",
     "book": "shortEasy",
-    "sourceName": "كتاب الآيات القصيرة",
+    "sourceName": "قـصـار السور للصلاة",
     "surahName": "الفلق",
     "surahNo": 113,
     "startAyah": 1,
     "endAyah": 5,
+    "ayahCount": 5,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفلق",
+    "page": 604,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفلق في التوحيد وعظمة الخالق",
     "rakah1End": 2,
     "rakah2Start": 3,
     "verses": [
@@ -4307,15 +5030,21 @@
   {
     "id": "mediumSelected_50",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "ق",
     "surahNo": 50,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة ق",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 518,
+    "theme": "مقاطع مختارة تامة المعنى من سورة ق في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4348,21 +5077,35 @@
       {
         "num": 8,
         "text": "تَبْصِرَةًۭ وَذِكْرَىٰ لِكُلِّ عَبْدٍۢ مُّنِيبٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "وَنَزَّلْنَا مِنَ ٱلسَّمَآءِ مَآءًۭ مُّبَٰرَكًۭا فَأَنۢبَتْنَا بِهِۦ جَنَّٰتٍۢ وَحَبَّ ٱلْحَصِيدِ"
+      },
+      {
+        "num": 10,
+        "text": "وَٱلنَّخْلَ بَاسِقَٰتٍۢ لَّهَا طَلْعٌۭ نَّضِيدٌۭ"
       }
     ]
   },
   {
     "id": "mediumSelected_36",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "يس",
     "surahNo": 36,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 22,
-    "theme": "مقاطع مختارة تامة المعنى من سورة يس",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 440,
+    "theme": "مقاطع مختارة تامة المعنى من سورة يس في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4395,19 +5138,33 @@
       {
         "num": 8,
         "text": "إِنَّا جَعَلْنَا فِىٓ أَعْنَٰقِهِمْ أَغْلَٰلًۭا فَهِىَ إِلَى ٱلْأَذْقَانِ فَهُم مُّقْمَحُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَجَعَلْنَا مِنۢ بَيْنِ أَيْدِيهِمْ سَدًّۭا وَمِنْ خَلْفِهِمْ سَدًّۭا فَأَغْشَيْنَٰهُمْ فَهُمْ لَا يُبْصِرُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَسَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_1",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الفاتحة",
     "surahNo": 1,
     "startAyah": 1,
     "endAyah": 7,
+    "ayahCount": 7,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 1,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفاتحة",
+    "page": 1,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفاتحة في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [
@@ -4444,15 +5201,21 @@
   {
     "id": "mediumSelected_38",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "ص",
     "surahNo": 38,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 23,
-    "theme": "مقاطع مختارة تامة المعنى من سورة ص",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 453,
+    "theme": "مقاطع مختارة تامة المعنى من سورة ص في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4485,21 +5248,35 @@
       {
         "num": 8,
         "text": "أَءُنزِلَ عَلَيْهِ ٱلذِّكْرُ مِنۢ بَيْنِنَا ۚ بَلْ هُمْ فِى شَكٍّۢ مِّن ذِكْرِى ۖ بَل لَّمَّا يَذُوقُوا۟ عَذَابِ"
+      },
+      {
+        "num": 9,
+        "text": "أَمْ عِندَهُمْ خَزَآئِنُ رَحْمَةِ رَبِّكَ ٱلْعَزِيزِ ٱلْوَهَّابِ"
+      },
+      {
+        "num": 10,
+        "text": "أَمْ لَهُم مُّلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ۖ فَلْيَرْتَقُوا۟ فِى ٱلْأَسْبَٰبِ"
       }
     ]
   },
   {
     "id": "mediumSelected_3",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "آل عمران",
     "surahNo": 3,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 3,
-    "theme": "مقاطع مختارة تامة المعنى من سورة آل عمران",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 50,
+    "theme": "مقاطع مختارة تامة المعنى من سورة آل عمران في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4532,21 +5309,35 @@
       {
         "num": 8,
         "text": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ"
+      },
+      {
+        "num": 9,
+        "text": "رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍۢ لَّا رَيْبَ فِيهِ ۚ إِنَّ ٱللَّهَ لَا يُخْلِفُ ٱلْمِيعَادَ"
+      },
+      {
+        "num": 10,
+        "text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ لَن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَٰدُهُم مِّنَ ٱللَّهِ شَيْـًۭٔا ۖ وَأُو۟لَٰٓئِكَ هُمْ وَقُودُ ٱلنَّارِ"
       }
     ]
   },
   {
     "id": "mediumSelected_4",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "النساء",
     "surahNo": 4,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 4,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النساء",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 77,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النساء في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4579,21 +5370,35 @@
       {
         "num": 8,
         "text": "وَإِذَا حَضَرَ ٱلْقِسْمَةَ أُو۟لُوا۟ ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينُ فَٱرْزُقُوهُم مِّنْهُ وَقُولُوا۟ لَهُمْ قَوْلًۭا مَّعْرُوفًۭا"
+      },
+      {
+        "num": 9,
+        "text": "وَلْيَخْشَ ٱلَّذِينَ لَوْ تَرَكُوا۟ مِنْ خَلْفِهِمْ ذُرِّيَّةًۭ ضِعَٰفًا خَافُوا۟ عَلَيْهِمْ فَلْيَتَّقُوا۟ ٱللَّهَ وَلْيَقُولُوا۟ قَوْلًۭا سَدِيدًا"
+      },
+      {
+        "num": 10,
+        "text": "إِنَّ ٱلَّذِينَ يَأْكُلُونَ أَمْوَٰلَ ٱلْيَتَٰمَىٰ ظُلْمًا إِنَّمَا يَأْكُلُونَ فِى بُطُونِهِمْ نَارًۭا ۖ وَسَيَصْلَوْنَ سَعِيرًۭا"
       }
     ]
   },
   {
     "id": "mediumSelected_5",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "المائدة",
     "surahNo": 5,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "morals",
+    "topicLabel": "الأخلاق والتقوى والمعاملات",
     "juz": 6,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المائدة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 106,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المائدة في الأخلاق والتقوى والمعاملات",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4626,21 +5431,35 @@
       {
         "num": 8,
         "text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَوَّٰمِينَ لِلَّهِ شُهَدَآءَ بِٱلْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَـَٔانُ قَوْمٍ عَلَىٰٓ أَلَّا تَعْدِلُوا۟ ۚ ٱعْدِلُوا۟ هُوَ أَقْرَبُ لِلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ خَبِيرٌۢ بِمَا تَعْمَلُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَعَدَ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ ۙ لَهُم مَّغْفِرَةٌۭ وَأَجْرٌ عَظِيمٌۭ"
+      },
+      {
+        "num": 10,
+        "text": "وَٱلَّذِينَ كَفَرُوا۟ وَكَذَّبُوا۟ بِـَٔايَٰتِنَآ أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْجَحِيمِ"
       }
     ]
   },
   {
     "id": "mediumSelected_6",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأنعام",
     "surahNo": 6,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 7,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأنعام",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 128,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأنعام في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4673,21 +5492,35 @@
       {
         "num": 8,
         "text": "وَقَالُوا۟ لَوْلَآ أُنزِلَ عَلَيْهِ مَلَكٌۭ ۖ وَلَوْ أَنزَلْنَا مَلَكًۭا لَّقُضِىَ ٱلْأَمْرُ ثُمَّ لَا يُنظَرُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَلَوْ جَعَلْنَٰهُ مَلَكًۭا لَّجَعَلْنَٰهُ رَجُلًۭا وَلَلَبَسْنَا عَلَيْهِم مَّا يَلْبِسُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَلَقَدِ ٱسْتُهْزِئَ بِرُسُلٍۢ مِّن قَبْلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُوا۟ مِنْهُم مَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_7",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأعراف",
     "surahNo": 7,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 8,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأعراف",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 151,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأعراف في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4720,21 +5553,35 @@
       {
         "num": 8,
         "text": "وَٱلْوَزْنُ يَوْمَئِذٍ ٱلْحَقُّ ۚ فَمَن ثَقُلَتْ مَوَٰزِينُهُۥ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَمَنْ خَفَّتْ مَوَٰزِينُهُۥ فَأُو۟لَٰٓئِكَ ٱلَّذِينَ خَسِرُوٓا۟ أَنفُسَهُم بِمَا كَانُوا۟ بِـَٔايَٰتِنَا يَظْلِمُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَلَقَدْ مَكَّنَّٰكُمْ فِى ٱلْأَرْضِ وَجَعَلْنَا لَكُمْ فِيهَا مَعَٰيِشَ ۗ قَلِيلًۭا مَّا تَشْكُرُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_8",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأنفال",
     "surahNo": 8,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 9,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأنفال",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 177,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأنفال في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4767,21 +5614,35 @@
       {
         "num": 8,
         "text": "لِيُحِقَّ ٱلْحَقَّ وَيُبْطِلَ ٱلْبَٰطِلَ وَلَوْ كَرِهَ ٱلْمُجْرِمُونَ"
+      },
+      {
+        "num": 9,
+        "text": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَٱسْتَجَابَ لَكُمْ أَنِّى مُمِدُّكُم بِأَلْفٍۢ مِّنَ ٱلْمَلَٰٓئِكَةِ مُرْدِفِينَ"
+      },
+      {
+        "num": 10,
+        "text": "وَمَا جَعَلَهُ ٱللَّهُ إِلَّا بُشْرَىٰ وَلِتَطْمَئِنَّ بِهِۦ قُلُوبُكُمْ ۚ وَمَا ٱلنَّصْرُ إِلَّا مِنْ عِندِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ عَزِيزٌ حَكِيمٌ"
       }
     ]
   },
   {
     "id": "mediumSelected_9",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "التوبة",
     "surahNo": 9,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 10,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التوبة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 187,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التوبة في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4814,21 +5675,35 @@
       {
         "num": 8,
         "text": "كَيْفَ وَإِن يَظْهَرُوا۟ عَلَيْكُمْ لَا يَرْقُبُوا۟ فِيكُمْ إِلًّۭا وَلَا ذِمَّةًۭ ۚ يُرْضُونَكُم بِأَفْوَٰهِهِمْ وَتَأْبَىٰ قُلُوبُهُمْ وَأَكْثَرُهُمْ فَٰسِقُونَ"
+      },
+      {
+        "num": 9,
+        "text": "ٱشْتَرَوْا۟ بِـَٔايَٰتِ ٱللَّهِ ثَمَنًۭا قَلِيلًۭا فَصَدُّوا۟ عَن سَبِيلِهِۦٓ ۚ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ"
+      },
+      {
+        "num": 10,
+        "text": "لَا يَرْقُبُونَ فِى مُؤْمِنٍ إِلًّۭا وَلَا ذِمَّةًۭ ۚ وَأُو۟لَٰٓئِكَ هُمُ ٱلْمُعْتَدُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_10",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "يونس",
     "surahNo": 10,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 11,
-    "theme": "مقاطع مختارة تامة المعنى من سورة يونس",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 208,
+    "theme": "مقاطع مختارة تامة المعنى من سورة يونس في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4861,21 +5736,35 @@
       {
         "num": 8,
         "text": "أُو۟لَٰٓئِكَ مَأْوَىٰهُمُ ٱلنَّارُ بِمَا كَانُوا۟ يَكْسِبُونَ"
+      },
+      {
+        "num": 9,
+        "text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ يَهْدِيهِمْ رَبُّهُم بِإِيمَٰنِهِمْ ۖ تَجْرِى مِن تَحْتِهِمُ ٱلْأَنْهَٰرُ فِى جَنَّٰتِ ٱلنَّعِيمِ"
+      },
+      {
+        "num": 10,
+        "text": "دَعْوَىٰهُمْ فِيهَا سُبْحَٰنَكَ ٱللَّهُمَّ وَتَحِيَّتُهُمْ فِيهَا سَلَٰمٌۭ ۚ وَءَاخِرُ دَعْوَىٰهُمْ أَنِ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_11",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "هود",
     "surahNo": 11,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 11,
-    "theme": "مقاطع مختارة تامة المعنى من سورة هود",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 221,
+    "theme": "مقاطع مختارة تامة المعنى من سورة هود في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4908,21 +5797,35 @@
       {
         "num": 8,
         "text": "وَلَئِنْ أَخَّرْنَا عَنْهُمُ ٱلْعَذَابَ إِلَىٰٓ أُمَّةٍۢ مَّعْدُودَةٍۢ لَّيَقُولُنَّ مَا يَحْبِسُهُۥٓ ۗ أَلَا يَوْمَ يَأْتِيهِمْ لَيْسَ مَصْرُوفًا عَنْهُمْ وَحَاقَ بِهِم مَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَلَئِنْ أَذَقْنَا ٱلْإِنسَٰنَ مِنَّا رَحْمَةًۭ ثُمَّ نَزَعْنَٰهَا مِنْهُ إِنَّهُۥ لَيَـُٔوسٌۭ كَفُورٌۭ"
+      },
+      {
+        "num": 10,
+        "text": "وَلَئِنْ أَذَقْنَٰهُ نَعْمَآءَ بَعْدَ ضَرَّآءَ مَسَّتْهُ لَيَقُولَنَّ ذَهَبَ ٱلسَّيِّـَٔاتُ عَنِّىٓ ۚ إِنَّهُۥ لَفَرِحٌۭ فَخُورٌ"
       }
     ]
   },
   {
     "id": "mediumSelected_12",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "يوسف",
     "surahNo": 12,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 12,
-    "theme": "مقاطع مختارة تامة المعنى من سورة يوسف",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 235,
+    "theme": "مقاطع مختارة تامة المعنى من سورة يوسف في قصص الأنبياء والرسل والعِبر",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -4955,21 +5858,35 @@
       {
         "num": 8,
         "text": "إِذْ قَالُوا۟ لَيُوسُفُ وَأَخُوهُ أَحَبُّ إِلَىٰٓ أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِى ضَلَٰلٍۢ مُّبِينٍ"
+      },
+      {
+        "num": 9,
+        "text": "ٱقْتُلُوا۟ يُوسُفَ أَوِ ٱطْرَحُوهُ أَرْضًۭا يَخْلُ لَكُمْ وَجْهُ أَبِيكُمْ وَتَكُونُوا۟ مِنۢ بَعْدِهِۦ قَوْمًۭا صَٰلِحِينَ"
+      },
+      {
+        "num": 10,
+        "text": "قَالَ قَآئِلٌۭ مِّنْهُمْ لَا تَقْتُلُوا۟ يُوسُفَ وَأَلْقُوهُ فِى غَيَٰبَتِ ٱلْجُبِّ يَلْتَقِطْهُ بَعْضُ ٱلسَّيَّارَةِ إِن كُنتُمْ فَٰعِلِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_13",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الرعد",
     "surahNo": 13,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 13,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الرعد",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 249,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الرعد في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5002,21 +5919,35 @@
       {
         "num": 8,
         "text": "ٱللَّهُ يَعْلَمُ مَا تَحْمِلُ كُلُّ أُنثَىٰ وَمَا تَغِيضُ ٱلْأَرْحَامُ وَمَا تَزْدَادُ ۖ وَكُلُّ شَىْءٍ عِندَهُۥ بِمِقْدَارٍ"
+      },
+      {
+        "num": 9,
+        "text": "عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ٱلْكَبِيرُ ٱلْمُتَعَالِ"
+      },
+      {
+        "num": 10,
+        "text": "سَوَآءٌۭ مِّنكُم مَّنْ أَسَرَّ ٱلْقَوْلَ وَمَن جَهَرَ بِهِۦ وَمَنْ هُوَ مُسْتَخْفٍۭ بِٱلَّيْلِ وَسَارِبٌۢ بِٱلنَّهَارِ"
       }
     ]
   },
   {
     "id": "mediumSelected_14",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "إبراهيم",
     "surahNo": 14,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 13,
-    "theme": "مقاطع مختارة تامة المعنى من سورة إبراهيم",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 255,
+    "theme": "مقاطع مختارة تامة المعنى من سورة إبراهيم في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5049,21 +5980,35 @@
       {
         "num": 8,
         "text": "وَقَالَ مُوسَىٰٓ إِن تَكْفُرُوٓا۟ أَنتُمْ وَمَن فِى ٱلْأَرْضِ جَمِيعًۭا فَإِنَّ ٱللَّهَ لَغَنِىٌّ حَمِيدٌ"
+      },
+      {
+        "num": 9,
+        "text": "أَلَمْ يَأْتِكُمْ نَبَؤُا۟ ٱلَّذِينَ مِن قَبْلِكُمْ قَوْمِ نُوحٍۢ وَعَادٍۢ وَثَمُودَ ۛ وَٱلَّذِينَ مِنۢ بَعْدِهِمْ ۛ لَا يَعْلَمُهُمْ إِلَّا ٱللَّهُ ۚ جَآءَتْهُمْ رُسُلُهُم بِٱلْبَيِّنَٰتِ فَرَدُّوٓا۟ أَيْدِيَهُمْ فِىٓ أَفْوَٰهِهِمْ وَقَالُوٓا۟ إِنَّا كَفَرْنَا بِمَآ أُرْسِلْتُم بِهِۦ وَإِنَّا لَفِى شَكٍّۢ مِّمَّا تَدْعُونَنَآ إِلَيْهِ مُرِيبٍۢ"
+      },
+      {
+        "num": 10,
+        "text": "۞ قَالَتْ رُسُلُهُمْ أَفِى ٱللَّهِ شَكٌّۭ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ يَدْعُوكُمْ لِيَغْفِرَ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرَكُمْ إِلَىٰٓ أَجَلٍۢ مُّسَمًّۭى ۚ قَالُوٓا۟ إِنْ أَنتُمْ إِلَّا بَشَرٌۭ مِّثْلُنَا تُرِيدُونَ أَن تَصُدُّونَا عَمَّا كَانَ يَعْبُدُ ءَابَآؤُنَا فَأْتُونَا بِسُلْطَٰنٍۢ مُّبِينٍۢ"
       }
     ]
   },
   {
     "id": "mediumSelected_15",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الحجر",
     "surahNo": 15,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 14,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحجر",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 262,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحجر في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5096,21 +6041,35 @@
       {
         "num": 8,
         "text": "مَا نُنَزِّلُ ٱلْمَلَٰٓئِكَةَ إِلَّا بِٱلْحَقِّ وَمَا كَانُوٓا۟ إِذًۭا مُّنظَرِينَ"
+      },
+      {
+        "num": 9,
+        "text": "إِنَّا نَحْنُ نَزَّلْنَا ٱلذِّكْرَ وَإِنَّا لَهُۥ لَحَٰفِظُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَلَقَدْ أَرْسَلْنَا مِن قَبْلِكَ فِى شِيَعِ ٱلْأَوَّلِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_16",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "النحل",
     "surahNo": 16,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 14,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النحل",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 267,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النحل في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5143,21 +6102,35 @@
       {
         "num": 8,
         "text": "وَٱلْخَيْلَ وَٱلْبِغَالَ وَٱلْحَمِيرَ لِتَرْكَبُوهَا وَزِينَةًۭ ۚ وَيَخْلُقُ مَا لَا تَعْلَمُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَعَلَى ٱللَّهِ قَصْدُ ٱلسَّبِيلِ وَمِنْهَا جَآئِرٌۭ ۚ وَلَوْ شَآءَ لَهَدَىٰكُمْ أَجْمَعِينَ"
+      },
+      {
+        "num": 10,
+        "text": "هُوَ ٱلَّذِىٓ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءًۭ ۖ لَّكُم مِّنْهُ شَرَابٌۭ وَمِنْهُ شَجَرٌۭ فِيهِ تُسِيمُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_17",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الإسراء",
     "surahNo": 17,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 15,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الإسراء",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 282,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الإسراء في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5190,21 +6163,35 @@
       {
         "num": 8,
         "text": "عَسَىٰ رَبُّكُمْ أَن يَرْحَمَكُمْ ۚ وَإِنْ عُدتُّمْ عُدْنَا ۘ وَجَعَلْنَا جَهَنَّمَ لِلْكَٰفِرِينَ حَصِيرًا"
+      },
+      {
+        "num": 9,
+        "text": "إِنَّ هَٰذَا ٱلْقُرْءَانَ يَهْدِى لِلَّتِى هِىَ أَقْوَمُ وَيُبَشِّرُ ٱلْمُؤْمِنِينَ ٱلَّذِينَ يَعْمَلُونَ ٱلصَّٰلِحَٰتِ أَنَّ لَهُمْ أَجْرًۭا كَبِيرًۭا"
+      },
+      {
+        "num": 10,
+        "text": "وَأَنَّ ٱلَّذِينَ لَا يُؤْمِنُونَ بِٱلْءَاخِرَةِ أَعْتَدْنَا لَهُمْ عَذَابًا أَلِيمًۭا"
       }
     ]
   },
   {
     "id": "mediumSelected_18",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الكهف",
     "surahNo": 18,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 15,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الكهف",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 293,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الكهف في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5237,21 +6224,35 @@
       {
         "num": 8,
         "text": "وَإِنَّا لَجَٰعِلُونَ مَا عَلَيْهَا صَعِيدًۭا جُرُزًا"
+      },
+      {
+        "num": 9,
+        "text": "أَمْ حَسِبْتَ أَنَّ أَصْحَٰبَ ٱلْكَهْفِ وَٱلرَّقِيمِ كَانُوا۟ مِنْ ءَايَٰتِنَا عَجَبًا"
+      },
+      {
+        "num": 10,
+        "text": "إِذْ أَوَى ٱلْفِتْيَةُ إِلَى ٱلْكَهْفِ فَقَالُوا۟ رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحْمَةًۭ وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًۭا"
       }
     ]
   },
   {
     "id": "mediumSelected_20",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "طه",
     "surahNo": 20,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 16,
-    "theme": "مقاطع مختارة تامة المعنى من سورة طه",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 312,
+    "theme": "مقاطع مختارة تامة المعنى من سورة طه في قصص الأنبياء والرسل والعِبر",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5284,21 +6285,35 @@
       {
         "num": 8,
         "text": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ"
+      },
+      {
+        "num": 9,
+        "text": "وَهَلْ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ"
+      },
+      {
+        "num": 10,
+        "text": "إِذْ رَءَا نَارًۭا فَقَالَ لِأَهْلِهِ ٱمْكُثُوٓا۟ إِنِّىٓ ءَانَسْتُ نَارًۭا لَّعَلِّىٓ ءَاتِيكُم مِّنْهَا بِقَبَسٍ أَوْ أَجِدُ عَلَى ٱلنَّارِ هُدًۭى"
       }
     ]
   },
   {
     "id": "mediumSelected_21",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأنبياء",
     "surahNo": 21,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 17,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأنبياء",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 322,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأنبياء في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5331,21 +6346,35 @@
       {
         "num": 8,
         "text": "وَمَا جَعَلْنَٰهُمْ جَسَدًۭا لَّا يَأْكُلُونَ ٱلطَّعَامَ وَمَا كَانُوا۟ خَٰلِدِينَ"
+      },
+      {
+        "num": 9,
+        "text": "ثُمَّ صَدَقْنَٰهُمُ ٱلْوَعْدَ فَأَنجَيْنَٰهُمْ وَمَن نَّشَآءُ وَأَهْلَكْنَا ٱلْمُسْرِفِينَ"
+      },
+      {
+        "num": 10,
+        "text": "لَقَدْ أَنزَلْنَآ إِلَيْكُمْ كِتَٰبًۭا فِيهِ ذِكْرُكُمْ ۖ أَفَلَا تَعْقِلُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_22",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الحج",
     "surahNo": 22,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 17,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحج",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 332,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحج في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5378,21 +6407,35 @@
       {
         "num": 8,
         "text": "وَمِنَ ٱلنَّاسِ مَن يُجَٰدِلُ فِى ٱللَّهِ بِغَيْرِ عِلْمٍۢ وَلَا هُدًۭى وَلَا كِتَٰبٍۢ مُّنِيرٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "ثَانِىَ عِطْفِهِۦ لِيُضِلَّ عَن سَبِيلِ ٱللَّهِ ۖ لَهُۥ فِى ٱلدُّنْيَا خِزْىٌۭ ۖ وَنُذِيقُهُۥ يَوْمَ ٱلْقِيَٰمَةِ عَذَابَ ٱلْحَرِيقِ"
+      },
+      {
+        "num": 10,
+        "text": "ذَٰلِكَ بِمَا قَدَّمَتْ يَدَاكَ وَأَنَّ ٱللَّهَ لَيْسَ بِظَلَّٰمٍۢ لِّلْعَبِيدِ"
       }
     ]
   },
   {
     "id": "mediumSelected_23",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "المؤمنون",
     "surahNo": 23,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 18,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المؤمنون",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 342,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المؤمنون في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5425,21 +6468,35 @@
       {
         "num": 8,
         "text": "وَٱلَّذِينَ هُمْ لِأَمَٰنَٰتِهِمْ وَعَهْدِهِمْ رَٰعُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَٱلَّذِينَ هُمْ عَلَىٰ صَلَوَٰتِهِمْ يُحَافِظُونَ"
+      },
+      {
+        "num": 10,
+        "text": "أُو۟لَٰٓئِكَ هُمُ ٱلْوَٰرِثُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_24",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "النور",
     "surahNo": 24,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 18,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النور",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 350,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النور في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5472,21 +6529,35 @@
       {
         "num": 8,
         "text": "وَيَدْرَؤُا۟ عَنْهَا ٱلْعَذَابَ أَن تَشْهَدَ أَرْبَعَ شَهَٰدَٰتٍۭ بِٱللَّهِ ۙ إِنَّهُۥ لَمِنَ ٱلْكَٰذِبِينَ"
+      },
+      {
+        "num": 9,
+        "text": "وَٱلْخَٰمِسَةَ أَنَّ غَضَبَ ٱللَّهِ عَلَيْهَآ إِن كَانَ مِنَ ٱلصَّٰدِقِينَ"
+      },
+      {
+        "num": 10,
+        "text": "وَلَوْلَا فَضْلُ ٱللَّهِ عَلَيْكُمْ وَرَحْمَتُهُۥ وَأَنَّ ٱللَّهَ تَوَّابٌ حَكِيمٌ"
       }
     ]
   },
   {
     "id": "mediumSelected_25",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الفرقان",
     "surahNo": 25,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "paradise",
+    "topicLabel": "نعيم الجنة والرضوان",
     "juz": 18,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفرقان",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 359,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفرقان في نعيم الجنة والرضوان",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5519,21 +6590,35 @@
       {
         "num": 8,
         "text": "أَوْ يُلْقَىٰٓ إِلَيْهِ كَنزٌ أَوْ تَكُونُ لَهُۥ جَنَّةٌۭ يَأْكُلُ مِنْهَا ۚ وَقَالَ ٱلظَّٰلِمُونَ إِن تَتَّبِعُونَ إِلَّا رَجُلًۭا مَّسْحُورًا"
+      },
+      {
+        "num": 9,
+        "text": "ٱنظُرْ كَيْفَ ضَرَبُوا۟ لَكَ ٱلْأَمْثَٰلَ فَضَلُّوا۟ فَلَا يَسْتَطِيعُونَ سَبِيلًۭا"
+      },
+      {
+        "num": 10,
+        "text": "تَبَارَكَ ٱلَّذِىٓ إِن شَآءَ جَعَلَ لَكَ خَيْرًۭا مِّن ذَٰلِكَ جَنَّٰتٍۢ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ وَيَجْعَل لَّكَ قُصُورًۢا"
       }
     ]
   },
   {
     "id": "mediumSelected_26",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الشعراء",
     "surahNo": 26,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 19,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الشعراء",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 367,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الشعراء في قصص الأنبياء والرسل والعِبر",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5566,21 +6651,35 @@
       {
         "num": 8,
         "text": "إِنَّ فِى ذَٰلِكَ لَءَايَةًۭ ۖ وَمَا كَانَ أَكْثَرُهُم مُّؤْمِنِينَ"
+      },
+      {
+        "num": 9,
+        "text": "وَإِنَّ رَبَّكَ لَهُوَ ٱلْعَزِيزُ ٱلرَّحِيمُ"
+      },
+      {
+        "num": 10,
+        "text": "وَإِذْ نَادَىٰ رَبُّكَ مُوسَىٰٓ أَنِ ٱئْتِ ٱلْقَوْمَ ٱلظَّٰلِمِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_27",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "النمل",
     "surahNo": 27,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 19,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النمل",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 377,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النمل في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5613,21 +6712,35 @@
       {
         "num": 8,
         "text": "فَلَمَّا جَآءَهَا نُودِىَ أَنۢ بُورِكَ مَن فِى ٱلنَّارِ وَمَنْ حَوْلَهَا وَسُبْحَٰنَ ٱللَّهِ رَبِّ ٱلْعَٰلَمِينَ"
+      },
+      {
+        "num": 9,
+        "text": "يَٰمُوسَىٰٓ إِنَّهُۥٓ أَنَا ٱللَّهُ ٱلْعَزِيزُ ٱلْحَكِيمُ"
+      },
+      {
+        "num": 10,
+        "text": "وَأَلْقِ عَصَاكَ ۚ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّۭ وَلَّىٰ مُدْبِرًۭا وَلَمْ يُعَقِّبْ ۚ يَٰمُوسَىٰ لَا تَخَفْ إِنِّى لَا يَخَافُ لَدَىَّ ٱلْمُرْسَلُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_28",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "القصص",
     "surahNo": 28,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 20,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القصص",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 385,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القصص في قصص الأنبياء والرسل والعِبر",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5660,21 +6773,35 @@
       {
         "num": 8,
         "text": "فَٱلْتَقَطَهُۥٓ ءَالُ فِرْعَوْنَ لِيَكُونَ لَهُمْ عَدُوًّۭا وَحَزَنًا ۗ إِنَّ فِرْعَوْنَ وَهَٰمَٰنَ وَجُنُودَهُمَا كَانُوا۟ خَٰطِـِٔينَ"
+      },
+      {
+        "num": 9,
+        "text": "وَقَالَتِ ٱمْرَأَتُ فِرْعَوْنَ قُرَّتُ عَيْنٍۢ لِّى وَلَكَ ۖ لَا تَقْتُلُوهُ عَسَىٰٓ أَن يَنفَعَنَآ أَوْ نَتَّخِذَهُۥ وَلَدًۭا وَهُمْ لَا يَشْعُرُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَىٰ فَٰرِغًا ۖ إِن كَادَتْ لَتُبْدِى بِهِۦ لَوْلَآ أَن رَّبَطْنَا عَلَىٰ قَلْبِهَا لِتَكُونَ مِنَ ٱلْمُؤْمِنِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_29",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "العنكبوت",
     "surahNo": 29,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 20,
-    "theme": "مقاطع مختارة تامة المعنى من سورة العنكبوت",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 396,
+    "theme": "مقاطع مختارة تامة المعنى من سورة العنكبوت في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5707,21 +6834,35 @@
       {
         "num": 8,
         "text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ حُسْنًۭا ۖ وَإِن جَٰهَدَاكَ لِتُشْرِكَ بِى مَا لَيْسَ لَكَ بِهِۦ عِلْمٌۭ فَلَا تُطِعْهُمَآ ۚ إِلَىَّ مَرْجِعُكُمْ فَأُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَنُدْخِلَنَّهُمْ فِى ٱلصَّٰلِحِينَ"
+      },
+      {
+        "num": 10,
+        "text": "وَمِنَ ٱلنَّاسِ مَن يَقُولُ ءَامَنَّا بِٱللَّهِ فَإِذَآ أُوذِىَ فِى ٱللَّهِ جَعَلَ فِتْنَةَ ٱلنَّاسِ كَعَذَابِ ٱللَّهِ وَلَئِن جَآءَ نَصْرٌۭ مِّن رَّبِّكَ لَيَقُولُنَّ إِنَّا كُنَّا مَعَكُمْ ۚ أَوَلَيْسَ ٱللَّهُ بِأَعْلَمَ بِمَا فِى صُدُورِ ٱلْعَٰلَمِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_30",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الروم",
     "surahNo": 30,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الروم",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 404,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الروم في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5754,21 +6895,35 @@
       {
         "num": 8,
         "text": "أَوَلَمْ يَتَفَكَّرُوا۟ فِىٓ أَنفُسِهِم ۗ مَّا خَلَقَ ٱللَّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَآ إِلَّا بِٱلْحَقِّ وَأَجَلٍۢ مُّسَمًّۭى ۗ وَإِنَّ كَثِيرًۭا مِّنَ ٱلنَّاسِ بِلِقَآئِ رَبِّهِمْ لَكَٰفِرُونَ"
+      },
+      {
+        "num": 9,
+        "text": "أَوَلَمْ يَسِيرُوا۟ فِى ٱلْأَرْضِ فَيَنظُرُوا۟ كَيْفَ كَانَ عَٰقِبَةُ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ كَانُوٓا۟ أَشَدَّ مِنْهُمْ قُوَّةًۭ وَأَثَارُوا۟ ٱلْأَرْضَ وَعَمَرُوهَآ أَكْثَرَ مِمَّا عَمَرُوهَا وَجَآءَتْهُمْ رُسُلُهُم بِٱلْبَيِّنَٰتِ ۖ فَمَا كَانَ ٱللَّهُ لِيَظْلِمَهُمْ وَلَٰكِن كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ"
+      },
+      {
+        "num": 10,
+        "text": "ثُمَّ كَانَ عَٰقِبَةَ ٱلَّذِينَ أَسَٰٓـُٔوا۟ ٱلسُّوٓأَىٰٓ أَن كَذَّبُوا۟ بِـَٔايَٰتِ ٱللَّهِ وَكَانُوا۟ بِهَا يَسْتَهْزِءُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_31",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "لقمان",
     "surahNo": 31,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة لقمان",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 411,
+    "theme": "مقاطع مختارة تامة المعنى من سورة لقمان في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5801,21 +6956,35 @@
       {
         "num": 8,
         "text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَهُمْ جَنَّٰتُ ٱلنَّعِيمِ"
+      },
+      {
+        "num": 9,
+        "text": "خَٰلِدِينَ فِيهَا ۖ وَعْدَ ٱللَّهِ حَقًّۭا ۚ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ"
+      },
+      {
+        "num": 10,
+        "text": "خَلَقَ ٱلسَّمَٰوَٰتِ بِغَيْرِ عَمَدٍۢ تَرَوْنَهَا ۖ وَأَلْقَىٰ فِى ٱلْأَرْضِ رَوَٰسِىَ أَن تَمِيدَ بِكُمْ وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٍۢ ۚ وَأَنزَلْنَا مِنَ ٱلسَّمَآءِ مَآءًۭ فَأَنۢبَتْنَا فِيهَا مِن كُلِّ زَوْجٍۢ كَرِيمٍ"
       }
     ]
   },
   {
     "id": "mediumSelected_32",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "السجدة",
     "surahNo": 32,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة السجدة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 415,
+    "theme": "مقاطع مختارة تامة المعنى من سورة السجدة في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5848,21 +7017,35 @@
       {
         "num": 8,
         "text": "ثُمَّ جَعَلَ نَسْلَهُۥ مِن سُلَٰلَةٍۢ مِّن مَّآءٍۢ مَّهِينٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "ثُمَّ سَوَّىٰهُ وَنَفَخَ فِيهِ مِن رُّوحِهِۦ ۖ وَجَعَلَ لَكُمُ ٱلسَّمْعَ وَٱلْأَبْصَٰرَ وَٱلْأَفْـِٔدَةَ ۚ قَلِيلًۭا مَّا تَشْكُرُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَقَالُوٓا۟ أَءِذَا ضَلَلْنَا فِى ٱلْأَرْضِ أَءِنَّا لَفِى خَلْقٍۢ جَدِيدٍۭ ۚ بَلْ هُم بِلِقَآءِ رَبِّهِمْ كَٰفِرُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_33",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأحزاب",
     "surahNo": 33,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 21,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأحزاب",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 418,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأحزاب في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5895,21 +7078,35 @@
       {
         "num": 8,
         "text": "لِّيَسْـَٔلَ ٱلصَّٰدِقِينَ عَن صِدْقِهِمْ ۚ وَأَعَدَّ لِلْكَٰفِرِينَ عَذَابًا أَلِيمًۭا"
+      },
+      {
+        "num": 9,
+        "text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱذْكُرُوا۟ نِعْمَةَ ٱللَّهِ عَلَيْكُمْ إِذْ جَآءَتْكُمْ جُنُودٌۭ فَأَرْسَلْنَا عَلَيْهِمْ رِيحًۭا وَجُنُودًۭا لَّمْ تَرَوْهَا ۚ وَكَانَ ٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرًا"
+      },
+      {
+        "num": 10,
+        "text": "إِذْ جَآءُوكُم مِّن فَوْقِكُمْ وَمِنْ أَسْفَلَ مِنكُمْ وَإِذْ زَاغَتِ ٱلْأَبْصَٰرُ وَبَلَغَتِ ٱلْقُلُوبُ ٱلْحَنَاجِرَ وَتَظُنُّونَ بِٱللَّهِ ٱلظُّنُونَا۠"
       }
     ]
   },
   {
     "id": "mediumSelected_34",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "سبأ",
     "surahNo": 34,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 22,
-    "theme": "مقاطع مختارة تامة المعنى من سورة سبأ",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 428,
+    "theme": "مقاطع مختارة تامة المعنى من سورة سبأ في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5942,21 +7139,35 @@
       {
         "num": 8,
         "text": "أَفْتَرَىٰ عَلَى ٱللَّهِ كَذِبًا أَم بِهِۦ جِنَّةٌۢ ۗ بَلِ ٱلَّذِينَ لَا يُؤْمِنُونَ بِٱلْءَاخِرَةِ فِى ٱلْعَذَابِ وَٱلضَّلَٰلِ ٱلْبَعِيدِ"
+      },
+      {
+        "num": 9,
+        "text": "أَفَلَمْ يَرَوْا۟ إِلَىٰ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُم مِّنَ ٱلسَّمَآءِ وَٱلْأَرْضِ ۚ إِن نَّشَأْ نَخْسِفْ بِهِمُ ٱلْأَرْضَ أَوْ نُسْقِطْ عَلَيْهِمْ كِسَفًۭا مِّنَ ٱلسَّمَآءِ ۚ إِنَّ فِى ذَٰلِكَ لَءَايَةًۭ لِّكُلِّ عَبْدٍۢ مُّنِيبٍۢ"
+      },
+      {
+        "num": 10,
+        "text": "۞ وَلَقَدْ ءَاتَيْنَا دَاوُۥدَ مِنَّا فَضْلًۭا ۖ يَٰجِبَالُ أَوِّبِى مَعَهُۥ وَٱلطَّيْرَ ۖ وَأَلَنَّا لَهُ ٱلْحَدِيدَ"
       }
     ]
   },
   {
     "id": "mediumSelected_35",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "فاطر",
     "surahNo": 35,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 22,
-    "theme": "مقاطع مختارة تامة المعنى من سورة فاطر",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 434,
+    "theme": "مقاطع مختارة تامة المعنى من سورة فاطر في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -5989,21 +7200,35 @@
       {
         "num": 8,
         "text": "أَفَمَن زُيِّنَ لَهُۥ سُوٓءُ عَمَلِهِۦ فَرَءَاهُ حَسَنًۭا ۖ فَإِنَّ ٱللَّهَ يُضِلُّ مَن يَشَآءُ وَيَهْدِى مَن يَشَآءُ ۖ فَلَا تَذْهَبْ نَفْسُكَ عَلَيْهِمْ حَسَرَٰتٍ ۚ إِنَّ ٱللَّهَ عَلِيمٌۢ بِمَا يَصْنَعُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَٱللَّهُ ٱلَّذِىٓ أَرْسَلَ ٱلرِّيَٰحَ فَتُثِيرُ سَحَابًۭا فَسُقْنَٰهُ إِلَىٰ بَلَدٍۢ مَّيِّتٍۢ فَأَحْيَيْنَا بِهِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا ۚ كَذَٰلِكَ ٱلنُّشُورُ"
+      },
+      {
+        "num": 10,
+        "text": "مَن كَانَ يُرِيدُ ٱلْعِزَّةَ فَلِلَّهِ ٱلْعِزَّةُ جَمِيعًا ۚ إِلَيْهِ يَصْعَدُ ٱلْكَلِمُ ٱلطَّيِّبُ وَٱلْعَمَلُ ٱلصَّٰلِحُ يَرْفَعُهُۥ ۚ وَٱلَّذِينَ يَمْكُرُونَ ٱلسَّيِّـَٔاتِ لَهُمْ عَذَابٌۭ شَدِيدٌۭ ۖ وَمَكْرُ أُو۟لَٰٓئِكَ هُوَ يَبُورُ"
       }
     ]
   },
   {
     "id": "mediumSelected_37",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الصافات",
     "surahNo": 37,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "paradise",
+    "topicLabel": "نعيم الجنة والرضوان",
     "juz": 23,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الصافات",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 446,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الصافات في نعيم الجنة والرضوان",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6036,21 +7261,35 @@
       {
         "num": 8,
         "text": "لَّا يَسَّمَّعُونَ إِلَى ٱلْمَلَإِ ٱلْأَعْلَىٰ وَيُقْذَفُونَ مِن كُلِّ جَانِبٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "دُحُورًۭا ۖ وَلَهُمْ عَذَابٌۭ وَاصِبٌ"
+      },
+      {
+        "num": 10,
+        "text": "إِلَّا مَنْ خَطِفَ ٱلْخَطْفَةَ فَأَتْبَعَهُۥ شِهَابٌۭ ثَاقِبٌۭ"
       }
     ]
   },
   {
     "id": "mediumSelected_39",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الزمر",
     "surahNo": 39,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 23,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الزمر",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 458,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الزمر في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6083,21 +7322,35 @@
       {
         "num": 8,
         "text": "۞ وَإِذَا مَسَّ ٱلْإِنسَٰنَ ضُرٌّۭ دَعَا رَبَّهُۥ مُنِيبًا إِلَيْهِ ثُمَّ إِذَا خَوَّلَهُۥ نِعْمَةًۭ مِّنْهُ نَسِىَ مَا كَانَ يَدْعُوٓا۟ إِلَيْهِ مِن قَبْلُ وَجَعَلَ لِلَّهِ أَندَادًۭا لِّيُضِلَّ عَن سَبِيلِهِۦ ۚ قُلْ تَمَتَّعْ بِكُفْرِكَ قَلِيلًا ۖ إِنَّكَ مِنْ أَصْحَٰبِ ٱلنَّارِ"
+      },
+      {
+        "num": 9,
+        "text": "أَمَّنْ هُوَ قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًۭا وَقَآئِمًۭا يَحْذَرُ ٱلْءَاخِرَةَ وَيَرْجُوا۟ رَحْمَةَ رَبِّهِۦ ۗ قُلْ هَلْ يَسْتَوِى ٱلَّذِينَ يَعْلَمُونَ وَٱلَّذِينَ لَا يَعْلَمُونَ ۗ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَٰبِ"
+      },
+      {
+        "num": 10,
+        "text": "قُلْ يَٰعِبَادِ ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ رَبَّكُمْ ۚ لِلَّذِينَ أَحْسَنُوا۟ فِى هَٰذِهِ ٱلدُّنْيَا حَسَنَةٌۭ ۗ وَأَرْضُ ٱللَّهِ وَٰسِعَةٌ ۗ إِنَّمَا يُوَفَّى ٱلصَّٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍۢ"
       }
     ]
   },
   {
     "id": "mediumSelected_40",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "غافر",
     "surahNo": 40,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 24,
-    "theme": "مقاطع مختارة تامة المعنى من سورة غافر",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 467,
+    "theme": "مقاطع مختارة تامة المعنى من سورة غافر في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6130,21 +7383,35 @@
       {
         "num": 8,
         "text": "رَبَّنَا وَأَدْخِلْهُمْ جَنَّٰتِ عَدْنٍ ٱلَّتِى وَعَدتَّهُمْ وَمَن صَلَحَ مِنْ ءَابَآئِهِمْ وَأَزْوَٰجِهِمْ وَذُرِّيَّٰتِهِمْ ۚ إِنَّكَ أَنتَ ٱلْعَزِيزُ ٱلْحَكِيمُ"
+      },
+      {
+        "num": 9,
+        "text": "وَقِهِمُ ٱلسَّيِّـَٔاتِ ۚ وَمَن تَقِ ٱلسَّيِّـَٔاتِ يَوْمَئِذٍۢ فَقَدْ رَحِمْتَهُۥ ۚ وَذَٰلِكَ هُوَ ٱلْفَوْزُ ٱلْعَظِيمُ"
+      },
+      {
+        "num": 10,
+        "text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ يُنَادَوْنَ لَمَقْتُ ٱللَّهِ أَكْبَرُ مِن مَّقْتِكُمْ أَنفُسَكُمْ إِذْ تُدْعَوْنَ إِلَى ٱلْإِيمَٰنِ فَتَكْفُرُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_41",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "فصلت",
     "surahNo": 41,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 24,
-    "theme": "مقاطع مختارة تامة المعنى من سورة فصلت",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 477,
+    "theme": "مقاطع مختارة تامة المعنى من سورة فصلت في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6177,21 +7444,35 @@
       {
         "num": 8,
         "text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "۞ قُلْ أَئِنَّكُمْ لَتَكْفُرُونَ بِٱلَّذِى خَلَقَ ٱلْأَرْضَ فِى يَوْمَيْنِ وَتَجْعَلُونَ لَهُۥٓ أَندَادًۭا ۚ ذَٰلِكَ رَبُّ ٱلْعَٰلَمِينَ"
+      },
+      {
+        "num": 10,
+        "text": "وَجَعَلَ فِيهَا رَوَٰسِىَ مِن فَوْقِهَا وَبَٰرَكَ فِيهَا وَقَدَّرَ فِيهَآ أَقْوَٰتَهَا فِىٓ أَرْبَعَةِ أَيَّامٍۢ سَوَآءًۭ لِّلسَّآئِلِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_42",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الشورى",
     "surahNo": 42,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الشورى",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 483,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الشورى في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6224,21 +7505,35 @@
       {
         "num": 8,
         "text": "وَلَوْ شَآءَ ٱللَّهُ لَجَعَلَهُمْ أُمَّةًۭ وَٰحِدَةًۭ وَلَٰكِن يُدْخِلُ مَن يَشَآءُ فِى رَحْمَتِهِۦ ۚ وَٱلظَّٰلِمُونَ مَا لَهُم مِّن وَلِىٍّۢ وَلَا نَصِيرٍ"
+      },
+      {
+        "num": 9,
+        "text": "أَمِ ٱتَّخَذُوا۟ مِن دُونِهِۦٓ أَوْلِيَآءَ ۖ فَٱللَّهُ هُوَ ٱلْوَلِىُّ وَهُوَ يُحْىِ ٱلْمَوْتَىٰ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ"
+      },
+      {
+        "num": 10,
+        "text": "وَمَا ٱخْتَلَفْتُمْ فِيهِ مِن شَىْءٍۢ فَحُكْمُهُۥٓ إِلَى ٱللَّهِ ۚ ذَٰلِكُمُ ٱللَّهُ رَبِّى عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ"
       }
     ]
   },
   {
     "id": "mediumSelected_43",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الزخرف",
     "surahNo": 43,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الزخرف",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 489,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الزخرف في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6271,21 +7566,35 @@
       {
         "num": 8,
         "text": "فَأَهْلَكْنَآ أَشَدَّ مِنْهُم بَطْشًۭا وَمَضَىٰ مَثَلُ ٱلْأَوَّلِينَ"
+      },
+      {
+        "num": 9,
+        "text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ لَيَقُولُنَّ خَلَقَهُنَّ ٱلْعَزِيزُ ٱلْعَلِيمُ"
+      },
+      {
+        "num": 10,
+        "text": "ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ مَهْدًۭا وَجَعَلَ لَكُمْ فِيهَا سُبُلًۭا لَّعَلَّكُمْ تَهْتَدُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_44",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الدخان",
     "surahNo": 44,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 25,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الدخان",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 496,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الدخان في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6318,21 +7627,35 @@
       {
         "num": 8,
         "text": "لَآ إِلَٰهَ إِلَّا هُوَ يُحْىِۦ وَيُمِيتُ ۖ رَبُّكُمْ وَرَبُّ ءَابَآئِكُمُ ٱلْأَوَّلِينَ"
+      },
+      {
+        "num": 9,
+        "text": "بَلْ هُمْ فِى شَكٍّۢ يَلْعَبُونَ"
+      },
+      {
+        "num": 10,
+        "text": "فَٱرْتَقِبْ يَوْمَ تَأْتِى ٱلسَّمَآءُ بِدُخَانٍۢ مُّبِينٍۢ"
       }
     ]
   },
   {
     "id": "mediumSelected_46",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأحقاف",
     "surahNo": 46,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأحقاف",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 502,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأحقاف في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6365,21 +7688,35 @@
       {
         "num": 8,
         "text": "أَمْ يَقُولُونَ ٱفْتَرَىٰهُ ۖ قُلْ إِنِ ٱفْتَرَيْتُهُۥ فَلَا تَمْلِكُونَ لِى مِنَ ٱللَّهِ شَيْـًٔا ۖ هُوَ أَعْلَمُ بِمَا تُفِيضُونَ فِيهِ ۖ كَفَىٰ بِهِۦ شَهِيدًۢا بَيْنِى وَبَيْنَكُمْ ۖ وَهُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+      },
+      {
+        "num": 9,
+        "text": "قُلْ مَا كُنتُ بِدْعًۭا مِّنَ ٱلرُّسُلِ وَمَآ أَدْرِى مَا يُفْعَلُ بِى وَلَا بِكُمْ ۖ إِنْ أَتَّبِعُ إِلَّا مَا يُوحَىٰٓ إِلَىَّ وَمَآ أَنَا۠ إِلَّا نَذِيرٌۭ مُّبِينٌۭ"
+      },
+      {
+        "num": 10,
+        "text": "قُلْ أَرَءَيْتُمْ إِن كَانَ مِنْ عِندِ ٱللَّهِ وَكَفَرْتُم بِهِۦ وَشَهِدَ شَاهِدٌۭ مِّنۢ بَنِىٓ إِسْرَٰٓءِيلَ عَلَىٰ مِثْلِهِۦ فَـَٔامَنَ وَٱسْتَكْبَرْتُمْ ۖ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّٰلِمِينَ"
       }
     ]
   },
   {
     "id": "mediumSelected_47",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "محمد",
     "surahNo": 47,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة محمد",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 507,
+    "theme": "مقاطع مختارة تامة المعنى من سورة محمد في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6412,21 +7749,35 @@
       {
         "num": 8,
         "text": "وَٱلَّذِينَ كَفَرُوا۟ فَتَعْسًۭا لَّهُمْ وَأَضَلَّ أَعْمَٰلَهُمْ"
+      },
+      {
+        "num": 9,
+        "text": "ذَٰلِكَ بِأَنَّهُمْ كَرِهُوا۟ مَآ أَنزَلَ ٱللَّهُ فَأَحْبَطَ أَعْمَٰلَهُمْ"
+      },
+      {
+        "num": 10,
+        "text": "۞ أَفَلَمْ يَسِيرُوا۟ فِى ٱلْأَرْضِ فَيَنظُرُوا۟ كَيْفَ كَانَ عَٰقِبَةُ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ دَمَّرَ ٱللَّهُ عَلَيْهِمْ ۖ وَلِلْكَٰفِرِينَ أَمْثَٰلُهَا"
       }
     ]
   },
   {
     "id": "mediumSelected_48",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الفتح",
     "surahNo": 48,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الفتح",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 511,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الفتح في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6459,21 +7810,35 @@
       {
         "num": 8,
         "text": "إِنَّآ أَرْسَلْنَٰكَ شَٰهِدًۭا وَمُبَشِّرًۭا وَنَذِيرًۭا"
+      },
+      {
+        "num": 9,
+        "text": "لِّتُؤْمِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ وَتُعَزِّرُوهُ وَتُوَقِّرُوهُ وَتُسَبِّحُوهُ بُكْرَةًۭ وَأَصِيلًا"
+      },
+      {
+        "num": 10,
+        "text": "إِنَّ ٱلَّذِينَ يُبَايِعُونَكَ إِنَّمَا يُبَايِعُونَ ٱللَّهَ يَدُ ٱللَّهِ فَوْقَ أَيْدِيهِمْ ۚ فَمَن نَّكَثَ فَإِنَّمَا يَنكُثُ عَلَىٰ نَفْسِهِۦ ۖ وَمَنْ أَوْفَىٰ بِمَا عَٰهَدَ عَلَيْهُ ٱللَّهَ فَسَيُؤْتِيهِ أَجْرًا عَظِيمًۭا"
       }
     ]
   },
   {
     "id": "mediumSelected_49",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الحجرات",
     "surahNo": 49,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحجرات",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 515,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحجرات في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6506,21 +7871,35 @@
       {
         "num": 8,
         "text": "فَضْلًۭا مِّنَ ٱللَّهِ وَنِعْمَةًۭ ۚ وَٱللَّهُ عَلِيمٌ حَكِيمٌۭ"
+      },
+      {
+        "num": 9,
+        "text": "وَإِن طَآئِفَتَانِ مِنَ ٱلْمُؤْمِنِينَ ٱقْتَتَلُوا۟ فَأَصْلِحُوا۟ بَيْنَهُمَا ۖ فَإِنۢ بَغَتْ إِحْدَىٰهُمَا عَلَى ٱلْأُخْرَىٰ فَقَٰتِلُوا۟ ٱلَّتِى تَبْغِى حَتَّىٰ تَفِىٓءَ إِلَىٰٓ أَمْرِ ٱللَّهِ ۚ فَإِن فَآءَتْ فَأَصْلِحُوا۟ بَيْنَهُمَا بِٱلْعَدْلِ وَأَقْسِطُوٓا۟ ۖ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُقْسِطِينَ"
+      },
+      {
+        "num": 10,
+        "text": "إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌۭ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ ۚ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_51",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الذاريات",
     "surahNo": 51,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 26,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الذاريات",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 520,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الذاريات في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6553,21 +7932,35 @@
       {
         "num": 8,
         "text": "إِنَّكُمْ لَفِى قَوْلٍۢ مُّخْتَلِفٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "يُؤْفَكُ عَنْهُ مَنْ أُفِكَ"
+      },
+      {
+        "num": 10,
+        "text": "قُتِلَ ٱلْخَرَّٰصُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_53",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "النجم",
     "surahNo": 53,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النجم",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 526,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النجم في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6600,21 +7993,35 @@
       {
         "num": 8,
         "text": "ثُمَّ دَنَا فَتَدَلَّىٰ"
+      },
+      {
+        "num": 9,
+        "text": "فَكَانَ قَابَ قَوْسَيْنِ أَوْ أَدْنَىٰ"
+      },
+      {
+        "num": 10,
+        "text": "فَأَوْحَىٰٓ إِلَىٰ عَبْدِهِۦ مَآ أَوْحَىٰ"
       }
     ]
   },
   {
     "id": "mediumSelected_54",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "القمر",
     "surahNo": 54,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القمر",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 528,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القمر في قصص الأنبياء والرسل والعِبر",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6647,21 +8054,35 @@
       {
         "num": 8,
         "text": "مُّهْطِعِينَ إِلَى ٱلدَّاعِ ۖ يَقُولُ ٱلْكَٰفِرُونَ هَٰذَا يَوْمٌ عَسِرٌۭ"
+      },
+      {
+        "num": 9,
+        "text": "۞ كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍۢ فَكَذَّبُوا۟ عَبْدَنَا وَقَالُوا۟ مَجْنُونٌۭ وَٱزْدُجِرَ"
+      },
+      {
+        "num": 10,
+        "text": "فَدَعَا رَبَّهُۥٓ أَنِّى مَغْلُوبٌۭ فَٱنتَصِرْ"
       }
     ]
   },
   {
     "id": "mediumSelected_57",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الحديد",
     "surahNo": 57,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 27,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحديد",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 537,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحديد في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6694,21 +8115,35 @@
       {
         "num": 8,
         "text": "وَمَا لَكُمْ لَا تُؤْمِنُونَ بِٱللَّهِ ۙ وَٱلرَّسُولُ يَدْعُوكُمْ لِتُؤْمِنُوا۟ بِرَبِّكُمْ وَقَدْ أَخَذَ مِيثَٰقَكُمْ إِن كُنتُم مُّؤْمِنِينَ"
+      },
+      {
+        "num": 9,
+        "text": "هُوَ ٱلَّذِى يُنَزِّلُ عَلَىٰ عَبْدِهِۦٓ ءَايَٰتٍۭ بَيِّنَٰتٍۢ لِّيُخْرِجَكُم مِّنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ ۚ وَإِنَّ ٱللَّهَ بِكُمْ لَرَءُوفٌۭ رَّحِيمٌۭ"
+      },
+      {
+        "num": 10,
+        "text": "وَمَا لَكُمْ أَلَّا تُنفِقُوا۟ فِى سَبِيلِ ٱللَّهِ وَلِلَّهِ مِيرَٰثُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ لَا يَسْتَوِى مِنكُم مَّنْ أَنفَقَ مِن قَبْلِ ٱلْفَتْحِ وَقَٰتَلَ ۚ أُو۟لَٰٓئِكَ أَعْظَمُ دَرَجَةًۭ مِّنَ ٱلَّذِينَ أَنفَقُوا۟ مِنۢ بَعْدُ وَقَٰتَلُوا۟ ۚ وَكُلًّۭا وَعَدَ ٱللَّهُ ٱلْحُسْنَىٰ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ"
       }
     ]
   },
   {
     "id": "mediumSelected_58",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "المجادلة",
     "surahNo": 58,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المجادلة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 542,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المجادلة في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6741,21 +8176,35 @@
       {
         "num": 8,
         "text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ نُهُوا۟ عَنِ ٱلنَّجْوَىٰ ثُمَّ يَعُودُونَ لِمَا نُهُوا۟ عَنْهُ وَيَتَنَٰجَوْنَ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَإِذَا جَآءُوكَ حَيَّوْكَ بِمَا لَمْ يُحَيِّكَ بِهِ ٱللَّهُ وَيَقُولُونَ فِىٓ أَنفُسِهِمْ لَوْلَا يُعَذِّبُنَا ٱللَّهُ بِمَا نَقُولُ ۚ حَسْبُهُمْ جَهَنَّمُ يَصْلَوْنَهَا ۖ فَبِئْسَ ٱلْمَصِيرُ"
+      },
+      {
+        "num": 9,
+        "text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَٰجَيْتُمْ فَلَا تَتَنَٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+      },
+      {
+        "num": 10,
+        "text": "إِنَّمَا ٱلنَّجْوَىٰ مِنَ ٱلشَّيْطَٰنِ لِيَحْزُنَ ٱلَّذِينَ ءَامَنُوا۟ وَلَيْسَ بِضَآرِّهِمْ شَيْـًٔا إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_59",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الحشر",
     "surahNo": 59,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحشر",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 545,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحشر في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6788,21 +8237,35 @@
       {
         "num": 8,
         "text": "لِلْفُقَرَآءِ ٱلْمُهَٰجِرِينَ ٱلَّذِينَ أُخْرِجُوا۟ مِن دِيَٰرِهِمْ وَأَمْوَٰلِهِمْ يَبْتَغُونَ فَضْلًۭا مِّنَ ٱللَّهِ وَرِضْوَٰنًۭا وَيَنصُرُونَ ٱللَّهَ وَرَسُولَهُۥٓ ۚ أُو۟لَٰٓئِكَ هُمُ ٱلصَّٰدِقُونَ"
+      },
+      {
+        "num": 9,
+        "text": "وَٱلَّذِينَ تَبَوَّءُو ٱلدَّارَ وَٱلْإِيمَٰنَ مِن قَبْلِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ وَلَا يَجِدُونَ فِى صُدُورِهِمْ حَاجَةًۭ مِّمَّآ أُوتُوا۟ وَيُؤْثِرُونَ عَلَىٰٓ أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌۭ ۚ وَمَن يُوقَ شُحَّ نَفْسِهِۦ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَٱلَّذِينَ جَآءُو مِنۢ بَعْدِهِمْ يَقُولُونَ رَبَّنَا ٱغْفِرْ لَنَا وَلِإِخْوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّۭا لِّلَّذِينَ ءَامَنُوا۟ رَبَّنَآ إِنَّكَ رَءُوفٌۭ رَّحِيمٌ"
       }
     ]
   },
   {
     "id": "mediumSelected_60",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الممتحنة",
     "surahNo": 60,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الممتحنة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 549,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الممتحنة في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6835,21 +8298,35 @@
       {
         "num": 8,
         "text": "لَّا يَنْهَىٰكُمُ ٱللَّهُ عَنِ ٱلَّذِينَ لَمْ يُقَٰتِلُوكُمْ فِى ٱلدِّينِ وَلَمْ يُخْرِجُوكُم مِّن دِيَٰرِكُمْ أَن تَبَرُّوهُمْ وَتُقْسِطُوٓا۟ إِلَيْهِمْ ۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُقْسِطِينَ"
+      },
+      {
+        "num": 9,
+        "text": "إِنَّمَا يَنْهَىٰكُمُ ٱللَّهُ عَنِ ٱلَّذِينَ قَٰتَلُوكُمْ فِى ٱلدِّينِ وَأَخْرَجُوكُم مِّن دِيَٰرِكُمْ وَظَٰهَرُوا۟ عَلَىٰٓ إِخْرَاجِكُمْ أَن تَوَلَّوْهُمْ ۚ وَمَن يَتَوَلَّهُمْ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ"
+      },
+      {
+        "num": 10,
+        "text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا جَآءَكُمُ ٱلْمُؤْمِنَٰتُ مُهَٰجِرَٰتٍۢ فَٱمْتَحِنُوهُنَّ ۖ ٱللَّهُ أَعْلَمُ بِإِيمَٰنِهِنَّ ۖ فَإِنْ عَلِمْتُمُوهُنَّ مُؤْمِنَٰتٍۢ فَلَا تَرْجِعُوهُنَّ إِلَى ٱلْكُفَّارِ ۖ لَا هُنَّ حِلٌّۭ لَّهُمْ وَلَا هُمْ يَحِلُّونَ لَهُنَّ ۖ وَءَاتُوهُم مَّآ أَنفَقُوا۟ ۚ وَلَا جُنَاحَ عَلَيْكُمْ أَن تَنكِحُوهُنَّ إِذَآ ءَاتَيْتُمُوهُنَّ أُجُورَهُنَّ ۚ وَلَا تُمْسِكُوا۟ بِعِصَمِ ٱلْكَوَافِرِ وَسْـَٔلُوا۟ مَآ أَنفَقْتُمْ وَلْيَسْـَٔلُوا۟ مَآ أَنفَقُوا۟ ۚ ذَٰلِكُمْ حُكْمُ ٱللَّهِ ۖ يَحْكُمُ بَيْنَكُمْ ۚ وَٱللَّهُ عَلِيمٌ حَكِيمٌۭ"
       }
     ]
   },
   {
     "id": "mediumSelected_62",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الجمعة",
     "surahNo": 62,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الجمعة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 553,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الجمعة في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6882,21 +8359,35 @@
       {
         "num": 8,
         "text": "قُلْ إِنَّ ٱلْمَوْتَ ٱلَّذِى تَفِرُّونَ مِنْهُ فَإِنَّهُۥ مُلَٰقِيكُمْ ۖ ثُمَّ تُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ"
+      },
+      {
+        "num": 9,
+        "text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نُودِىَ لِلصَّلَوٰةِ مِن يَوْمِ ٱلْجُمُعَةِ فَٱسْعَوْا۟ إِلَىٰ ذِكْرِ ٱللَّهِ وَذَرُوا۟ ٱلْبَيْعَ ۚ ذَٰلِكُمْ خَيْرٌۭ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ"
+      },
+      {
+        "num": 10,
+        "text": "فَإِذَا قُضِيَتِ ٱلصَّلَوٰةُ فَٱنتَشِرُوا۟ فِى ٱلْأَرْضِ وَٱبْتَغُوا۟ مِن فَضْلِ ٱللَّهِ وَٱذْكُرُوا۟ ٱللَّهَ كَثِيرًۭا لَّعَلَّكُمْ تُفْلِحُونَ"
       }
     ]
   },
   {
     "id": "mediumSelected_64",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "التغابن",
     "surahNo": 64,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التغابن",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 556,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التغابن في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6929,21 +8420,35 @@
       {
         "num": 8,
         "text": "فَـَٔامِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ وَٱلنُّورِ ٱلَّذِىٓ أَنزَلْنَا ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ"
+      },
+      {
+        "num": 9,
+        "text": "يَوْمَ يَجْمَعُكُمْ لِيَوْمِ ٱلْجَمْعِ ۖ ذَٰلِكَ يَوْمُ ٱلتَّغَابُنِ ۗ وَمَن يُؤْمِنۢ بِٱللَّهِ وَيَعْمَلْ صَٰلِحًۭا يُكَفِّرْ عَنْهُ سَيِّـَٔاتِهِۦ وَيُدْخِلْهُ جَنَّٰتٍۢ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدًۭا ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْعَظِيمُ"
+      },
+      {
+        "num": 10,
+        "text": "وَٱلَّذِينَ كَفَرُوا۟ وَكَذَّبُوا۟ بِـَٔايَٰتِنَآ أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ خَٰلِدِينَ فِيهَا ۖ وَبِئْسَ ٱلْمَصِيرُ"
       }
     ]
   },
   {
     "id": "mediumSelected_65",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الطلاق",
     "surahNo": 65,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 28,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الطلاق",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 558,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الطلاق في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -6976,21 +8481,35 @@
       {
         "num": 8,
         "text": "وَكَأَيِّن مِّن قَرْيَةٍ عَتَتْ عَنْ أَمْرِ رَبِّهَا وَرُسُلِهِۦ فَحَاسَبْنَٰهَا حِسَابًۭا شَدِيدًۭا وَعَذَّبْنَٰهَا عَذَابًۭا نُّكْرًۭا"
+      },
+      {
+        "num": 9,
+        "text": "فَذَاقَتْ وَبَالَ أَمْرِهَا وَكَانَ عَٰقِبَةُ أَمْرِهَا خُسْرًا"
+      },
+      {
+        "num": 10,
+        "text": "أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًۭا شَدِيدًۭا ۖ فَٱتَّقُوا۟ ٱللَّهَ يَٰٓأُو۟لِى ٱلْأَلْبَٰبِ ٱلَّذِينَ ءَامَنُوا۟ ۚ قَدْ أَنزَلَ ٱللَّهُ إِلَيْكُمْ ذِكْرًۭا"
       }
     ]
   },
   {
     "id": "mediumSelected_67",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الملك",
     "surahNo": 67,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الملك",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 562,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الملك في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7023,21 +8542,35 @@
       {
         "num": 8,
         "text": "تَكَادُ تَمَيَّزُ مِنَ ٱلْغَيْظِ ۖ كُلَّمَآ أُلْقِىَ فِيهَا فَوْجٌۭ سَأَلَهُمْ خَزَنَتُهَآ أَلَمْ يَأْتِكُمْ نَذِيرٌۭ"
+      },
+      {
+        "num": 9,
+        "text": "قَالُوا۟ بَلَىٰ قَدْ جَآءَنَا نَذِيرٌۭ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ ٱللَّهُ مِن شَىْءٍ إِنْ أَنتُمْ إِلَّا فِى ضَلَٰلٍۢ كَبِيرٍۢ"
+      },
+      {
+        "num": 10,
+        "text": "وَقَالُوا۟ لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِىٓ أَصْحَٰبِ ٱلسَّعِيرِ"
       }
     ]
   },
   {
     "id": "mediumSelected_68",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "القلم",
     "surahNo": 68,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القلم",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 564,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القلم في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7070,21 +8603,35 @@
       {
         "num": 8,
         "text": "فَلَا تُطِعِ ٱلْمُكَذِّبِينَ"
+      },
+      {
+        "num": 9,
+        "text": "وَدُّوا۟ لَوْ تُدْهِنُ فَيُدْهِنُونَ"
+      },
+      {
+        "num": 10,
+        "text": "وَلَا تُطِعْ كُلَّ حَلَّافٍۢ مَّهِينٍ"
       }
     ]
   },
   {
     "id": "mediumSelected_69",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الحاقة",
     "surahNo": 69,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "prophets",
+    "topicLabel": "قصص الأنبياء والرسل والعِبر",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الحاقة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 566,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الحاقة في قصص الأنبياء والرسل والعِبر",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7117,21 +8664,35 @@
       {
         "num": 8,
         "text": "فَهَلْ تَرَىٰ لَهُم مِّنۢ بَاقِيَةٍۢ"
+      },
+      {
+        "num": 9,
+        "text": "وَجَآءَ فِرْعَوْنُ وَمَن قَبْلَهُۥ وَٱلْمُؤْتَفِكَٰتُ بِٱلْخَاطِئَةِ"
+      },
+      {
+        "num": 10,
+        "text": "فَعَصَوْا۟ رَسُولَ رَبِّهِمْ فَأَخَذَهُمْ أَخْذَةًۭ رَّابِيَةً"
       }
     ]
   },
   {
     "id": "mediumSelected_71",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "نوح",
     "surahNo": 71,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "afterlife",
+    "topicLabel": "أهوال القيامة والمواعظ",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة نوح",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 570,
+    "theme": "مقاطع مختارة تامة المعنى من سورة نوح في أهوال القيامة والمواعظ",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7164,21 +8725,35 @@
       {
         "num": 8,
         "text": "ثُمَّ إِنِّى دَعَوْتُهُمْ جِهَارًۭا"
+      },
+      {
+        "num": 9,
+        "text": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًۭا"
+      },
+      {
+        "num": 10,
+        "text": "فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًۭا"
       }
     ]
   },
   {
     "id": "mediumSelected_75",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "القيامة",
     "surahNo": 75,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة القيامة",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 577,
+    "theme": "مقاطع مختارة تامة المعنى من سورة القيامة في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7211,21 +8786,35 @@
       {
         "num": 8,
         "text": "وَخَسَفَ ٱلْقَمَرُ"
+      },
+      {
+        "num": 9,
+        "text": "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ"
+      },
+      {
+        "num": 10,
+        "text": "يَقُولُ ٱلْإِنسَٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ"
       }
     ]
   },
   {
     "id": "mediumSelected_77",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "المرسلات",
     "surahNo": 77,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 29,
-    "theme": "مقاطع مختارة تامة المعنى من سورة المرسلات",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 580,
+    "theme": "مقاطع مختارة تامة المعنى من سورة المرسلات في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7258,21 +8847,35 @@
       {
         "num": 8,
         "text": "فَإِذَا ٱلنُّجُومُ طُمِسَتْ"
+      },
+      {
+        "num": 9,
+        "text": "وَإِذَا ٱلسَّمَآءُ فُرِجَتْ"
+      },
+      {
+        "num": 10,
+        "text": "وَإِذَا ٱلْجِبَالُ نُسِفَتْ"
       }
     ]
   },
   {
     "id": "mediumSelected_79",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "النازعات",
     "surahNo": 79,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة النازعات",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 583,
+    "theme": "مقاطع مختارة تامة المعنى من سورة النازعات في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7305,21 +8908,35 @@
       {
         "num": 8,
         "text": "قُلُوبٌۭ يَوْمَئِذٍۢ وَاجِفَةٌ"
+      },
+      {
+        "num": 9,
+        "text": "أَبْصَٰرُهَا خَٰشِعَةٌۭ"
+      },
+      {
+        "num": 10,
+        "text": "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ"
       }
     ]
   },
   {
     "id": "mediumSelected_81",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "التكوير",
     "surahNo": 81,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة التكوير",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 586,
+    "theme": "مقاطع مختارة تامة المعنى من سورة التكوير في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7352,21 +8969,35 @@
       {
         "num": 8,
         "text": "وَإِذَا ٱلْمَوْءُۥدَةُ سُئِلَتْ"
+      },
+      {
+        "num": 9,
+        "text": "بِأَىِّ ذَنۢبٍۢ قُتِلَتْ"
+      },
+      {
+        "num": 10,
+        "text": "وَإِذَا ٱلصُّحُفُ نُشِرَتْ"
       }
     ]
   },
   {
     "id": "mediumSelected_84",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الانشقاق",
     "surahNo": 84,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الانشقاق",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 589,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الانشقاق في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7399,21 +9030,35 @@
       {
         "num": 8,
         "text": "فَسَوْفَ يُحَاسَبُ حِسَابًۭا يَسِيرًۭا"
+      },
+      {
+        "num": 9,
+        "text": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًۭا"
+      },
+      {
+        "num": 10,
+        "text": "وَأَمَّا مَنْ أُوتِىَ كِتَٰبَهُۥ وَرَآءَ ظَهْرِهِۦ"
       }
     ]
   },
   {
     "id": "mediumSelected_87",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الأعلى",
     "surahNo": 87,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الأعلى",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 591,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الأعلى في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7446,21 +9091,35 @@
       {
         "num": 8,
         "text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ"
+      },
+      {
+        "num": 9,
+        "text": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ"
+      },
+      {
+        "num": 10,
+        "text": "سَيَذَّكَّرُ مَن يَخْشَىٰ"
       }
     ]
   },
   {
     "id": "mediumSelected_92",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الليل",
     "surahNo": 92,
     "startAyah": 1,
-    "endAyah": 8,
+    "endAyah": 10,
+    "ayahCount": 10,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الليل",
-    "rakah1End": 4,
-    "rakah2Start": 5,
+    "page": 595,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الليل في التوحيد وعظمة الخالق",
+    "rakah1End": 5,
+    "rakah2Start": 6,
     "verses": [
       {
         "num": 1,
@@ -7493,19 +9152,33 @@
       {
         "num": 8,
         "text": "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ"
+      },
+      {
+        "num": 9,
+        "text": "وَكَذَّبَ بِٱلْحُسْنَىٰ"
+      },
+      {
+        "num": 10,
+        "text": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ"
       }
     ]
   },
   {
     "id": "mediumSelected_98",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "البينة",
     "surahNo": 98,
     "startAyah": 1,
     "endAyah": 8,
+    "ayahCount": 8,
+    "lengthTier": "medium",
+    "lengthLabel": "متوسط",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة البينة",
+    "page": 598,
+    "theme": "مقاطع مختارة تامة المعنى من سورة البينة في التوحيد وعظمة الخالق",
     "rakah1End": 4,
     "rakah2Start": 5,
     "verses": [
@@ -7546,13 +9219,19 @@
   {
     "id": "mediumSelected_103",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "العصر",
     "surahNo": 103,
     "startAyah": 1,
     "endAyah": 3,
+    "ayahCount": 3,
+    "lengthTier": "very_short",
+    "lengthLabel": "قصير جداً",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة العصر",
+    "page": 601,
+    "theme": "مقاطع مختارة تامة المعنى من سورة العصر في التوحيد وعظمة الخالق",
     "rakah1End": 1,
     "rakah2Start": 2,
     "verses": [
@@ -7573,13 +9252,19 @@
   {
     "id": "mediumSelected_109",
     "book": "mediumSelected",
-    "sourceName": "الشيخ محمد المطري",
+    "sourceName": "آيات وسور مختارة للصلاة",
     "surahName": "الكافرون",
     "surahNo": 109,
     "startAyah": 1,
     "endAyah": 6,
+    "ayahCount": 6,
+    "lengthTier": "short",
+    "lengthLabel": "قصير",
+    "topicKey": "tawheed",
+    "topicLabel": "التوحيد وعظمة الخالق",
     "juz": 30,
-    "theme": "مقاطع مختارة تامة المعنى من سورة الكافرون",
+    "page": 603,
+    "theme": "مقاطع مختارة تامة المعنى من سورة الكافرون في التوحيد وعظمة الخالق",
     "rakah1End": 3,
     "rakah2Start": 4,
     "verses": [

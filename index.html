@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>مِحْرَابُ الإِمَام | رفيق التلاوة والوقف</title>
   
+  <!-- إعدادات تطبيق الويب التقدمي PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F382A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="المحراب">
+  <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2855/2855427.png">
+
+  <!-- خطوط عربية فاخرة -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   
   <style>
+    /* استدعاء خط مجمع الملك فهد لطباعة المصحف الشريف المعتمد برسم حفص */
+    @font-face {
+      font-family: 'KFGQPC Uthmanic Naskh';
+      src: url('https://cdn.jsdelivr.net/gh/quran/quran.com-frontend@master/public/fonts/quran/hafs/uthmanic_hafs_v22.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --primary: #0F382A;
       --primary-light: #18533E;
@@ -26,8 +44,8 @@
       --shadow-lg: 0 12px 32px rgba(15, 56, 42, 0.12);
       --radius: 18px;
       --transition: all 0.25s ease;
-      --quran-font-size: 1.55rem;
-      --reader-font-size: 1.7rem;
+      --quran-font-size: 1.65rem;
+      --reader-font-size: 1.8rem;
     }
 
     body.dark-mode {
@@ -60,7 +78,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 70px;
+      padding-bottom: 75px;
       overflow-x: hidden;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
@@ -277,7 +295,6 @@
       border-color: var(--gold);
     }
 
-    /* بطاقة نطاق الحفظ الاحترافية الجديدة */
     .memorization-scope-card {
       background: linear-gradient(135deg, rgba(197, 160, 89, 0.1) 0%, rgba(15, 56, 42, 0.06) 100%);
       border: 1.5px solid var(--border-gold);
@@ -413,6 +430,7 @@
       gap: 14px;
     }
 
+    /* تطبيق خط مجمع الملك فهد مع ميزات الـ OpenType لضبط التشكيل */
     .quran-text-wrapper {
       background: var(--card-bg);
       border: 1px solid var(--border-subtle);
@@ -420,11 +438,15 @@
       padding: 24px 18px;
       text-align: justify;
       text-align-last: center;
-      line-height: 2.8;
-      font-family: 'Amiri Quran', serif;
+      line-height: 2.85;
+      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
       font-size: var(--quran-font-size);
       color: var(--text-main);
       box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02);
+      font-feature-settings: "cv01", "cv02", "liga", "calt", "mkmk", "mark";
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      direction: rtl;
     }
 
     .verse-badge {
@@ -432,8 +454,8 @@
       align-items: center;
       justify-content: center;
       color: var(--gold);
-      font-family: 'Amiri Quran', serif;
-      font-size: 1.35rem;
+      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-size: 1.4rem;
       margin: 0 4px;
       font-weight: bold;
       user-select: none;
@@ -481,7 +503,7 @@
       box-shadow: 0 6px 18px rgba(197, 160, 89, 0.4);
     }
 
-    /* نافذة ضبط نطاق الحفظ الاحترافية (Studio Modal) */
+    /* نافذة نطاق الحفظ */
     .scope-modal-card {
       background: var(--card-bg);
       width: 100%;
@@ -697,12 +719,15 @@
       border-radius: 18px;
       padding: 35px 25px;
       box-shadow: var(--shadow-lg);
-      line-height: 2.8;
-      font-family: 'Amiri Quran', serif;
+      line-height: 2.9;
+      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
       font-size: var(--reader-font-size);
       text-align: justify;
       text-align-last: center;
       position: relative;
+      font-feature-settings: "cv01", "cv02", "liga", "calt", "mkmk", "mark";
+      -webkit-font-smoothing: antialiased;
+      direction: rtl;
     }
 
     .surah-banner {
@@ -712,7 +737,7 @@
       padding: 8px;
       text-align: center;
       margin: 20px 0;
-      font-family: 'Tajawal', sans-serif;
+      font-family: 'Tajawal', sans-serif !important;
       font-weight: 900;
       font-size: 1.25rem;
       color: var(--primary);
@@ -724,8 +749,8 @@
 
     .basmalah {
       text-align: center;
-      font-family: 'Amiri Quran', serif;
-      font-size: 1.6rem;
+      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-size: 1.7rem;
       color: var(--gold);
       margin-bottom: 20px;
       display: block;
@@ -764,36 +789,6 @@
       align-items: center;
       z-index: 1000;
       padding: 16px;
-    }
-
-    .modal-card {
-      background: var(--card-bg);
-      width: 100%;
-      max-width: 520px;
-      max-height: 82vh;
-      border-radius: var(--radius);
-      border: 1px solid var(--border-gold);
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-
-    .modal-header {
-      padding: 16px 20px;
-      background: var(--primary);
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .modal-body {
-      padding: 16px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
     }
 
     .toast {
@@ -897,7 +892,6 @@
         </div>
       </div>
 
-      <!-- بطاقة نطاق حفظ الإمام الجديدة بالكامل -->
       <div class="memorization-scope-card">
         <div>
           <div class="scope-info-title">
@@ -922,7 +916,7 @@
     <section id="cardsFeed"></section>
   </main>
 
-  <!-- نافذة تخصيص حفظ الإمام الاحترافية -->
+  <!-- نافذة تخصيص حفظ الإمام -->
   <div id="scopeModal" class="modal-overlay" onclick="closeScopeModal(event)">
     <div class="scope-modal-card" onclick="event.stopPropagation()">
       <div class="modal-header">
@@ -935,7 +929,7 @@
         <button class="scope-type-btn" onclick="switchScopeMode('surah', this)">بالسور المحددة (١١٤ سورة)</button>
       </div>
 
-      <div class="modal-body">
+      <div class="modal-body" style="padding:16px;">
         <div class="quick-presets-row">
           <button class="chip-filter" onclick="applyScopePreset('all')">المصحف كاملاً</button>
           <button class="chip-filter" onclick="applyScopePreset('amma')">جزء عم فقط (٣٠)</button>
@@ -944,13 +938,11 @@
           <button class="chip-filter" style="border-color:#D9534F; color:#D9534F;" onclick="applyScopePreset('clear')">إلغاء التحديد</button>
         </div>
 
-        <!-- وضع الأجزاء -->
         <div id="scopeModeJuz">
           <div style="font-size:0.84rem; font-weight:800; color:var(--text-muted); margin-bottom:6px;">اختر الأجزاء التي تحفظها (انقر لتفعيل/تعطيل الجزء):</div>
           <div id="juzGrid" class="juz-grid-selector"></div>
         </div>
 
-        <!-- وضع السور -->
         <div id="scopeModeSurah" style="display:none;">
           <input type="text" id="scopeSurahSearch" class="search-input" style="padding:8px 12px; margin-bottom:8px; font-size:0.85rem;" placeholder="ابحث عن اسم السورة..." oninput="filterScopeSurahs(this.value)">
           <div id="surahChecklist" class="surah-checklist"></div>
@@ -964,7 +956,7 @@
     </div>
   </div>
 
-  <!-- شاشة متصفح المصحف والكتب الشامل المدمج -->
+  <!-- متصفح المصحف والكتب الشامل -->
   <div id="readerModal" class="reader-modal">
     <div class="reader-header">
       <div style="display:flex; align-items:center; gap:10px;">
@@ -1009,12 +1001,12 @@
 
   <!-- نافذة المحظورات 48 ساعة -->
   <div id="lockedModal" class="modal-overlay" onclick="closeLockedModal(event)">
-    <div class="modal-card" onclick="event.stopPropagation()">
-      <div class="modal-header">
+    <div style="background:var(--card-bg); width:100%; max-width:520px; max-height:82vh; border-radius:var(--radius); border:1px solid var(--border-gold); box-shadow:var(--shadow-lg); display:flex; flex-direction:column; overflow:hidden;" onclick="event.stopPropagation()">
+      <div style="padding:16px 20px; background:var(--primary); color:#fff; display:flex; justify-content:space-between; align-items:center;">
         <div style="font-weight: 800; font-size: 1rem;">المقاطع المحظورة مؤقتاً (48 ساعة)</div>
         <button onclick="closeLockedModal(null)" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
       </div>
-      <div id="lockedModalBody" class="modal-body"></div>
+      <div id="lockedModalBody" style="padding:16px; overflow-y:auto; display:flex; flex-direction:column; gap:10px;"></div>
       <div style="padding: 12px; background:var(--bg); border-top:1px solid var(--border-subtle); text-align:center;">
         <button onclick="resetAllCooldowns()" style="background:#D9534F; color:#fff; border:none; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:0.85rem;">
           إلغاء حظر كافة المقاطع فوراً
@@ -1029,6 +1021,17 @@
   </div>
 
   <script>
+    // تفعيل Service Worker للعمل Offline
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(() => {
+          console.log('تم تفعيل مشغل المحراب Offline بنجاح');
+        }).catch(err => {
+          console.warn('تعذر تسجيل الخدمة:', err);
+        });
+      });
+    }
+
     const SURAH_NAMES = [
       "الفاتحة", "البقرة", "آل عمران", "النساء", "المائدة", "الأنعام", "الأعراف", "الأنفال", "التوبة", "يونس",
       "هود", "يوسف", "الرعد", "إبراهيم", "الحجر", "النحل", "الإسراء", "الكهف", "مريم", "طه",
@@ -1051,15 +1054,13 @@
     let selectedTopic = 'all';
     let searchQuery = '';
     let showFavsOnly = false;
-    let currentFontSizeRem = 1.55;
-    let readerFontSizeRem = 1.7;
+    let currentFontSizeRem = 1.65;
+    let readerFontSizeRem = 1.8;
 
-    // حالة الحفظ المخصص للإمام
-    let memorizedScopeMode = 'juz'; // 'juz' أو 'surah'
+    let memorizedScopeMode = 'juz';
     let selectedJuzs = new Set(Array.from({length: 30}, (_, i) => i + 1));
     let selectedSurahs = new Set(Array.from({length: 114}, (_, i) => i + 1));
 
-    // استرجاع الإعدادات
     if (localStorage.getItem('mihrab_dark') === 'true') {
       document.body.classList.add('dark-mode');
     }
@@ -1073,7 +1074,6 @@
       selectedSurahs = new Set(JSON.parse(localStorage.getItem('mihrab_saved_surahs')));
     }
 
-    // حالة المتصفح والقارئ
     let currentReaderSource = 'quran';
     let currentSurahIndex = 1;
     let currentBookIndex = 0;
@@ -1102,12 +1102,12 @@
     }
 
     function changeFontSize(delta) {
-      currentFontSizeRem = Math.max(1.2, Math.min(2.4, currentFontSizeRem + delta));
+      currentFontSizeRem = Math.max(1.3, Math.min(2.5, currentFontSizeRem + delta));
       document.documentElement.style.setProperty('--quran-font-size', currentFontSizeRem + 'rem');
     }
 
     function changeReaderFontSize(delta) {
-      readerFontSizeRem = Math.max(1.3, Math.min(2.8, readerFontSizeRem + delta));
+      readerFontSizeRem = Math.max(1.3, Math.min(2.9, readerFontSizeRem + delta));
       document.documentElement.style.setProperty('--reader-font-size', readerFontSizeRem + 'rem');
     }
 
@@ -1144,7 +1144,6 @@
       render();
     }
 
-    /* إدارة نافذة حفظ الإمام الاحترافية */
     function openScopeModal() {
       document.getElementById('scopeModal').style.display = 'flex';
       renderJuzGrid();
@@ -1223,13 +1222,13 @@
         selectedSurahs = new Set(Array.from({length: 114}, (_, i) => i + 1));
       } else if (preset === 'amma') {
         selectedJuzs = new Set([30]);
-        selectedSurahs = new Set(Array.from({length: 37}, (_, i) => 78 + i)); // من النبأ إلى الناس
+        selectedSurahs = new Set(Array.from({length: 37}, (_, i) => 78 + i));
       } else if (preset === 'tabarak_amma') {
         selectedJuzs = new Set([29, 30]);
-        selectedSurahs = new Set(Array.from({length: 48}, (_, i) => 67 + i)); // من الملك إلى الناس
+        selectedSurahs = new Set(Array.from({length: 48}, (_, i) => 67 + i));
       } else if (preset === 'last_ten') {
         selectedJuzs = new Set(Array.from({length: 10}, (_, i) => 21 + i));
-        selectedSurahs = new Set(Array.from({length: 86}, (_, i) => 29 + i)); // من العنكبوت إلى الناس
+        selectedSurahs = new Set(Array.from({length: 86}, (_, i) => 29 + i));
       } else if (preset === 'clear') {
         selectedJuzs.clear();
         selectedSurahs.clear();
@@ -1348,7 +1347,6 @@
           const exp = parseInt(localStorage.getItem('mihrab_cd_' + s.id));
           const hoursLeft = Math.max(1, Math.round((exp - Date.now()) / (1000 * 60 * 60)));
           const row = document.createElement('div');
-          row.className = 'locked-item-row';
           row.style.cssText = 'display:flex; justify-content:space-between; align-items:center; padding:10px 14px; background:var(--bg); border-radius:10px; border:1px solid var(--border-subtle);';
           row.innerHTML = `
             <div>
@@ -1382,7 +1380,6 @@
       render();
     }
 
-    /* متصفح وقارئ المصحف */
     function openReaderModal(src = 'quran') {
       document.getElementById('readerModal').style.display = 'flex';
       switchReaderSource(src);
@@ -1496,12 +1493,12 @@
 
         frame.innerHTML = `
           <div class="surah-banner">سُورَةُ ${currentItem.surahName} - الآيات (${toArabicDigits(currentItem.startAyah)} - ${toArabicDigits(currentItem.endAyah)})</div>
-          <div style="font-size:1rem; font-family:'Tajawal'; color:var(--gold); text-align:center; margin-bottom:18px; font-weight:800;">
+          <div style="font-size:1rem; font-family:'Tajawal' !important; color:var(--gold); text-align:center; margin-bottom:18px; font-weight:800;">
             الموضوع: ${currentItem.theme}
           </div>
           ${currentItem.surahNo !== 9 && currentItem.startAyah === 1 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
           <div style="text-align:justify; text-align-last:center;">${versesHtml}</div>
-          <div class="rakah-box" style="margin-top:25px; font-family:'Tajawal'; font-size:0.95rem;">
+          <div class="rakah-box" style="margin-top:25px; font-family:'Tajawal' !important; font-size:0.95rem;">
             <span>📖</span>
             <span>دليل الركعتين: الأولى تقف عند آية (${toArabicDigits(currentItem.rakah1End)})، والثانية تبدأ من آية (${toArabicDigits(currentItem.rakah2Start)}).</span>
           </div>
@@ -1542,7 +1539,6 @@
       }
     }
 
-    /* دالة العرض والتصفية المحدثة */
     function render() {
       const feed = document.getElementById('cardsFeed');
       feed.innerHTML = '';
@@ -1550,7 +1546,6 @@
       const seenPassages = new Set();
 
       const filtered = database.filter(item => {
-        // فلترة نطاق الحفظ الاحترافية (حسب النمط: أجزاء أو سور)
         if (memorizedScopeMode === 'juz') {
           if (!selectedJuzs.has(item.juz)) return false;
         } else {

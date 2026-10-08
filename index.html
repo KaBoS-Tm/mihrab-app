@@ -8,20 +8,12 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0F382A">
 
+  <!-- استدعاء الخطوط المصحفية المعتمدة والمستقرة عالمياً -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   
   <style>
-    /* استدعاء خط مجمع الملك فهد لطباعة المصحف الشريف بالمدينة المنورة برسم حفص */
-    @font-face {
-      font-family: 'KFGQPC Uthmanic Naskh';
-      src: url('https://cdn.jsdelivr.net/gh/quran/quran.com-frontend@master/public/fonts/quran/hafs/uthmanic_hafs_v22.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-
     :root {
       --primary: #0F382A;
       --primary-light: #18533E;
@@ -36,9 +28,9 @@
       --border-gold: rgba(197, 160, 89, 0.45);
       --shadow-sm: 0 4px 14px rgba(15, 56, 42, 0.05);
       --shadow-lg: 0 12px 32px rgba(15, 56, 42, 0.12);
-      --radius: 18px;
+      --radius: 16px;
       --transition: all 0.25s ease;
-      --quran-font-size: 1.6rem;
+      --quran-font-size: 1.65rem;
       --reader-font-size: 1.75rem;
     }
 
@@ -90,7 +82,7 @@
     }
 
     .header-content {
-      max-width: 820px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -137,6 +129,7 @@
       color: var(--primary);
     }
 
+    /* تخطيط الحاوية والتبديل بين وضعي الجوال والحاسوب */
     .container {
       width: 100%;
       max-width: 820px;
@@ -144,6 +137,16 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
+      transition: max-width 0.3s ease;
+    }
+
+    /* عند تفعيل وضع الحاسوب */
+    body.desktop-mode .container {
+      max-width: 1150px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      align-items: start;
+      gap: 18px;
     }
 
     .control-card {
@@ -374,7 +377,7 @@
       gap: 12px;
     }
 
-    /* تطبيق خط مجمع الملك فهد مع إعدادات ربط الحروف والتشكيل */
+    /* ضبط الخط القرآني وإلزام المتصفح بربط الحروف والتشكيل */
     .quran-text-wrapper, .mushaf-page-frame {
       background: var(--card-bg);
       border: 1px solid var(--border-subtle);
@@ -383,13 +386,15 @@
       text-align: justify;
       text-align-last: center;
       line-height: 2.85;
-      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-family: 'Amiri Quran', 'Amiri', serif !important;
       font-size: var(--quran-font-size);
       color: var(--text-main);
       direction: rtl;
-      font-feature-settings: "liga" 1, "calt" 1, "mkmk" 1, "mark" 1;
+      font-feature-settings: "liga" on, "calt" on, "mkmk" on, "mark" on;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
+      letter-spacing: 0;
+      word-spacing: 2px;
     }
 
     .verse-badge {
@@ -397,9 +402,9 @@
       align-items: center;
       justify-content: center;
       color: var(--gold);
-      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-family: 'Amiri Quran', serif !important;
       font-size: 1.35rem;
-      margin: 0 3px;
+      margin: 0 4px;
       font-weight: bold;
     }
 
@@ -426,7 +431,7 @@
       cursor: pointer;
     }
 
-    /* نافذة استوديو الحفظ */
+    /* نافذة الحفظ */
     .scope-modal-card {
       background: var(--card-bg);
       width: 100%;
@@ -461,25 +466,6 @@
       background: var(--gold);
       color: var(--primary);
       border-color: var(--gold);
-    }
-
-    .surah-checklist {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 6px;
-      max-height: 350px;
-      overflow-y: auto;
-    }
-
-    .surah-check-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
-      background: var(--bg);
-      border-radius: 6px;
-      font-size: 0.82rem;
-      font-weight: 700;
     }
 
     /* متصفح المصحف والكتب */
@@ -540,7 +526,7 @@
 
     .basmalah {
       text-align: center;
-      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-family: 'Amiri Quran', serif !important;
       font-size: 1.55rem;
       color: var(--gold);
       margin-bottom: 16px;
@@ -558,7 +544,6 @@
         box-shadow: -4px 0 16px rgba(0,0,0,0.3);
       }
       .juz-grid-selector { grid-template-columns: repeat(5, 1fr); }
-      .surah-checklist { grid-template-columns: 1fr; }
     }
 
     .modal-overlay {
@@ -611,6 +596,7 @@
       <div class="brand-title">مِحْرَابُ <span class="accent">الإِمَام</span></div>
       <div class="header-actions">
         <button class="icon-btn" onclick="openReaderModal('quran')">📖 تصفح الكتب</button>
+        <button class="icon-btn" onclick="toggleLayoutMode()" id="layoutToggleBtn">💻 حاسب</button>
         <button class="icon-btn" onclick="toggleDarkMode()" style="padding:0 8px;">🌙</button>
         <button class="icon-btn" onclick="openLockedModal()">
           <span>⏳</span>
@@ -746,7 +732,11 @@
     let selectedJuzs = new Set(Array.from({length: 30}, (_, i) => i + 1));
     let currentReaderSource = 'quran';
 
+    // تهيئة الإعدادات المحفوظة
     if (localStorage.getItem('mihrab_dark') === 'true') document.body.classList.add('dark-mode');
+    if (localStorage.getItem('mihrab_layout') === 'desktop') {
+      document.body.classList.add('desktop-mode');
+    }
     if (localStorage.getItem('mihrab_saved_juzs')) {
       selectedJuzs = new Set(JSON.parse(localStorage.getItem('mihrab_saved_juzs')));
     }
@@ -755,9 +745,28 @@
       return String(n).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
     }
 
+    /* دالة برمجية مهمة: تطبيع النصوص القرآنية لحل انفصال حرف اللام وتراكب الحركات المزعجة */
+    function cleanQuranText(text) {
+      if (!text) return '';
+      return text
+        .replace(/\u0671/g, 'ا') // تحويل همزة الوصل المصحفية التي تفصل اللام إلى ألف طبيعية متصلة
+        .replace(/\u06DF/g, '')  // إزالة الصفر المستدير غير المتوافق مع بعض الهواتف
+        .replace(/[\u06D6-\u06DC\u06E0-\u06E8]/g, '') // تنظيف علامات الوقف الإضافية المشوهة للسطر
+        .trim();
+    }
+
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       localStorage.setItem('mihrab_dark', document.body.classList.contains('dark-mode'));
+    }
+
+    /* دالة التبديل الفعلي بين وضع الجوال والحاسوب */
+    function toggleLayoutMode() {
+      const btn = document.getElementById('layoutToggleBtn');
+      document.body.classList.toggle('desktop-mode');
+      const isDesktop = document.body.classList.contains('desktop-mode');
+      localStorage.setItem('mihrab_layout', isDesktop ? 'desktop' : 'mobile');
+      btn.innerText = isDesktop ? '📱 جوال' : '💻 حاسب';
     }
 
     function setPrayer(p, btn) {
@@ -928,7 +937,7 @@
         const res = await fetch(`https://api.alquran.cloud/v1/surah/${num}/quran-uthmani`);
         const json = await res.json();
         const s = json.data;
-        const text = s.ayahs.map(a => `${a.text} <span class="verse-badge">﴿${toAr(a.numberInSurah)}﴾</span>`).join(' ');
+        const text = s.ayahs.map(a => `${cleanQuranText(a.text)} <span class="verse-badge">﴿${toAr(a.numberInSurah)}﴾</span>`).join(' ');
         frame.innerHTML = `<div class="surah-banner">سورة ${s.name}</div>${num !== 9 ? '<div class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' : ''}${text}`;
       } catch (e) {
         frame.innerHTML = '<div style="text-align:center; color:#D9534F;">تأكد من الاتصال بالإنترنت.</div>';
@@ -937,7 +946,7 @@
 
     function renderBookItem(item) {
       const frame = document.getElementById('mushafFrame');
-      const text = (item.verses || []).map(v => `${v.text} <span class="verse-badge">﴿${toAr(v.num)}﴾</span>`).join(' ');
+      const text = (item.verses || []).map(v => `${cleanQuranText(v.text)} <span class="verse-badge">﴿${toAr(v.num)}﴾</span>`).join(' ');
       frame.innerHTML = `
         <div class="surah-banner">سورة ${item.surahName} (${toAr(item.startAyah)} - ${toAr(item.endAyah)})</div>
         <div style="text-align:center; color:var(--gold); font-weight:800; margin-bottom:12px;">الموضوع: ${item.theme}</div>
@@ -985,7 +994,7 @@
 
       filtered.forEach(sec => {
         const vHtml = (sec.verses || []).map(v => 
-          `${v.text} <span class="verse-badge">﴿${toAr(v.num)}﴾</span>`
+          `${cleanQuranText(v.text)} <span class="verse-badge">﴿${toAr(v.num)}﴾</span>`
         ).join(' ');
 
         const card = document.createElement('article');
@@ -1014,6 +1023,10 @@
     }
 
     async function init() {
+      // مزامنة حالة زر العرض مع التفضيل المخزن
+      if (document.body.classList.contains('desktop-mode')) {
+        document.getElementById('layoutToggleBtn').innerText = '📱 جوال';
+      }
       try {
         const res = await fetch('quran_books.json?v=' + Date.now());
         if (res.ok) database = await res.json();

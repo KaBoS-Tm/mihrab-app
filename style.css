@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Tajawal:wght@400;600;800;900&display=swap');
+
+@font-face {
+  font-family: 'KFGQPC Uthmanic Naskh';
+  src: url('https://cdn.jsdelivr.net/gh/quran/quran.com-frontend@master/public/fonts/quran/hafs/uthmanic_hafs_v22.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --primary: #0F382A;
+  --gold: #C5A059;
+  --gold-light: #DFCA95;
+  --bg: #F7F5EE;
+  --card-bg: #FFFFFF;
+  --text-main: #19221E;
+  --text-muted: #5D6B64;
+  --border: #E8E2D2;
+}
+
+body.dark-mode {
+  --primary: #174233;
+  --gold: #D6B26B;
+  --bg: #0C1512;
+  --card-bg: #141F1B;
+  --text-main: #E9ECE9;
+  --text-muted: #9EAEA6;
+  --border: #24352D;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Tajawal', sans-serif; }
+body { background: var(--bg); color: var(--text-main); min-height: 100vh; padding-bottom: 80px; }
+
+/* شريط التنقل العلوي */
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--gold);
+  position: sticky; top: 0; z-index: 100;
+}
+.brand-title { font-size: 1.3rem; font-weight: 900; }
+.brand-title span { color: var(--gold-light); }
+
+/* أزرار التحكم العلوية */
+.top-actions { display: flex; gap: 8px; align-items: center; }
+.btn-sm {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid var(--gold);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* الحاوية الأساسية */
+.main-wrapper { max-width: 900px; margin: 0 auto; padding: 14px; display: flex; flex-direction: column; gap: 14px; }
+
+/* لوحة الفلاتر */
+.filters-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text-main);
+  outline: none;
+}
+
+/* شرائط التمرير الأفقية دون قص للكلمات */
+.scroll-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.scroll-row::-webkit-scrollbar { display: none; }
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.chip.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--gold);
+}
+
+/* بطاقة عرض الآيات القرآنية */
+.card-item {
+  background: var(--card-bg);
+  border: 1.5px solid var(--gold);
+  border-radius: 16px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.card-header {
+  background: rgba(197, 160, 89, 0.1);
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.card-body { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+
+/* النص القرآني وضبط الخط لعدم تفكك اللام */
+.quran-text {
+  font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+  font-size: 1.6rem;
+  line-height: 2.7;
+  text-align: justify;
+  text-align-last: center;
+  direction: rtl;
+  font-feature-settings: "liga" 1, "calt" 1, "mkmk" 1, "mark" 1;
+  text-rendering: optimizeLegibility;
+}
+.ayah-num { color: var(--gold); font-weight: bold; margin: 0 4px; }
+
+/* دليل الركعتين */
+.rakah-guide {
+  background: rgba(15, 56, 42, 0.06);
+  border: 1px solid rgba(15, 56, 42, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+body.dark-mode .rakah-guide { color: var(--gold-light); }
+
+.btn-confirm {
+  background: linear-gradient(135deg, var(--gold) 0%, #A8833A 100%);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* شريط التنقل السفلي المخصص للجوال (Bottom Navigation) */
+.mobile-nav {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 62px;
+  background: var(--card-bg);
+  border-top: 1.5px solid var(--border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 200;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+  gap: 3px;
+}
+.nav-item.active { color: var(--gold); }
+
+/* وضع الحاسب والتابلت المكتبي */
+@media (min-width: 850px) {
+  body { padding-bottom: 20px; }
+  .mobile-nav { display: none; }
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    max-width: 1150px;
+    align-items: start;
+  }
+}

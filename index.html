@@ -12,69 +12,162 @@
 <body>
 
   <header>
-    <div class="brand-title">مِحْرَابُ <span>الإِمَام</span></div>
-    <div class="top-actions">
-      <button class="btn-sm" onclick="toggleDarkMode()">🌙</button>
-      <button class="btn-sm" onclick="toggleLayoutMode()" id="layoutToggleBtn">📱 جوال</button>
+    <div class="header-content">
+      <div class="brand-title">مِحْرَابُ <span class="accent">الإِمَام</span></div>
+      <div class="header-actions">
+        <button class="icon-btn" onclick="openReaderModal('quran')">📖 تصفح الكتب</button>
+        <button class="icon-btn" onclick="toggleDarkMode()" style="width:36px; padding:0;">🌙</button>
+        <button class="icon-btn" onclick="toggleLayoutMode()" id="layoutToggleBtn">📱 جوال</button>
+      </div>
     </div>
   </header>
 
-  <main class="main-wrapper">
-    <!-- قائمة الفلاتر الجانبية / العلوية -->
-    <aside class="filters-card">
-      <input type="text" id="liveSearch" class="search-box" placeholder="ابحث عن سورة أو كلمة..." oninput="handleSearch(this.value)">
-
-      <div style="font-size:0.8rem; font-weight:800; color:var(--text-muted);">الصلاة:</div>
-      <div class="scroll-row">
-        <button class="chip" onclick="setPrayer('fajr', this)">الفجر</button>
-        <button class="chip" onclick="setPrayer('dhuhr', this)">الظهر</button>
-        <button class="chip" onclick="setPrayer('asr', this)">العصر</button>
-        <button class="chip active" onclick="setPrayer('maghrib', this)">المغرب</button>
-        <button class="chip" onclick="setPrayer('isha', this)">العشاء</button>
+  <main class="container">
+    <aside class="control-card">
+      <div class="search-input-wrap">
+        <input type="text" id="liveSearch" class="search-input" placeholder="ابحث عن سورة أو كلمة..." oninput="handleSearch(this.value)">
+        <span class="search-icon">🔍</span>
       </div>
 
-      <div style="font-size:0.8rem; font-weight:800; color:var(--text-muted);">الكتاب:</div>
-      <div class="scroll-row">
-        <button class="chip active" onclick="setBook('all', this)">كلاهما</button>
-        <button class="chip" onclick="setBook('shortEasy', this)">قصار السور</button>
-        <button class="chip" onclick="setBook('mediumSelected', this)">آيات مختارة</button>
+      <div class="prayers-grid">
+        <button class="prayer-btn" onclick="setPrayer('fajr', this)">الفجر</button>
+        <button class="prayer-btn" onclick="setPrayer('dhuhr', this)">الظهر</button>
+        <button class="prayer-btn" onclick="setPrayer('asr', this)">العصر</button>
+        <button class="prayer-btn active" onclick="setPrayer('maghrib', this)">المغرب</button>
+        <button class="prayer-btn" onclick="setPrayer('isha', this)">العشاء</button>
       </div>
 
-      <div style="font-size:0.8rem; font-weight:800; color:var(--text-muted);">طول المقطع:</div>
+      <div class="book-tabs">
+        <button class="book-tab-btn" onclick="setBookFilter('shortEasy', this)">📖 قـصـار السور</button>
+        <button class="book-tab-btn" onclick="setBookFilter('mediumSelected', this)">📚 آيات مختارة</button>
+        <button class="book-tab-btn active" onclick="setBookFilter('all', this)">✨ كلاهما</button>
+      </div>
+
       <div class="scroll-row">
-        <button class="chip active" onclick="setLength('all', this)">الكل</button>
-        <button class="chip" onclick="setLength('very_short', this)">قصير جداً</button>
-        <button class="chip" onclick="setLength('short', this)">قصير</button>
-        <button class="chip" onclick="setLength('medium', this)">متوسط</button>
-        <button class="chip" onclick="setLength('long', this)">طويل</button>
+        <button class="chip active" onclick="setLengthFilter('all', this)">الكل</button>
+        <button class="chip" onclick="setLengthFilter('very_short', this)">قصير جداً</button>
+        <button class="chip" onclick="setLengthFilter('short', this)">قصير</button>
+        <button class="chip" onclick="setLengthFilter('medium', this)">متوسط</button>
+        <button class="chip" onclick="setLengthFilter('long', this)">طويل</button>
+      </div>
+
+      <div class="scroll-row">
+        <button class="chip active" onclick="setTopicFilter('all', this)">كافة الموضوعات</button>
+        <button class="chip" onclick="setTopicFilter('paradise', this)">نعيم الجنة</button>
+        <button class="chip" onclick="setTopicFilter('afterlife', this)">القيامة والمواعظ</button>
+        <button class="chip" onclick="setTopicFilter('prophets', this)">قصص الأنبياء</button>
+        <button class="chip" onclick="setTopicFilter('tawheed', this)">التوحيد</button>
+        <button class="chip" onclick="setTopicFilter('morals', this)">الأخلاق</button>
+      </div>
+
+      <div class="memorization-scope-card">
+        <div>
+          <div class="scope-info-title"><span>🛡️</span><span>سجل حفظ الإمام</span></div>
+          <div id="scopeSummaryText" class="scope-info-sub">المصحف كاملاً</div>
+        </div>
+        <button class="scope-edit-btn" onclick="openScopeModal()">⚙️ تخصيص</button>
       </div>
     </aside>
 
-    <!-- مكان عرض البطاقات -->
     <section id="cardsFeed"></section>
   </main>
 
-  <!-- شريط التنقل السفلي المخصص لشاشات الجوال -->
   <nav class="mobile-nav">
     <button class="nav-item active" onclick="window.scrollTo({top:0, behavior:'smooth'})">
       <span>🏠</span><span>المقترح</span>
     </button>
-    <button class="nav-item" onclick="alert('سجل الحفظ مفعل تلقائياً')">
-      <span>🛡️</span><span>حفظ الإمام</span>
+    <button class="nav-item" onclick="openReaderModal('quran')">
+      <span>📖</span><span>المصحف</span>
     </button>
-    <button class="nav-item" onclick="resetCooldowns()">
-      <span>⏳</span><span id="cdCount">المحظور (0)</span>
+    <button class="nav-item" onclick="openScopeModal()">
+      <span>🛡️</span><span>حفظي</span>
+    </button>
+    <button class="nav-item" onclick="openLockedModal()">
+      <span>⏳</span><span id="cdCountNav">المحظور (0)</span>
     </button>
   </nav>
+
+  <!-- نافذة تخصيص نطاق الحفظ -->
+  <div id="scopeModal" class="modal-overlay" onclick="closeScopeModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>تخصيص نطاق حفظ الإمام</div>
+        <button onclick="closeScopeModal(null)" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="font-size:0.85rem; font-weight:800; color:var(--text-muted);">حدد الأجزاء المحفوظة:</div>
+        <div id="juzGrid" class="juz-grid-selector"></div>
+      </div>
+      <div style="padding:12px; background:var(--bg); border-top:1px solid var(--border-subtle); text-align:center;">
+        <button class="confirm-btn" onclick="saveScopeSettings()">اعتماد النطاق ✓</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- متصفح المصحف والكتب -->
+  <div id="readerModal" class="reader-modal">
+    <div class="reader-header">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="icon-btn" onclick="toggleMobileIndex()">📑 الفهرس</button>
+        <span id="readerTitle" style="font-weight:800; font-size:1rem;">المصحف الشريف</span>
+      </div>
+      <div style="display:flex; gap:4px;">
+        <button class="chip" onclick="switchReaderSource('quran', this)">المصحف</button>
+        <button class="chip" onclick="switchReaderSource('shortEasy', this)">قصار السور</button>
+        <button class="chip" onclick="switchReaderSource('mediumSelected', this)">آيات مختارة</button>
+      </div>
+      <button onclick="closeReaderModal()" style="background:none; border:none; color:#fff; font-size:1.3rem; cursor:pointer;">✕</button>
+    </div>
+
+    <div class="reader-layout">
+      <aside id="readerSidebar" class="reader-index-sidebar">
+        <div style="padding:8px; border-bottom:1px solid var(--border-subtle);">
+          <input type="text" class="search-input" placeholder="ابحث في الفهرس..." oninput="filterIndex(this.value)">
+        </div>
+        <div id="readerIndexList" style="flex:1; overflow-y:auto; padding:6px; display:flex; flex-direction:column; gap:4px;"></div>
+      </aside>
+
+      <div class="reader-viewport">
+        <div id="mushafFrame" class="quran-text-wrapper" style="width:100%; max-width:800px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- نافذة المحظورات -->
+  <div id="lockedModal" class="modal-overlay" onclick="closeLockedModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>المقاطع المحظورة (48 ساعة)</div>
+        <button onclick="closeLockedModal(null)" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
+      </div>
+      <div id="lockedModalBody" class="modal-body"></div>
+      <div style="padding:12px; background:var(--bg); border-top:1px solid var(--border-subtle); text-align:center;">
+        <button class="chip" style="color:#D9534F; border-color:#D9534F;" onclick="resetAllCooldowns()">إلغاء حظر الكل</button>
+      </div>
+    </div>
+  </div>
 
   <script>
     let database = [];
     let selectedPrayer = 'maghrib';
     let selectedBook = 'all';
     let selectedLength = 'all';
+    let selectedTopic = 'all';
     let searchQuery = '';
+    let selectedJuzs = new Set(Array.from({length: 30}, (_, i) => i + 1));
+
+    let currentReaderSource = 'quran';
+    let currentSurahIndex = 1;
+    let currentBookIndex = 0;
 
     if (localStorage.getItem('mihrab_dark') === 'true') document.body.classList.add('dark-mode');
+    if (localStorage.getItem('mihrab_saved_juzs')) {
+      selectedJuzs = new Set(JSON.parse(localStorage.getItem('mihrab_saved_juzs')));
+    }
+
+    function toAr(n) {
+      return String(n).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+    }
 
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
@@ -83,31 +176,33 @@
 
     function toggleLayoutMode() {
       const btn = document.getElementById('layoutToggleBtn');
-      if (document.body.classList.contains('force-desktop')) {
-        document.body.classList.remove('force-desktop');
-        btn.innerText = '📱 جوال';
-      } else {
-        document.body.classList.add('force-desktop');
-        btn.innerText = '💻 حاسب';
-      }
+      document.body.classList.toggle('desktop-view');
+      btn.innerText = document.body.classList.contains('desktop-view') ? '💻 حاسب' : '📱 جوال';
     }
 
     function setPrayer(p, btn) {
       selectedPrayer = p;
-      btn.parentElement.querySelectorAll('.chip').forEach(b => b.classList.remove('active'));
+      btn.parentElement.querySelectorAll('.prayer-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       render();
     }
 
-    function setBook(b, btn) {
+    function setBookFilter(b, btn) {
       selectedBook = b;
+      btn.parentElement.querySelectorAll('.book-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    }
+
+    function setLengthFilter(l, btn) {
+      selectedLength = l;
       btn.parentElement.querySelectorAll('.chip').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       render();
     }
 
-    function setLength(l, btn) {
-      selectedLength = l;
+    function setTopicFilter(t, btn) {
+      selectedTopic = t;
       btn.parentElement.querySelectorAll('.chip').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       render();
@@ -134,22 +229,133 @@
       render();
     }
 
-    function resetCooldowns() {
+    function resetAllCooldowns() {
       Object.keys(localStorage).forEach(k => { if(k.startsWith('mihrab_cd_')) localStorage.removeItem(k); });
-      alert('تم إلغاء حظر جميع المقاطع');
+      closeLockedModal();
       render();
     }
 
-    async function init() {
+    function openScopeModal() {
+      document.getElementById('scopeModal').style.display = 'flex';
+      const grid = document.getElementById('juzGrid');
+      grid.innerHTML = '';
+      for (let j = 1; j <= 30; j++) {
+        const btn = document.createElement('button');
+        btn.className = `juz-btn ${selectedJuzs.has(j) ? 'selected' : ''}`;
+        btn.innerText = `جـ ${toAr(j)}`;
+        btn.onclick = () => {
+          if (selectedJuzs.has(j)) selectedJuzs.delete(j);
+          else selectedJuzs.add(j);
+          btn.classList.toggle('selected', selectedJuzs.has(j));
+        };
+        grid.appendChild(btn);
+      }
+    }
+
+    function closeScopeModal() {
+      document.getElementById('scopeModal').style.display = 'none';
+    }
+
+    function saveScopeSettings() {
+      localStorage.setItem('mihrab_saved_juzs', JSON.stringify(Array.from(selectedJuzs)));
+      closeScopeModal();
+      document.getElementById('scopeSummaryText').innerText = `مفعل: ${toAr(selectedJuzs.size)} أجزاء`;
+      render();
+    }
+
+    function openLockedModal() {
+      document.getElementById('lockedModal').style.display = 'flex';
+      const body = document.getElementById('lockedModalBody');
+      body.innerHTML = '';
+      const list = database.filter(s => isLocked(s.id));
+      if (list.length === 0) {
+        body.innerHTML = '<div style="text-align:center; padding:20px; color:var(--text-muted);">لا توجد مقاطع محظورة حالياً.</div>';
+      } else {
+        list.forEach(s => {
+          const row = document.createElement('div');
+          row.style.cssText = 'display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:var(--bg); border-radius:8px;';
+          row.innerHTML = `<span>سورة ${s.surahName} (${toAr(s.startAyah)}-${toAr(s.endAyah)})</span>
+            <button class="chip" onclick="localStorage.removeItem('mihrab_cd_${s.id}'); openLockedModal(); render();">إتاحة</button>`;
+          body.appendChild(row);
+        });
+      }
+    }
+
+    function closeLockedModal() {
+      document.getElementById('lockedModal').style.display = 'none';
+    }
+
+    function openReaderModal(src) {
+      document.getElementById('readerModal').style.display = 'flex';
+      switchReaderSource(src);
+    }
+
+    function closeReaderModal() {
+      document.getElementById('readerModal').style.display = 'none';
+    }
+
+    function toggleMobileIndex() {
+      document.getElementById('readerSidebar').classList.toggle('mobile-open');
+    }
+
+    function switchReaderSource(src, btn) {
+      currentReaderSource = src;
+      const list = document.getElementById('readerIndexList');
+      list.innerHTML = '';
+
+      if (src === 'quran') {
+        document.getElementById('readerTitle').innerText = 'المصحف الشريف';
+        for (let i = 1; i <= 114; i++) {
+          const b = document.createElement('button');
+          b.className = 'chip';
+          b.style.textAlign = 'right';
+          b.innerText = `سورة رقم ${toAr(i)}`;
+          b.onclick = () => loadSurahReader(i);
+          list.appendChild(b);
+        }
+        loadSurahReader(currentSurahIndex);
+      } else {
+        document.getElementById('readerTitle').innerText = src === 'shortEasy' ? 'قصار السور للصلاة' : 'آيات مختارة للصلاة';
+        const items = database.filter(d => d.book === src);
+        items.forEach((item, idx) => {
+          const b = document.createElement('button');
+          b.className = 'chip';
+          b.style.textAlign = 'right';
+          b.innerText = `سورة ${item.surahName} (${toAr(item.startAyah)}-${toAr(item.endAyah)})`;
+          b.onclick = () => renderBookItem(item);
+          list.appendChild(b);
+        });
+        if (items.length > 0) renderBookItem(items[0]);
+      }
+    }
+
+    async function loadSurahReader(num) {
+      currentSurahIndex = num;
+      const frame = document.getElementById('mushafFrame');
+      frame.innerHTML = '<div style="text-align:center;">جاري التحميل...</div>';
       try {
-        const res = await fetch('quran_books.json?v=' + Date.now());
-        if (res.ok) database = await res.json();
-      } catch(e) {}
-      render();
+        const res = await fetch(`https://api.alquran.cloud/v1/surah/${num}/quran-uthmani`);
+        const json = await res.json();
+        const s = json.data;
+        const text = s.ayahs.map(a => `${normalizeQuranText(a.text)} <span class="verse-badge">﴿${toAr(a.numberInSurah)}﴾</span>`).join(' ');
+        frame.innerHTML = `<div class="surah-banner">سورة ${s.name}</div>${num !== 9 ? '<div class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' : ''}${text}`;
+      } catch (e) {
+        frame.innerHTML = '<div style="text-align:center; color:#D9534F;">تأكد من اتصال الإنترنت لقراءة السورة كاملة.</div>';
+      }
     }
 
-    function toArDigits(n) {
-      return String(n).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+    function renderBookItem(item) {
+      const frame = document.getElementById('mushafFrame');
+      const text = (item.verses || []).map(v => `${normalizeQuranText(v.text)} <span class="verse-badge">﴿${toAr(v.num)}﴾</span>`).join(' ');
+      frame.innerHTML = `
+        <div class="surah-banner">سورة ${item.surahName} (${toAr(item.startAyah)} - ${toAr(item.endAyah)})</div>
+        <div style="text-align:center; color:var(--gold); font-weight:800; margin-bottom:12px;">الموضوع: ${item.theme}</div>
+        ${item.startAyah === 1 && item.surahNo !== 9 ? '<div class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' : ''}
+        ${text}
+        <div class="rakah-box" style="margin-top:20px;">
+          📖 دليل الركعتين: الأولى تقف عند آية (${toAr(item.rakah1End)})، والثانية تبدأ من آية (${toAr(item.rakah2Start)}).
+        </div>
+      `;
     }
 
     function render() {
@@ -158,19 +364,21 @@
 
       let lockedCount = 0;
       database.forEach(s => { if (isLocked(s.id)) lockedCount++; });
-      document.getElementById('cdCount').innerText = `المحظور (${lockedCount})`;
+      document.getElementById('cdCountNav').innerText = `المحظور (${toAr(lockedCount)})`;
 
       const seen = new Set();
       const filtered = database.filter(item => {
+        if (!selectedJuzs.has(item.juz)) return false;
         if (selectedBook !== 'all' && item.book !== selectedBook) return false;
         if (selectedLength !== 'all' && item.lengthTier !== selectedLength) return false;
+        if (selectedTopic !== 'all' && item.topicKey !== selectedTopic) return false;
         if (selectedPrayer === 'maghrib' && item.ayahCount > 8) return false;
         if (isLocked(item.id)) return false;
 
         if (searchQuery) {
-          const matchSurah = item.surahName.includes(searchQuery);
-          const matchText = (item.verses || []).some(v => v.text.includes(searchQuery));
-          if (!matchSurah && !matchText) return false;
+          const inSurah = item.surahName.includes(searchQuery);
+          const inVerses = (item.verses || []).some(v => v.text.includes(searchQuery));
+          if (!inSurah && !inVerses) return false;
         }
 
         const key = `${item.book}_${item.surahNo}_${item.startAyah}`;
@@ -180,33 +388,46 @@
       });
 
       if (filtered.length === 0) {
-        feed.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">لا توجد مقاطع مطابقة أو جميعها محظورة (48 ساعة).</div>';
+        feed.innerHTML = '<div class="control-card" style="text-align:center; padding:35px; color:var(--text-muted);">لا توجد مقاطع مطابقة أو أن المقاطع تحت حظر الـ 48 ساعة.</div>';
         return;
       }
 
       filtered.forEach(sec => {
-        // تمرير النص القرآني عبر دالة المعالجة لمنع تفكك اللام
-        const versesHtml = (sec.verses || []).map(v => 
-          `${normalizeQuranText(v.text)} <span class="ayah-num">﴿${toArDigits(v.num)}﴾</span>`
+        const vHtml = (sec.verses || []).map(v => 
+          `${normalizeQuranText(v.text)} <span class="verse-badge">﴿${toAr(v.num)}﴾</span>`
         ).join(' ');
 
         const card = document.createElement('article');
         card.className = 'card-item';
         card.innerHTML = `
-          <div class="card-header">
-            <span style="font-weight:900; color:var(--primary);">سورة ${sec.surahName} (${toArDigits(sec.startAyah)}-${toArDigits(sec.endAyah)})</span>
-            <span style="font-size:0.78rem; font-weight:700; color:var(--gold);">${sec.sourceName}</span>
-          </div>
-          <div class="card-body">
-            <div class="quran-text">${versesHtml}</div>
-            <div class="rakah-guide">
-              📖 دليل الركعتين: الأولى تقف عند آية (${toArDigits(sec.rakah1End)})، والثانية تبدأ من آية (${toArDigits(sec.rakah2Start)}).
+          <div class="card-header-bar">
+            <div class="surah-info">
+              <span class="surah-title">سورة ${sec.surahName}</span>
+              <span class="ayat-tag">الآيات (${toAr(sec.startAyah)} - ${toAr(sec.endAyah)})</span>
+              <span class="ayat-tag" style="color:var(--gold);">جـ ${toAr(sec.juz)}</span>
             </div>
-            <button class="btn-confirm" onclick="commitRead('${sec.id}')">✓ تمت القراءة في الصلاة (حظر 48 ساعة)</button>
+            <span class="topic-badge">${sec.topicLabel || 'عام'}</span>
+          </div>
+          <div class="card-content">
+            <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700;">المصدر: ${sec.sourceName}</div>
+            <div class="quran-text-wrapper">${vHtml}</div>
+            <div class="rakah-box">
+              <span>📖</span>
+              <span>دليل الركعتين: الأولى تقف عند آية (${toAr(sec.rakah1End)})، والثانية تبدأ من آية (${toAr(sec.rakah2Start)}).</span>
+            </div>
+            <button class="confirm-btn" onclick="commitRead('${sec.id}')">✓ تمت القراءة في الصلاة (حظر 48 ساعة)</button>
           </div>
         `;
         feed.appendChild(card);
       });
+    }
+
+    async function init() {
+      try {
+        const res = await fetch('quran_books.json?v=' + Date.now());
+        if (res.ok) database = await res.json();
+      } catch (e) {}
+      render();
     }
 
     init();

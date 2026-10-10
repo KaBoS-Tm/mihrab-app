@@ -431,7 +431,7 @@
     }
 
     /* تطبيق خط مجمع الملك فهد مع ميزات الـ OpenType لضبط التشكيل */
-    .quran-text-wrapper, .mushaf-page-frame, #mushafFrame {
+    .quran-text-wrapper {
       background: var(--card-bg);
       border: 1px solid var(--border-subtle);
       border-radius: 14px;
@@ -439,7 +439,7 @@
       text-align: justify;
       text-align-last: center;
       line-height: 2.85;
-      font-family: 'KFGQPC_Hafs', serif !important;
+      font-family: 'KFGQPC_Hafs', 'Amiri Quran', serif !important;
       font-size: var(--quran-font-size);
       color: var(--text-main);
       box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02);
@@ -1539,10 +1539,6 @@
       }
     }
 
-    function formatQuranText(txt) {
-  if (!txt) return '';
-  return txt.replace(/\u06DF/g, '');
-}
     function render() {
       const feed = document.getElementById('cardsFeed');
       feed.innerHTML = '';
@@ -1596,7 +1592,7 @@
       filtered.forEach(sec => {
         const isFav = !!localStorage.getItem('mihrab_fav_' + sec.id);
         const versesHtml = (sec.verses || []).map(v => 
-          let t = formatQuranText(a.text); <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
+          `${v.text} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
         ).join(' ');
 
         const card = document.createElement('article');

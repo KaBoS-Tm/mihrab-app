@@ -1,0 +1,218 @@
+/* ==========================================================================
+   محراب الإمام - نظام التجاوب الذكي (جوال / تابلت / حاسب)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. وضع الجوال (Mobile Mode) - الافتراضي للشاشات الصغيرة أو بالفرض اليدوي
+   -------------------------------------------------------------------------- */
+@media (max-width: 680px), (body.force-mobile) {
+  header {
+    padding: 10px 14px !important;
+  }
+
+  .header-content {
+    gap: 6px !important;
+  }
+
+  .brand-title {
+    font-size: 1.25rem !important;
+  }
+
+  .brand-desc {
+    display: none !important; /* إخفاء الوصف الطويل في الجوال لتوفير المساحة */
+  }
+
+  .header-actions {
+    gap: 5px !important;
+  }
+
+  .icon-btn {
+    height: 34px !important;
+    padding: 0 8px !important;
+    font-size: 0.74rem !important;
+    border-radius: 16px !important;
+  }
+
+  .container {
+    padding: 10px !important;
+    gap: 12px !important;
+  }
+
+  .control-card {
+    padding: 12px !important;
+    border-radius: 14px !important;
+    gap: 10px !important;
+  }
+
+  .search-input {
+    padding: 10px 36px 10px 12px !important;
+    font-size: 0.88rem !important;
+    border-radius: 10px !important;
+  }
+
+  .prayers-grid {
+    gap: 4px !important;
+  }
+
+  .prayer-btn {
+    padding: 8px 2px !important;
+    font-size: 0.78rem !important;
+    border-radius: 9px !important;
+  }
+
+  .book-tabs {
+    padding: 3px !important;
+    border-radius: 10px !important;
+  }
+
+  .book-tab-btn {
+    padding: 7px 3px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .chip-filter {
+    padding: 5px 11px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .memorization-scope-card {
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+  }
+
+  .scope-info-title {
+    font-size: 0.84rem !important;
+  }
+
+  .scope-edit-btn {
+    padding: 6px 12px !important;
+    font-size: 0.76rem !important;
+  }
+
+  .card-item {
+    border-radius: 14px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .card-header-bar {
+    padding: 10px 12px !important;
+  }
+
+  .surah-title {
+    font-size: 1.05rem !important;
+  }
+
+  .ayat-tag {
+    padding: 2px 6px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .card-content {
+    padding: 14px 12px !important;
+    gap: 10px !important;
+  }
+
+  .quran-text-wrapper {
+    padding: 16px 12px !important;
+    font-size: 1.45rem !important; /* حجم متناسق لشاشات الهواتف لمنع ضيق الأسطر */
+    line-height: 2.6 !important;
+  }
+
+  .rakah-box {
+    padding: 9px 11px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .confirm-btn {
+    padding: 11px !important;
+    font-size: 0.88rem !important;
+    border-radius: 10px !important;
+  }
+
+  .modal-overlay {
+    padding: 8px !important;
+  }
+
+  .scope-modal-card {
+    max-height: 94vh !important;
+    border-radius: 14px !important;
+  }
+
+  .juz-grid-selector {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .juz-btn {
+    padding: 8px 2px !important;
+    font-size: 0.82rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. وضع التابلت والأجهزة اللوحية (Tablet Mode: 681px إلى 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 681px) and (max-width: 1024px), (body.force-tablet) {
+  .container {
+    max-width: 95% !important;
+    padding: 16px !important;
+  }
+
+  .control-card {
+    padding: 16px 20px !important;
+  }
+
+  .prayers-grid {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .prayer-btn {
+    padding: 10px 4px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .card-item {
+    border-radius: 16px !important;
+  }
+
+  .quran-text-wrapper {
+    padding: 24px 20px !important;
+    font-size: 1.7rem !important;
+    line-height: 2.85 !important;
+  }
+
+  .juz-grid-selector {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. وضع الحاسوب والشاشات الكبيرة (Desktop Mode: 1025px فأعلى)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1025px), (body.force-desktop) {
+  body.force-desktop .container,
+  body:not(.force-mobile):not(.force-tablet) .container {
+    max-width: 1160px !important;
+    display: grid !important;
+    grid-template-columns: 360px 1fr !important;
+    align-items: start !important;
+    gap: 20px !important;
+  }
+
+  body.force-desktop .control-card,
+  body:not(.force-mobile):not(.force-tablet) .control-card {
+    position: sticky !important;
+    top: 86px !important;
+    z-index: 10 !important;
+  }
+}
+
+/* زر تبديل العرض في الترويسة */
+.layout-switcher-btn {
+  background: rgba(197, 160, 89, 0.22) !important;
+  border: 1px solid var(--gold) !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  cursor: pointer;
+}

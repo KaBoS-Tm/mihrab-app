@@ -20,7 +20,7 @@
   
   <style>
     /* خط مجمع الملك فهد لطباعة المصحف الشريف المعتمد برسم حفص */
-   @font-face {
+    @font-face {
       font-family: 'KFGQPC_Hafs';
       src: url('fonts/KFGQPC_Hafs_V30.ttf') format('truetype');
       font-weight: normal;
@@ -454,7 +454,7 @@
       align-items: center;
       justify-content: center;
       color: var(--gold);
-      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-family: 'KFGQPC_Hafs', 'Amiri Quran', serif !important;
       font-size: 1.4rem;
       margin: 0 4px;
       font-weight: bold;
@@ -720,7 +720,7 @@
       padding: 35px 25px;
       box-shadow: var(--shadow-lg);
       line-height: 2.9;
-      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-family: 'KFGQPC_Hafs', serif !important;
       font-size: var(--reader-font-size);
       text-align: justify;
       text-align-last: center;
@@ -749,7 +749,7 @@
 
     .basmalah {
       text-align: center;
-      font-family: 'KFGQPC Uthmanic Naskh', 'Amiri Quran', serif !important;
+      font-family: 'KFGQPC_Hafs', 'Amiri Quran', serif !important;
       font-size: 1.7rem;
       color: var(--gold);
       margin-bottom: 20px;
@@ -1090,6 +1090,11 @@
       }
       updateScopeSummaryCard();
       render();
+    }
+
+    function cleanAyaText(txt) {
+      if (!txt) return '';
+      return txt.replace(/\u06DF/g, '');
     }
 
     function toArabicDigits(num) {
@@ -1469,14 +1474,14 @@
         let ayahsHtml = surah.ayahs.map(a => {
           let t = a.text;
           if (currentSurahIndex !== 1 && a.numberInSurah === 1) {
-            t = t.replace("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ", "").replace("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ", "");
+            t = t.replace("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ", "").replace("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ", "");
           }
-          return `${t} <span class="verse-badge">﴿${toArabicDigits(a.numberInSurah)}﴾</span>`;
+          return `${cleanAyaText(t)} <span class="verse-badge">﴿${toArabicDigits(a.numberInSurah)}﴾</span>`;
         }).join(' ');
 
         frame.innerHTML = `
           <div class="surah-banner">سُورَةُ ${surah.name} (${toArabicDigits(surah.numberOfAyahs)} آية)</div>
-          ${currentSurahIndex !== 9 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
+          ${currentSurahIndex !== 9 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
           <div style="text-align:justify; text-align-last:center;">${ayahsHtml}</div>
         `;
       } else {
@@ -1488,7 +1493,7 @@
 
         const currentItem = bookItems[currentBookIndex] || bookItems[0];
         const versesHtml = (currentItem.verses || []).map(v => 
-          `${v.text} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
+          `${cleanAyaText(v.text)} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
         ).join(' ');
 
         frame.innerHTML = `
@@ -1496,7 +1501,7 @@
           <div style="font-size:1rem; font-family:'Tajawal' !important; color:var(--gold); text-align:center; margin-bottom:18px; font-weight:800;">
             الموضوع: ${currentItem.theme}
           </div>
-          ${currentItem.surahNo !== 9 && currentItem.startAyah === 1 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
+          ${currentItem.surahNo !== 9 && currentItem.startAyah === 1 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
           <div style="text-align:justify; text-align-last:center;">${versesHtml}</div>
           <div class="rakah-box" style="margin-top:25px; font-family:'Tajawal' !important; font-size:0.95rem;">
             <span>📖</span>
@@ -1592,7 +1597,7 @@
       filtered.forEach(sec => {
         const isFav = !!localStorage.getItem('mihrab_fav_' + sec.id);
         const versesHtml = (sec.verses || []).map(v => 
-          `${v.text} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
+          `${cleanAyaText(v.text)} <span class="verse-badge">﴿${toArabicDigits(v.num)}﴾</span>`
         ).join(' ');
 
         const card = document.createElement('article');

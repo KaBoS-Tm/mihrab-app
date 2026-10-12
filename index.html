@@ -1092,9 +1092,13 @@
       render();
     }
 
+    // تنقية محارف اليونيكود الشاذة التي تسبب الدوائر أو تراكم التشكيل
     function cleanAyaText(txt) {
       if (!txt) return '';
-      return txt.replace(/\u06DF/g, '');
+      return txt
+        .replace(/\u06DF/g, '')  // الصفر المستدير
+        .replace(/\u06E0/g, '')  // الصفر القائم
+        .replace(/\u06ED/g, ''); // علامة التنوين المتتابع الزائدة المسببة لتشوه كلمة هدى
     }
 
     function toArabicDigits(num) {
@@ -1481,8 +1485,8 @@
 
         frame.innerHTML = `
           <div class="surah-banner">سُورَةُ ${surah.name} (${toArabicDigits(surah.numberOfAyahs)} آية)</div>
-          ${currentSurahIndex !== 9 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
-          <div style="text-align:justify; text-align-last:center;">${ayahsHtml}</div>
+          ${currentSurahIndex !== 9 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
+          <div class="quran-text-wrapper" style="box-shadow:none; border:none; padding:10px 0; font-size:var(--reader-font-size);">${ayahsHtml}</div>
         `;
       } else {
         const bookItems = database.filter(item => item.book === currentReaderSource);
@@ -1501,8 +1505,8 @@
           <div style="font-size:1rem; font-family:'Tajawal' !important; color:var(--gold); text-align:center; margin-bottom:18px; font-weight:800;">
             الموضوع: ${currentItem.theme}
           </div>
-          ${currentItem.surahNo !== 9 && currentItem.startAyah === 1 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
-          <div style="text-align:justify; text-align-last:center;">${versesHtml}</div>
+          ${currentItem.surahNo !== 9 && currentItem.startAyah === 1 ? '<span class="basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>' : ''}
+          <div class="quran-text-wrapper" style="box-shadow:none; border:none; padding:10px 0; font-size:var(--reader-font-size);">${versesHtml}</div>
           <div class="rakah-box" style="margin-top:25px; font-family:'Tajawal' !important; font-size:0.95rem;">
             <span>📖</span>
             <span>دليل الركعتين: الأولى تقف عند آية (${toArabicDigits(currentItem.rakah1End)})، والثانية تبدأ من آية (${toArabicDigits(currentItem.rakah2Start)}).</span>

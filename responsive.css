@@ -1,9 +1,9 @@
 /* ==========================================================================
-   محراب الإمام - نظام التجاوب الذكي (جوال / تابلت / حاسب)
+   محراب الإمام - نظام التجاوب وضبط الشاشات والقارئ
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. وضع الجوال (Mobile Mode) - الافتراضي للشاشات الصغيرة أو بالفرض اليدوي
+   1. وضع الجوال (Mobile Mode)
    -------------------------------------------------------------------------- */
 @media (max-width: 680px), (body.force-mobile) {
   header {
@@ -19,7 +19,7 @@
   }
 
   .brand-desc {
-    display: none !important; /* إخفاء الوصف الطويل في الجوال لتوفير المساحة */
+    display: none !important;
   }
 
   .header-actions {
@@ -112,10 +112,10 @@
     gap: 10px !important;
   }
 
+  /* إتاحة التحكم في حجم خط البطاقات ديناميكياً بدون إجبار ثابت */
   .quran-text-wrapper {
     padding: 16px 12px !important;
-    font-size: 1.45rem !important; /* حجم متناسق لشاشات الهواتف لمنع ضيق الأسطر */
-    line-height: 2.6 !important;
+    line-height: 2.7 !important;
   }
 
   .rakah-box {
@@ -147,10 +147,82 @@
     padding: 8px 2px !important;
     font-size: 0.82rem !important;
   }
+
+  /* ----------------------------------------------------
+     إصلاح ترويسة متصفح الكتب في الجوال لمنع التداخل والقص
+     ---------------------------------------------------- */
+  .reader-header {
+    padding: 8px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .reader-top-bar {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  #readerTitle {
+    font-size: 0.92rem !important;
+    text-align: center !important;
+    flex: 1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    padding: 0 4px !important;
+  }
+
+  .reader-source-tabs {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: stretch !important;
+    gap: 3px !important;
+  }
+
+  .reader-tab-btn {
+    flex: 1 !important;
+    padding: 6px 2px !important;
+    font-size: 0.72rem !important;
+    text-align: center !important;
+  }
+
+  .reader-viewport {
+    padding: 12px 8px !important;
+  }
+
+  .mushaf-page-frame {
+    padding: 20px 12px !important;
+    line-height: 2.7 !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
-   2. وضع التابلت والأجهزة اللوحية (Tablet Mode: 681px إلى 1024px)
+   2. أزرار الرجوع والإغلاق البارزة
+   -------------------------------------------------------------------------- */
+.modal-close-btn, .reader-back-btn {
+  background: rgba(197, 160, 89, 0.25) !important;
+  border: 1.5px solid var(--gold) !important;
+  color: #FFFFFF !important;
+  padding: 5px 12px !important;
+  border-radius: 18px !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+.modal-close-btn:hover, .reader-back-btn:hover {
+  background: var(--gold) !important;
+  color: var(--primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. وضع التابلت والأجهزة اللوحية (681px إلى 1024px)
    -------------------------------------------------------------------------- */
 @media (min-width: 681px) and (max-width: 1024px), (body.force-tablet) {
   .container {
@@ -167,19 +239,8 @@
     gap: 8px !important;
   }
 
-  .prayer-btn {
-    padding: 10px 4px !important;
-    font-size: 0.9rem !important;
-  }
-
   .card-item {
     border-radius: 16px !important;
-  }
-
-  .quran-text-wrapper {
-    padding: 24px 20px !important;
-    font-size: 1.7rem !important;
-    line-height: 2.85 !important;
   }
 
   .juz-grid-selector {
@@ -188,7 +249,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   3. وضع الحاسوب والشاشات الكبيرة (Desktop Mode: 1025px فأعلى)
+   4. وضع الحاسوب والشاشات الكبيرة (1025px فأعلى)
    -------------------------------------------------------------------------- */
 @media (min-width: 1025px), (body.force-desktop) {
   body.force-desktop .container,
@@ -208,7 +269,6 @@
   }
 }
 
-/* زر تبديل العرض في الترويسة */
 .layout-switcher-btn {
   background: rgba(197, 160, 89, 0.22) !important;
   border: 1px solid var(--gold) !important;

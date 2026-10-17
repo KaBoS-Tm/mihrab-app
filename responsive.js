@@ -1,61 +1,71 @@
 /* ==========================================================================
-   محراب الإمام - المحرك المتقدم (التجاوب، أزرار الرجوع، تكبير الخط، والبحث الذكي)
+   محراب الإمام - المحرك الذكي (إصلاح البحث في كلمات الآيات بدقة + التجاوب)
    ========================================================================== */
 
 (function () {
-  // دالة تجريد النص العربي من التشكيل وعلامات المصحف لمطابقة البحث بدقة
-  function normalizeArabic(txt) {
+  // دالة متقدمة لتجريد النص وتوحيده للبحث الصافي
+  function cleanForSearch(txt) {
     if (!txt) return '';
     return txt
-      .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g, '') // إزالة كافة الحركات والتنوين
+      .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g, '') // إزالة التشكيل وعلامات الضبط
       .replace(/[أإآٱ]/g, 'ا') // توحيد الألف
       .replace(/ة/g, 'ه')     // توحيد التاء المربوطة
       .replace(/ى/g, 'ي')     // توحيد الياء
+      .replace(/[\u0640]/g, '') // إزالة الكشيدة (التطويل)
       .replace(/[\s\-_]+/g, ' ')
       .trim().toLowerCase();
   }
 
-  // --------------------------------------------------------------------------
-  // 1. ترقية محرك البحث ليشمل كل كلمات الآيات والسور دون التأثر بالتشكيل
-  // --------------------------------------------------------------------------
+  // تجاوز دالة البحث الأصلية بربط مباشر وذكي
   window.handleSearch = function (val) {
-    window.searchQuery = val.trim();
-    const qClean = normalizeArabic(val);
-
+    const qRaw = (val || '').trim();
+    const qClean = cleanForSearch(qRaw);
     const feed = document.getElementById('cardsFeed');
-    if (!feed || !window.database) return;
+    if (!feed) return;
+
+    // الوصول الآمن لمصفوفة البيانات العامة
+    const dataList = (typeof database !== 'undefined') ? database : (window.database || []);
 
     if (!qClean) {
-      if (typeof window.render === 'function') window.render();
+      if (typeof render === 'function') render();
       return;
     }
 
-    // فلترة فورية تبحث في اسم السورة، الموضوع، وكل كلمات الآيات نصياً
     feed.innerHTML = '';
-    const results = window.database.filter(item => {
-      const inSurah = normalizeArabic(item.surahName).includes(qClean);
-      const inTheme = normalizeArabic(item.theme || '').includes(qClean);
-      const inTopic = normalizeArabic(item.topicLabel || '').includes(qClean);
-      const inVerses = (item.verses || []).some(v => normalizeArabic(v.text).includes(qClean));
+
+    // البحث في اسم السورة، الموضوع، وكل كلمات الآيات حرفاً بحرف
+    const matched = dataList.filter(item => {
+      const inSurah = cleanForSearch(item.surahName).includes(qClean);
+      const inTheme = cleanForSearch(item.theme || '').includes(qClean);
+      const inTopic = cleanForSearch(item.topicLabel || '').includes(qClean);
+      const inVerses = (item.verses || []).some(v => cleanForSearch(v.text).includes(qClean));
 
       return inSurah || inTheme || inTopic || inVerses;
     });
 
-    if (results.length === 0) {
+    if (matched.length === 0) {
       feed.innerHTML = `
         <div class="empty-state">
           <span style="font-size: 2.4rem;">🔍</span>
-          <h3 style="color:var(--primary); font-weight:800;">لم يتم العثور على نتائج للكلمة: "${val}"</h3>
-          <p style="color:var(--text-muted); font-size:0.88rem;">جرب كتابة جذر الكلمة أو جزء منها للبحث في كافة السور والآيات.</p>
+          <h3 style="color:var(--primary); font-weight:800;">لم يتم العثور على نتائج للكلمة: "${qRaw}"</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem;">تأكد من كتابة أحرف الكلمة؛ والبحث يبحث تلقائياً في نصوص السور والآيات والموضوعات.</p>
         </div>`;
       return;
     }
 
-    results.forEach(sec => {
+    matched.forEach(sec => {
       const isFav = !!localStorage.getItem('mihrab_fav_' + sec.id);
-      const versesHtml = (sec.verses || []).map(v => 
-        `${(typeof window.cleanAyaText === 'function' ? window.cleanAyaText(v.text) : v.text)} <span class="verse-badge">﴿${window.toArabicDigits(v.num)}﴾</span>`
-      ).join(' ');
+      const versesHtml = (sec.verses || []).map(v => {
+        const txt = typeof cleanAyaText === 'function' ? cleanAyaText(v.text) : v.text;
+        const num = typeof toArabicDigits === 'function' ? toArabicDigits(v.num) : v.num;
+        return `${txt} <span class="verse-badge">﴿${num}﴾</span>`;
+      }).join(' ');
+
+      const start = typeof toArabicDigits === 'function' ? toArabicDigits(sec.startAyah) : sec.startAyah;
+      const end = typeof toArabicDigits === 'function' ? toArabicDigits(sec.endAyah) : sec.endAyah;
+      const juz = typeof toArabicDigits === 'function' ? toArabicDigits(sec.juz) : sec.juz;
+      const r1 = typeof toArabicDigits === 'function' ? toArabicDigits(sec.rakah1End) : sec.rakah1End;
+      const r2 = typeof toArabicDigits === 'function' ? toArabicDigits(sec.rakah2Start) : sec.rakah2Start;
 
       const card = document.createElement('article');
       card.className = 'card-item';
@@ -63,11 +73,11 @@
         <div class="card-header-bar">
           <div class="surah-info">
             <span class="surah-title">سورة ${sec.surahName}</span>
-            <span class="ayat-tag">الآيات (${window.toArabicDigits(sec.startAyah)} - ${window.toArabicDigits(sec.endAyah)})</span>
-            <span class="ayat-tag" style="color:var(--gold); font-weight:800;">جزء ${window.toArabicDigits(sec.juz)}</span>
+            <span class="ayat-tag">الآيات (${start} - ${end})</span>
+            <span class="ayat-tag" style="color:var(--gold); font-weight:800;">جزء ${juz}</span>
           </div>
           <div class="header-badges">
-            <span class="topic-badge">${sec.topicLabel || 'التوحيد'}</span>
+            <span class="topic-badge">${sec.topicLabel || 'عام'}</span>
             <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${sec.id}', this)" title="إضافة للمفضلة">
               ${isFav ? '★' : '☆'}
             </button>
@@ -80,7 +90,7 @@
           <div class="quran-text-wrapper">${versesHtml}</div>
           <div class="rakah-box">
             <span>📖</span>
-            <span>دليل الركعتين: الأولى تقف عند آية (${window.toArabicDigits(sec.rakah1End)})، والثانية تبدأ من آية (${window.toArabicDigits(sec.rakah2Start)}).</span>
+            <span>دليل الركعتين: الأولى تقف عند آية (${r1})، والثانية تبدأ من آية (${r2}).</span>
           </div>
           <button class="confirm-btn" onclick="commitRead('${sec.id}', this)">
             <span>✓</span>
@@ -91,15 +101,12 @@
     });
   };
 
-  // --------------------------------------------------------------------------
-  // 2. إصلاح أزرار تكبير وتصغير الخط وتطبيقها فوراً على القارئ والبطاقات
-  // --------------------------------------------------------------------------
+  // التحكم الديناميكي بأحجام الخط
   window.changeReaderFontSize = function (delta) {
     let current = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--reader-font-size')) || 1.8;
     current = Math.max(1.2, Math.min(3.2, current + delta));
     document.documentElement.style.setProperty('--reader-font-size', current + 'rem');
 
-    // فرض التطبيق المباشر على الحاويات النشطة
     document.querySelectorAll('.mushaf-page-frame, .mushaf-page-frame .quran-text-wrapper').forEach(el => {
       el.style.fontSize = current + 'rem';
     });
@@ -115,9 +122,7 @@
     });
   };
 
-  // --------------------------------------------------------------------------
-  // 3. إعادة هيكلة ترويسة القارئ وإضافة أزرار "رجوع" صريحة للجوال
-  // --------------------------------------------------------------------------
+  // ضبط أزرار الرجوع وترويسة القارئ
   function adjustReaderHeader() {
     const readerHeader = document.querySelector('.reader-header');
     if (!readerHeader || readerHeader.getAttribute('data-adjusted')) return;
@@ -126,17 +131,14 @@
     const tabsEl = readerHeader.querySelector('.reader-source-tabs');
     const oldCloseBtn = readerHeader.querySelector('button[onclick*="closeReaderModal"]');
 
-    // إنشاء شريط علوي أنيق
     const topBar = document.createElement('div');
     topBar.className = 'reader-top-bar';
 
-    // زر رجوع رئيسي
     const backBtn = document.createElement('button');
     backBtn.className = 'reader-back-btn';
     backBtn.innerHTML = '⬅ رجوع للمحراب';
-    backBtn.onclick = () => window.closeReaderModal();
+    backBtn.onclick = () => { if (typeof closeReaderModal === 'function') closeReaderModal(); };
 
-    // زر الفهرس
     const indexBtn = readerHeader.querySelector('button[onclick*="toggleMobileIndex"]');
 
     topBar.appendChild(backBtn);
@@ -152,9 +154,6 @@
     readerHeader.setAttribute('data-adjusted', 'true');
   }
 
-  // --------------------------------------------------------------------------
-  // 4. إضافة زر رجوع صريح لنافذة نطاق الحفظ (Scope Modal)
-  // --------------------------------------------------------------------------
   function adjustScopeModal() {
     const scopeCard = document.querySelector('.scope-modal-card');
     if (!scopeCard || scopeCard.getAttribute('data-back-added')) return;
@@ -164,15 +163,13 @@
       const backBtn = document.createElement('button');
       backBtn.className = 'modal-close-btn';
       backBtn.innerHTML = '✕ رجوع';
-      backBtn.onclick = () => window.closeScopeModal();
+      backBtn.onclick = () => { if (typeof closeScopeModal === 'function') closeScopeModal(); };
       modalHeader.appendChild(backBtn);
     }
     scopeCard.setAttribute('data-back-added', 'true');
   }
 
-  // --------------------------------------------------------------------------
-  // 5. زر تبديل أوضاع الشاشة (تلقائي / جوال / لوحي / حاسب)
-  // --------------------------------------------------------------------------
+  // زر التبديل بين التصميمات (تلقائي / جوال / لوحي / حاسب)
   const LAYOUT_MODES = [
     { key: 'auto', label: '⚙️ تلقائي' },
     { key: 'mobile', label: '📱 جوال' },
@@ -199,9 +196,9 @@
     const next = LAYOUT_MODES[(idx + 1) % LAYOUT_MODES.length].key;
     localStorage.setItem('mihrab_view_mode', next);
     applyLayout(next);
-    if (typeof window.showToast === 'function') {
+    if (typeof showToast === 'function') {
       const item = LAYOUT_MODES.find(m => m.key === next);
-      window.showToast(`تم تغيير العرض إلى: ${item.label}`);
+      showToast(`تم تغيير العرض إلى: ${item.label}`);
     }
   }
 
